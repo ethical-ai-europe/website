@@ -4,11 +4,13 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 const isProd = process.env.NODE_ENV === 'production';
 const FALLBACK_BASE_PATH = process.env.DEFAULT_BASE_PATH || '/website';
+const EXPECTED_REPO_SEGMENTS = 2;
+const REPOSITORY_NAME_INDEX = 1;
 function getDefaultBasePath() {
   if (process.env.GITHUB_REPOSITORY) {
     const segments = process.env.GITHUB_REPOSITORY.split('/');
-    if (segments.length === 2 && segments[1]) {
-      return `/${segments[1]}`;
+    if (segments.length === EXPECTED_REPO_SEGMENTS && segments[REPOSITORY_NAME_INDEX]) {
+      return `/${segments[REPOSITORY_NAME_INDEX]}`;
     }
   }
   return FALLBACK_BASE_PATH;
