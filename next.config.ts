@@ -3,7 +3,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 const isProd = process.env.NODE_ENV === 'production';
-const FALLBACK_BASE_PATH = process.env.DEFAULT_BASE_PATH || '/website';
+const FALLBACK_BASE_PATH = '/website';
 const EXPECTED_REPO_SEGMENTS = 2;
 const REPOSITORY_NAME_INDEX = 1;
 
@@ -45,8 +45,12 @@ const pathPrefix = isProd ? normalizedBasePath : undefined;
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: pathPrefix,
-  assetPrefix: pathPrefix,
+  ...(pathPrefix
+    ? {
+        basePath: pathPrefix,
+        assetPrefix: pathPrefix,
+      }
+    : {}),
 };
 
 export default withNextIntl(nextConfig);
