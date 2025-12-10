@@ -1,18 +1,19 @@
 import { notFound } from 'next/navigation';
 import { getContentBySlug, getContentSlugs } from '@/lib/markdown';
 import Link from 'next/link';
+import { locales } from '@/i18n';
 
-export async function generateStaticParams({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  const slugs = getContentSlugs(locale);
+export function generateStaticParams() {
+  const params: { locale: string; slug: string }[] = [];
   
-  return slugs.map((slug) => ({
-    slug,
-  }));
+  locales.forEach((locale) => {
+    const slugs = getContentSlugs(locale);
+    slugs.forEach((slug) => {
+      params.push({ locale, slug });
+    });
+  });
+  
+  return params;
 }
 
 export default async function ContentPage({
