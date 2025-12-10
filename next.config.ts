@@ -18,8 +18,8 @@ function getDefaultBasePath() {
 
 const DEFAULT_BASE_PATH = getDefaultBasePath();
 
-function getNormalizedBasePath() {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || DEFAULT_BASE_PATH;
+function getNormalizedBasePath(defaultBasePath: string) {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || defaultBasePath;
   if (basePath === '/') {
     // Preserve a root deployment path.
     return '/';
@@ -28,7 +28,7 @@ function getNormalizedBasePath() {
   return basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
 }
 
-const normalizedBasePath = getNormalizedBasePath();
+const normalizedBasePath = getNormalizedBasePath(DEFAULT_BASE_PATH);
 const pathPrefix = isProd ? normalizedBasePath : undefined;
 
 const nextConfig: NextConfig = {
