@@ -5,12 +5,12 @@ const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 const isProd = process.env.NODE_ENV === 'production';
 const DEFAULT_BASE_PATH = '/website';
 // Defaults to the repository path when deploying to GitHub Pages.
-const configuredBasePath = (process.env.NEXT_PUBLIC_BASE_PATH || DEFAULT_BASE_PATH).replace(/\/$/, '');
+const normalizedBasePath = (process.env.NEXT_PUBLIC_BASE_PATH || DEFAULT_BASE_PATH).replace(/\/$/, '');
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: isProd ? configuredBasePath : undefined,
-  assetPrefix: isProd ? configuredBasePath : undefined,
+  basePath: isProd ? normalizedBasePath : undefined,
+  assetPrefix: isProd ? normalizedBasePath : undefined,
 };
 
 export default withNextIntl(nextConfig);
