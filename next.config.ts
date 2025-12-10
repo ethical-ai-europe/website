@@ -8,11 +8,13 @@ const EXPECTED_REPO_SEGMENTS = 2;
 const REPOSITORY_NAME_INDEX = 1;
 
 function sanitizePathSegment(segment: string) {
-  return segment.trim().replace(/[^A-Za-z0-9._-]/g, '-');
+  const withoutScope = segment.trim().replace(/^@/, '').replace(/\//g, '-');
+  return withoutScope.replace(/[^A-Za-z0-9._-]/g, '-');
 }
 
 function getDefaultBasePath() {
   if (process.env.GITHUB_REPOSITORY) {
+    // GitHub repositories use the format owner/repo.
     const segments = process.env.GITHUB_REPOSITORY.split('/');
     const repositoryName = segments[REPOSITORY_NAME_INDEX]?.trim();
     if (segments.length === EXPECTED_REPO_SEGMENTS && repositoryName) {
