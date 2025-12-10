@@ -30,6 +30,7 @@ function getDefaultBasePath() {
 
 const DEFAULT_BASE_PATH = getDefaultBasePath();
 
+// Normalize after deriving the default so concerns remain separated.
 function getNormalizedBasePath(defaultBasePath: string) {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || defaultBasePath;
   if (basePath === '/') {
