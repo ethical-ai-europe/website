@@ -10,7 +10,7 @@ This project provides educational resources about:
 - Practical guidelines for AI development
 - Compliance and implementation strategies
 
-🌐 Live site: <https://ethical-ai.eu>
+🌐 Live site: <https://ethical-ai-europe.github.io/website/>
 
 ## 🚀 Tech Stack
 
