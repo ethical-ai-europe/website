@@ -10,6 +10,8 @@ This project provides educational resources about:
 - Practical guidelines for AI development
 - Compliance and implementation strategies
 
+🌐 Live site: <https://ethical-ai-europe.github.io/website/>
+
 ## 🚀 Tech Stack
 
 - **Framework**: Next.js 15 with App Router
