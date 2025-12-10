@@ -3,15 +3,23 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 const isProd = process.env.NODE_ENV === 'production';
-// Default to the repository name for GitHub Pages deployments.
-const DEFAULT_BASE_PATH = process.env.GITHUB_REPOSITORY
-  ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}`
-  : '/website';
+function getDefaultBasePath() {
+  if (process.env.GITHUB_REPOSITORY) {
+    const segments = process.env.GITHUB_REPOSITORY.split('/');
+    if (segments.length === 2 && segments[1]) {
+      return `/${segments[1]}`;
+    }
+  }
+  return '/website';
+}
+
+const DEFAULT_BASE_PATH = getDefaultBasePath();
 
 function getNormalizedBasePath() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || DEFAULT_BASE_PATH;
+  if (basePath === '/') return '/';
   // Remove any trailing slash to avoid double slashes in generated URLs.
-  return basePath.replace(/\/$/, '');
+  return basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
 }
 
 const normalizedBasePath = getNormalizedBasePath();
