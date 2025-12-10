@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Verify lockfile
-        run: test -f package-lock.json
+        run: ls -la package-lock.json
 
       - name: Setup Node.js
         uses: actions/setup-node@v4

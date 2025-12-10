@@ -9,8 +9,9 @@ const REPOSITORY_NAME_INDEX = 1;
 function getDefaultBasePath() {
   if (process.env.GITHUB_REPOSITORY) {
     const segments = process.env.GITHUB_REPOSITORY.split('/');
-    if (segments.length === EXPECTED_REPO_SEGMENTS && segments[REPOSITORY_NAME_INDEX]) {
-      return `/${segments[REPOSITORY_NAME_INDEX]}`;
+    const repositoryName = segments[REPOSITORY_NAME_INDEX]?.trim();
+    if (segments.length === EXPECTED_REPO_SEGMENTS && repositoryName) {
+      return `/${repositoryName}`;
     }
   }
   return FALLBACK_BASE_PATH;
