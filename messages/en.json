@@ -1,0 +1,24 @@
+{
+  "site": {
+    "title": "Ethical AI in Europe",
+    "description": "Understanding ethical and lawful AI use under the EU AI Act"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About the EU AI Act",
+    "principles": "Ethical Principles",
+    "guidelines": "Guidelines",
+    "resources": "Resources"
+  },
+  "home": {
+    "hero": {
+      "title": "Ethical AI in Europe",
+      "subtitle": "Building trust through responsible AI development",
+      "description": "Learn about the EU AI Act and how to develop, deploy, and use AI systems ethically and lawfully across Europe."
+    },
+    "cta": {
+      "learn": "Learn More",
+      "guidelines": "View Guidelines"
+    }
+  }
+}
