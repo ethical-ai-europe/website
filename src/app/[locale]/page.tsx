@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { resolveLocale, messagesByLocale } from '@/i18n';
 import { Navigation, FooterNavigation } from '@/components';
+import { PersonaSelector } from '@/components/PersonaSelector';
 
 export const dynamic = 'force-static';
 
