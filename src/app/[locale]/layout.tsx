@@ -1,9 +1,9 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
 import { Geist, Geist_Mono } from 'next/font/google';
-import { locales } from '@/i18n';
+import { locales, messagesByLocale, resolveLocale } from '@/i18n';
 import '../globals.css';
+
+export const dynamic = 'force-static';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -24,23 +24,16 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: { locale: string };
 }) {
-  const { locale } = await params;
-
-  // Ensure that the incoming `locale` is valid
-  if (!locales.includes(locale as any)) {
-    notFound();
-  }
-
-  // Providing all messages to the client
-  // side is the easiest way to get started
-  const messages = await getMessages();
+  const { locale } = params;
+  const resolvedLocale = resolveLocale(locale);
+  const messages = messagesByLocale[resolvedLocale];
 
   return (
-    <html lang={locale}>
+    <html lang={resolvedLocale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={resolvedLocale} messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>

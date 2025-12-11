@@ -1,21 +1,24 @@
-import { notFound } from 'next/navigation';
 import { getRequestConfig } from 'next-intl/server';
+import enMessages from '../messages/en.json';
 
 // Can be imported from a shared config
 export const locales = ['en'] as const;
 export type Locale = (typeof locales)[number];
 
-export default getRequestConfig(async ({ requestLocale }) => {
-  // This typically corresponds to the `[locale]` segment
-  let locale = await requestLocale;
-  
-  // Validate that the incoming `locale` parameter is valid
-  if (!locale || !locales.includes(locale as Locale)) {
-    notFound();
-  }
+// Currently only English translations are bundled; extend this map when adding locales.
+export const messagesByLocale = {
+  en: enMessages,
+} as const satisfies Record<Locale, typeof enMessages>;
+
+export function resolveLocale(locale: string): Locale {
+  return locales.includes(locale as Locale) ? (locale as Locale) : 'en';
+}
+
+export default getRequestConfig(({ locale }) => {
+  const resolvedLocale = resolveLocale(locale);
 
   return {
-    locale,
-    messages: (await import(`../messages/${locale}.json`)).default
+    locale: resolvedLocale,
+    messages: messagesByLocale[resolvedLocale],
   };
 });
