@@ -150,7 +150,7 @@ The AI rights movement needs to reach everyone. Help us translate content into o
 
 This is an open-source project. Find us on GitHub:
 
-**Repository**: *[GitHub link to come]*
+**Repository**: [github.com/ethical-ai-europe/website](https://github.com/ethical-ai-europe/website)
 
 **How to contribute**:
 1. Check the existing issues and discussions

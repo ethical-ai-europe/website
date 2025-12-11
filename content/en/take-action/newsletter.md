@@ -156,7 +156,7 @@ Not ready to subscribe? There are other ways to stay connected:
 ### 🔗 RSS Feed
 
 For those who prefer RSS:
-- *RSS feed coming soon*
+- *RSS feed is planned for a future update. In the meantime, [join our community](/en/take-action/community) to stay connected.*
 
 ### 💬 Community Updates
 
