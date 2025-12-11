@@ -30,9 +30,9 @@ Here's a clear breakdown of where your rights stand:
 
 These practices are **not allowed** in European workplaces:
 
-- **Emotion recognition in the workplace** - AI systems that infer your emotional state, feelings, or intentions while you work
-- **Biometric categorization by sensitive attributes** - AI that categorizes you based on race, political opinions, religious beliefs, sexual orientation, or other protected characteristics
-- **Social scoring by employers** - Rating employees based on social behavior or predicted characteristics
+- **Emotion recognition in the workplace** - Systems that infer your emotional state, feelings, or intentions while you work
+- **Biometric categorization by sensitive attributes** - Systems that categorize you based on race, political opinions, religious beliefs, sexual orientation, or other protected characteristics
+- **Social scoring by employers** - Systems that rate employees based on social behavior or predicted characteristics
 
 ### ⚠️ Restricted (Requires Justification & Safeguards)
 
