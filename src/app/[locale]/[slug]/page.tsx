@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getContentBySlug, getContentSlugs } from '@/lib/markdown';
 import Link from 'next/link';
-import { locales, resolveLocale } from '@/i18n';
+import { locales, resolveLocale, messagesByLocale } from '@/i18n';
 
 export const dynamic = 'force-static';
 
@@ -21,11 +21,13 @@ export function generateStaticParams() {
 export default async function ContentPage({
   params,
 }: {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const { locale, slug } = params;
+  const { locale, slug } = await params;
   const resolvedLocale = resolveLocale(locale);
   const content = await getContentBySlug(slug, resolvedLocale);
+  const { nav, site } = messagesByLocale[resolvedLocale];
+  const withLocale = (path: string) => `/${resolvedLocale}${path}`;
 
   if (!content) {
     notFound();
@@ -35,14 +37,42 @@ export default async function ContentPage({
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Navigation */}
       <nav className="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            <Link 
-              href={`/${resolvedLocale}`} 
-              className="text-xl font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
-            >
-              ← Back to Home
-            </Link>
+            <div className="flex-shrink-0 flex items-center">
+              <Link 
+                href={withLocale('')}
+                className="text-xl font-bold text-blue-600 dark:text-blue-400"
+              >
+                {site.title}
+              </Link>
+            </div>
+            <div className="hidden md:flex space-x-8">
+              <Link 
+                href={withLocale('/about')} 
+                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
+              >
+                {nav.about}
+              </Link>
+              <Link 
+                href={withLocale('/principles')} 
+                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
+              >
+                {nav.principles}
+              </Link>
+              <Link 
+                href={withLocale('/guidelines')} 
+                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
+              >
+                {nav.guidelines}
+              </Link>
+              <Link 
+                href={withLocale('/resources')} 
+                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
+              >
+                {nav.resources}
+              </Link>
+            </div>
           </div>
         </div>
       </nav>
