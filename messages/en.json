@@ -12,13 +12,12 @@
   },
   "home": {
     "hero": {
-      "title": "Ethical AI in Europe",
-      "subtitle": "Building trust through responsible AI development",
-      "description": "Learn about the EU AI Act and how to develop, deploy, and use AI systems ethically and lawfully across Europe."
+      "title": "AI Should Serve People, Not the Other Way Around",
+      "subtitle": "Europeans have the strongest AI protections in the world. Know your rights. Shape the future."
     },
     "cta": {
-      "learn": "Learn More",
-      "guidelines": "View Guidelines"
+      "rights": "Know Your Rights",
+      "action": "Join the Movement"
     }
   }
 }
