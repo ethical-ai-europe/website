@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { getContentBySlug, getContentSlugs } from '@/lib/markdown';
 import Link from 'next/link';
 import { locales, resolveLocale, messagesByLocale } from '@/i18n';
+import { Navigation, FooterNavigation } from '@/components';
 
 export const dynamic = 'force-static';
 
@@ -30,7 +31,6 @@ export default async function ContentPage({
   const slugPath = slug.join('/');
   const content = await getContentBySlug(slugPath, resolvedLocale);
   const { nav, site } = messagesByLocale[resolvedLocale];
-  const withLocale = (path: string) => `/${resolvedLocale}${path}`;
 
   if (!content) {
     notFound();
@@ -39,46 +39,12 @@ export default async function ContentPage({
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Navigation */}
-      <nav className="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <div className="flex-shrink-0 flex items-center">
-              <Link 
-                href={withLocale('')}
-                className="text-xl font-bold text-blue-600 dark:text-blue-400"
-              >
-                {site.title}
-              </Link>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <Link 
-                href={withLocale('/about')} 
-                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
-              >
-                {nav.about}
-              </Link>
-              <Link 
-                href={withLocale('/principles')} 
-                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
-              >
-                {nav.principles}
-              </Link>
-              <Link 
-                href={withLocale('/guidelines')} 
-                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
-              >
-                {nav.guidelines}
-              </Link>
-              <Link 
-                href={withLocale('/resources')} 
-                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
-              >
-                {nav.resources}
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation 
+        locale={resolvedLocale} 
+        siteTitle={site.title} 
+        nav={nav}
+        showActiveState={true}
+      />
 
       {/* Content */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -116,7 +82,9 @@ export default async function ContentPage({
 
       {/* Footer */}
       <footer className="border-t border-gray-200 dark:border-gray-700 mt-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          {/* Footer Navigation */}
+          <FooterNavigation locale={resolvedLocale} nav={nav} />
           <div className="text-center text-gray-600 dark:text-gray-400 text-sm">
             <Link href={`/${resolvedLocale}`} className="text-blue-600 dark:text-blue-400 hover:underline">
               Return to Homepage

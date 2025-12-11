@@ -13,3 +13,6 @@ export type { NewsletterSignupProps } from './NewsletterSignup';
 
 export { IssueCard } from './IssueCard';
 export type { IssueCardProps, IssueStats } from './IssueCard';
+
+export { Navigation, FooterNavigation } from './Navigation';
+export type { NavigationProps, FooterNavigationProps } from './Navigation';
