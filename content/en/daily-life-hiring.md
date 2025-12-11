@@ -37,7 +37,7 @@ AI aggregates information from databases, social media, or other sources about c
 AI hiring tools have been repeatedly shown to perpetuate or amplify discrimination:
 
 ### Known Issues
-- **Amazon's recruiting tool** (discontinued) learned to penalize resumes that included the word "women's"
+- **Amazon's recruiting tool** (discontinued in 2018) learned to penalize resumes that included the word "women's"
 - **Facial analysis systems** have shown bias against people with darker skin and non-Western facial features
 - **Language models** may penalize non-native speakers or regional dialects
 - **Historical hiring data** often encodes past discrimination, which AI then learns and repeats

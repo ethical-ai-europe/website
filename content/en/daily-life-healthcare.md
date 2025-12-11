@@ -112,7 +112,7 @@ If you think AI might be involved in your care, consider asking:
 
 ### Mental Health Apps
 
-The mental health app market has exploded, but oversight hasn't kept pace:
+The mental health app market has grown rapidly, but oversight hasn't kept pace:
 
 🚩 **Watch for:**
 - Apps making diagnostic claims without clinical validation

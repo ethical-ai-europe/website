@@ -203,7 +203,7 @@ If you're not getting responses or satisfaction:
 
 ## Freedom of Information Requests
 
-You can use FOI (Freedom of Information) laws to learn about AI systems government agencies use:
+You can use Freedom of Information (FOI) laws to learn about AI systems government agencies use:
 
 ### What to Request
 
