@@ -1,6 +1,7 @@
+import type { ReactNode } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import { Geist, Geist_Mono } from 'next/font/google';
-import { locales, messagesByLocale, resolveLocale } from '@/i18n';
+import { locales, messagesByLocale } from '@/i18n';
 import '../globals.css';
 
 export const dynamic = 'force-static';
@@ -19,21 +20,15 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
-  const { locale } = params;
-  const resolvedLocale = resolveLocale(locale);
-  const messages = messagesByLocale[resolvedLocale];
+export default function LocaleLayout({ children }: { children: ReactNode }) {
+  // Default to 'en' since this is a static export with a single locale
+  const locale = 'en';
+  const messages = messagesByLocale[locale];
 
   return (
-    <html lang={resolvedLocale}>
+    <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <NextIntlClientProvider locale={resolvedLocale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>

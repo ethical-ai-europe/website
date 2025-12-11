@@ -15,7 +15,7 @@ export function resolveLocale(locale: string): Locale {
 }
 
 export default getRequestConfig(({ locale }) => {
-  const resolvedLocale = resolveLocale(locale);
+  const resolvedLocale = resolveLocale(locale ?? 'en');
 
   return {
     locale: resolvedLocale,
