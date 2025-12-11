@@ -26,9 +26,7 @@ export default async function ContentPage({
   const { locale, slug } = await params;
   const resolvedLocale = resolveLocale(locale);
   const content = await getContentBySlug(slug, resolvedLocale);
-  const messages = messagesByLocale[resolvedLocale];
-  const nav = messages.nav;
-  const site = messages.site;
+  const { nav, site } = messagesByLocale[resolvedLocale];
   const withLocale = (path: string) => `/${resolvedLocale}${path}`;
 
   if (!content) {
