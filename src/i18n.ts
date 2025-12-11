@@ -10,8 +10,12 @@ export const messagesByLocale = {
   en: enMessages,
 } as const satisfies Record<Locale, typeof enMessages>;
 
+export function resolveLocale(locale: string): Locale {
+  return locales.includes(locale as Locale) ? (locale as Locale) : 'en';
+}
+
 export default getRequestConfig(({ locale }) => {
-  const resolvedLocale = locales.includes(locale as Locale) ? (locale as Locale) : 'en';
+  const resolvedLocale = resolveLocale(locale);
 
   return {
     locale: resolvedLocale,

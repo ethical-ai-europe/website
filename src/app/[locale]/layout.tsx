@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { Geist, Geist_Mono } from 'next/font/google';
-import { locales, messagesByLocale, type Locale } from '@/i18n';
+import { locales, messagesByLocale, resolveLocale } from '@/i18n';
 import '../globals.css';
 
 export const dynamic = 'force-static';
@@ -27,7 +27,7 @@ export default async function LocaleLayout({
   params: { locale: string };
 }) {
   const { locale } = params;
-  const resolvedLocale = locales.includes(locale as Locale) ? (locale as Locale) : 'en';
+  const resolvedLocale = resolveLocale(locale);
   const messages = messagesByLocale[resolvedLocale];
 
   return (

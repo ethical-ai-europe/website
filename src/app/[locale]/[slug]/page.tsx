@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getContentBySlug, getContentSlugs } from '@/lib/markdown';
 import Link from 'next/link';
-import { locales, type Locale } from '@/i18n';
+import { locales, resolveLocale } from '@/i18n';
 
 export const dynamic = 'force-static';
 
@@ -24,7 +24,7 @@ export default async function ContentPage({
   params: { locale: string; slug: string };
 }) {
   const { locale, slug } = params;
-  const resolvedLocale = locales.includes(locale as Locale) ? (locale as Locale) : 'en';
+  const resolvedLocale = resolveLocale(locale);
   const content = await getContentBySlug(slug, resolvedLocale);
 
   if (!content) {

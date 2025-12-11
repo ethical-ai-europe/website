@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { locales, type Locale } from '@/i18n';
+import { resolveLocale } from '@/i18n';
 
 export const dynamic = 'force-static';
 
@@ -9,9 +9,7 @@ export default function HomePage({
 }: {
   params: { locale: string };
 }) {
-  const resolvedLocale = locales.includes(params.locale as Locale)
-    ? (params.locale as Locale)
-    : 'en';
+  const resolvedLocale = resolveLocale(params.locale);
   const t = useTranslations('home');
   const withLocale = (path: string) => `/${resolvedLocale}${path}`;
   
