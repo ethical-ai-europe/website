@@ -1,7 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { Geist, Geist_Mono } from 'next/font/google';
-import { locales, type Locale } from '@/i18n';
-import enMessages from '../../../messages/en.json';
+import { locales, messagesByLocale, type Locale } from '@/i18n';
 import '../globals.css';
 
 export const dynamic = 'force-static';
@@ -15,10 +14,6 @@ const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
 });
-
-const messagesByLocale = {
-  en: enMessages,
-} as const satisfies Record<Locale, typeof enMessages>;
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

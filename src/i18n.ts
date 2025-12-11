@@ -5,7 +5,8 @@ import enMessages from '../messages/en.json';
 export const locales = ['en'] as const;
 export type Locale = (typeof locales)[number];
 
-const messagesByLocale = {
+// Currently only English translations are bundled; extend this map when adding locales.
+export const messagesByLocale = {
   en: enMessages,
 } as const satisfies Record<Locale, typeof enMessages>;
 
