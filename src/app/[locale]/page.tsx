@@ -43,6 +43,12 @@ export default function HomePage({
               >
                 Guidelines
               </Link>
+              <Link 
+                href={withLocale('/resources')} 
+                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
+              >
+                Resources
+              </Link>
             </div>
           </div>
         </div>
