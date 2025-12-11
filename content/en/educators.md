@@ -241,8 +241,8 @@ Before purchasing AI educational tools, require clear answers:
 
 ### For Students
 - **[Elements of AI](https://www.elementsofai.com/)** - Free, accessible AI course suitable for upper secondary and above
-- **AI4ALL** - Resources for teaching AI to diverse student populations
-- **MIT AI Ethics Curriculum** - High school-level materials on AI ethics
+- **[AI4ALL](https://ai-4-all.org/)** - Resources for teaching AI to diverse student populations
+- **[MIT AI Ethics Curriculum](https://www.media.mit.edu/projects/ai-ethics-for-middle-school/overview/)** - High school-level materials on AI ethics
 
 ### For Educators
 - **UNESCO AI Competency Framework** - Guidelines for educator AI literacy

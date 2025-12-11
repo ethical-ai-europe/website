@@ -232,10 +232,10 @@ The EU AI Act is phased in gradually:
 
 | Date | What Happens |
 |------|--------------|
-| **February 2025** | Prohibited AI practices are banned |
-| **August 2025** | General-purpose AI rules take effect |
+| **February 2025** | Prohibited AI practices banned |
+| **August 2025** | General-purpose AI rules apply |
 | **August 2026** | High-risk AI requirements apply |
-| **August 2027** | All provisions fully in force |
+| **August 2027** | All provisions in force |
 
 **Our advice:** Don't wait. Start with your AI inventory now. The organizations that prepare early will have the smoothest transitions.
 
