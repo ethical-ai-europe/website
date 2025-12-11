@@ -5,10 +5,18 @@
   },
   "nav": {
     "home": "Home",
+    "rights": "Your AI Rights",
+    "dailyLife": "AI in Daily Life",
+    "forOrganizations": "For Organizations",
+    "issues": "Issues",
+    "takeAction": "Take Action",
+    "euAiAct": "EU AI Act",
     "about": "About the EU AI Act",
     "principles": "Ethical Principles",
     "guidelines": "Guidelines",
-    "resources": "Resources"
+    "resources": "Resources",
+    "menu": "Menu",
+    "close": "Close menu"
   },
   "home": {
     "hero": {

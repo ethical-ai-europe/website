@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { resolveLocale } from '@/i18n';
+import { resolveLocale, messagesByLocale } from '@/i18n';
+import { Navigation, FooterNavigation } from '@/components';
 import { PersonaSelector } from '@/components/PersonaSelector';
 
 export const dynamic = 'force-static';
@@ -12,48 +13,17 @@ export default function HomePage({
 }) {
   const resolvedLocale = resolveLocale(params.locale);
   const t = useTranslations('home');
+  const { nav, site } = messagesByLocale[resolvedLocale];
   const withLocale = (path: string) => `/${resolvedLocale}${path}`;
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
       {/* Navigation */}
-      <nav className="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <div className="flex-shrink-0 flex items-center">
-              <h1 className="text-xl font-bold text-blue-600 dark:text-blue-400">
-                {t('hero.title')}
-              </h1>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <Link 
-                href={withLocale('/about')} 
-                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
-              >
-                About the EU AI Act
-              </Link>
-              <Link 
-                href={withLocale('/principles')} 
-                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
-              >
-                Ethical Principles
-              </Link>
-              <Link 
-                href={withLocale('/guidelines')} 
-                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
-              >
-                Guidelines
-              </Link>
-              <Link 
-                href={withLocale('/resources')} 
-                className="text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 px-3 py-2 text-sm font-medium"
-              >
-                Resources
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation 
+        locale={resolvedLocale} 
+        siteTitle={site.title} 
+        nav={nav}
+      />
 
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -167,6 +137,8 @@ export default function HomePage({
       {/* Footer */}
       <footer className="border-t border-gray-200 dark:border-gray-700 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          {/* Footer Navigation */}
+          <FooterNavigation locale={resolvedLocale} nav={nav} />
           <div className="text-center text-gray-600 dark:text-gray-400 text-sm">
             <p className="mb-2">
               © {new Date().getFullYear()} Ethical AI in Europe. Built with Next.js and next-intl.
