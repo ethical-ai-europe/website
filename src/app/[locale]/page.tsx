@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { resolveLocale } from '@/i18n';
+import { PersonaSelector } from '@/components/PersonaSelector';
 
 export const dynamic = 'force-static';
 
@@ -81,6 +82,9 @@ export default function HomePage({
             </Link>
           </div>
         </div>
+
+        {/* Persona Selector */}
+        <PersonaSelector locale={resolvedLocale} />
 
         {/* Key Topics */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
