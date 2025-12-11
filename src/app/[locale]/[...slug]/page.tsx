@@ -6,12 +6,13 @@ import { locales, resolveLocale, messagesByLocale } from '@/i18n';
 export const dynamic = 'force-static';
 
 export function generateStaticParams() {
-  const params: { locale: string; slug: string }[] = [];
+  const params: { locale: string; slug: string[] }[] = [];
   
   locales.forEach((locale) => {
     const slugs = getContentSlugs(locale);
     slugs.forEach((slug) => {
-      params.push({ locale, slug });
+      // Split nested slugs into array segments
+      params.push({ locale, slug: slug.split('/') });
     });
   });
   
@@ -21,11 +22,13 @@ export function generateStaticParams() {
 export default async function ContentPage({
   params,
 }: {
-  params: Promise<{ locale: string; slug: string }>;
+  params: Promise<{ locale: string; slug: string[] }>;
 }) {
   const { locale, slug } = await params;
   const resolvedLocale = resolveLocale(locale);
-  const content = await getContentBySlug(slug, resolvedLocale);
+  // Join the slug array back into a path string
+  const slugPath = slug.join('/');
+  const content = await getContentBySlug(slugPath, resolvedLocale);
   const { nav, site } = messagesByLocale[resolvedLocale];
   const withLocale = (path: string) => `/${resolvedLocale}${path}`;
 
