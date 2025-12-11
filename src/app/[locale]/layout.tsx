@@ -1,5 +1,4 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { notFound } from 'next/navigation';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { locales, type Locale } from '@/i18n';
 import enMessages from '../../../messages/en.json';
@@ -35,11 +34,6 @@ export default async function LocaleLayout({
   const { locale } = params;
   const resolvedLocale = locales.includes(locale as Locale) ? (locale as Locale) : 'en';
   const messages = messagesByLocale[resolvedLocale];
-
-  // Ensure that the incoming `locale` is valid
-  if (!messages) {
-    notFound();
-  }
 
   return (
     <html lang={resolvedLocale}>

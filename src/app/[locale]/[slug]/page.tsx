@@ -24,8 +24,8 @@ export default async function ContentPage({
   params: { locale: string; slug: string };
 }) {
   const { locale, slug } = params;
-  const isKnownLocale = locales.includes(locale as Locale);
-  const content = isKnownLocale ? await getContentBySlug(slug, locale) : null;
+  const resolvedLocale = locales.includes(locale as Locale) ? (locale as Locale) : 'en';
+  const content = await getContentBySlug(slug, resolvedLocale);
 
   if (!content) {
     notFound();
@@ -38,7 +38,7 @@ export default async function ContentPage({
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
             <Link 
-              href={`/${locale}`} 
+              href={`/${resolvedLocale}`} 
               className="text-xl font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
             >
               ← Back to Home
@@ -85,7 +85,7 @@ export default async function ContentPage({
       <footer className="border-t border-gray-200 dark:border-gray-700 mt-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600 dark:text-gray-400 text-sm">
-            <Link href={`/${locale}`} className="text-blue-600 dark:text-blue-400 hover:underline">
+            <Link href={`/${resolvedLocale}`} className="text-blue-600 dark:text-blue-400 hover:underline">
               Return to Homepage
             </Link>
           </div>
