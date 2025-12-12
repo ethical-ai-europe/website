@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { resolveLocale, messagesByLocale } from '@/i18n';
-import { Navigation, FooterNavigation } from '@/components';
+import { Navigation, FooterNavigation, NewsletterSignup, ActionCTA } from '@/components';
 import { PersonaSelector } from '@/components/PersonaSelector';
 
 export const dynamic = 'force-static';
@@ -61,7 +61,7 @@ export default function HomePage({
               EU AI Act
             </h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Understand Europe's comprehensive legal framework for artificial intelligence and its risk-based approach.
+              Understand Europe&apos;s comprehensive legal framework for artificial intelligence and its risk-based approach.
             </p>
             <Link href={withLocale('/about')} className="text-blue-600 dark:text-blue-400 hover:underline mt-4 inline-block">
               Learn more →
@@ -114,21 +114,28 @@ export default function HomePage({
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Ready to Build Ethical AI?
-          </h2>
-          <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Whether you're a developer, business leader, or policymaker, understanding the EU AI Act and ethical AI principles is essential for the future of technology in Europe.
-          </p>
-          <Link
-            href={withLocale('/guidelines')}
-            className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
-          >
-            Get Started with Guidelines
-          </Link>
-        </div>
+        {/* Newsletter Signup Section */}
+        <section className="mb-16" aria-labelledby="newsletter-section-heading">
+          <h2 id="newsletter-section-heading" className="sr-only">Newsletter Signup</h2>
+          <NewsletterSignup 
+            variant="card"
+            headline="Stay Informed, Stay Protected"
+            description="Get weekly updates on AI rights, new tools, and ways to take action. Join a growing community of Europeans already subscribed."
+          />
+        </section>
+
+        {/* Movement CTA Section */}
+        <section className="mb-16">
+          <ActionCTA
+            variant="primary"
+            headline="AI&apos;s Future Isn&apos;t Written Yet"
+            description="Across Europe, people like you are standing up for human-centered AI. Join us."
+            buttons={[
+              { label: 'Join the Movement', href: withLocale('/take-action'), variant: 'primary' },
+              { label: 'Read Our Story', href: withLocale('/about'), variant: 'secondary' }
+            ]}
+          />
+        </section>
       </main>
 
       {/* Footer */}
