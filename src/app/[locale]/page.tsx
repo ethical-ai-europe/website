@@ -31,24 +31,21 @@ export default function HomePage({
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
             {t('hero.title')}
           </h1>
-          <p className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 mb-4 font-medium">
+          <p className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 mb-8 font-medium max-w-3xl mx-auto">
             {t('hero.subtitle')}
-          </p>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8">
-            {t('hero.description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href={withLocale('/about')}
+              href={withLocale('/rights')}
               className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg"
             >
-              {t('cta.learn')}
+              {t('cta.rights')}
             </Link>
             <Link
-              href={withLocale('/guidelines')}
+              href={withLocale('/take-action')}
               className="inline-flex items-center justify-center px-8 py-3 border border-blue-600 text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 dark:bg-gray-800 dark:text-blue-400 dark:hover:bg-gray-700 md:text-lg"
             >
-              {t('cta.guidelines')}
+              {t('cta.action')}
             </Link>
           </div>
         </div>
