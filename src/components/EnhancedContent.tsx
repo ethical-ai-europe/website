@@ -6,12 +6,16 @@ export interface EnhancedContentProps {
   html: string;
 }
 
+// Common emojis used in content headings
+const EMOJI_PATTERN = /^(🔍|💡|⚖️|👤|✋|🏠|🌍|✊|⚠️|🚩|✓|🏭|💰|🗳️|👁️)/;
+
 /**
  * EnhancedContent component that adds visual enhancements to markdown-rendered HTML
  * - Enhances emoji headings with gradient backgrounds
  * - Adds fade-in animations to sections
  * - Styles horizontal rules as gradient dividers
  * - Auto-detects and styles callout patterns (🚩, 💡, ✓)
+ * - Generates IDs for headings to enable table of contents navigation
  */
 export function EnhancedContent({ html }: EnhancedContentProps) {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -21,13 +25,42 @@ export function EnhancedContent({ html }: EnhancedContentProps) {
 
     const content = contentRef.current;
 
-    // Enhance emoji headings (h2 with emoji at the start)
+    // Generate IDs for headings (for table of contents navigation)
     const h2Elements = content.querySelectorAll('h2');
+    const h3Elements = content.querySelectorAll('h3');
+    const allHeadings = [...h2Elements, ...h3Elements];
+    
+    const usedIds = new Set<string>();
+    
+    allHeadings.forEach((heading) => {
+      const text = heading.textContent || '';
+      
+      // Generate a slug from the text
+      const baseId = text
+        .toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/^-+|-+$/g, '');
+      
+      // Ensure uniqueness by adding a counter if needed
+      let id = baseId;
+      let counter = 1;
+      while (usedIds.has(id)) {
+        id = `${baseId}-${counter}`;
+        counter++;
+      }
+      
+      if (id && !heading.id) {
+        heading.id = id;
+        usedIds.add(id);
+      }
+    });
+
+    // Enhance emoji headings (h2 with emoji at the start)
     h2Elements.forEach((h2, index) => {
       const text = h2.textContent || '';
-      // Check if starts with emoji (common ones in the content)
-      const emojiMatch = text.match(/^(🔍|💡|⚖️|👤|✋|🏠|🌍|✊|⚠️|🚩|✓)/);
-      if (emojiMatch) {
+      // Check if starts with emoji
+      if (EMOJI_PATTERN.test(text)) {
         h2.classList.add('animate-fade-in');
         h2.style.animationDelay = `${index * 0.1}s`;
         h2.classList.add('bg-gradient-to-r', 'from-blue-50', 'to-transparent', 'dark:from-blue-900/20', 'dark:to-transparent', 'px-4', 'py-3', 'rounded-lg', '-mx-4');
