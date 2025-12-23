@@ -20,11 +20,11 @@ interface Heading {
  * - Only shows if page has 3+ headings
  */
 export function TableOfContents({ html }: TableOfContentsProps) {
-  const [headings, setHeadings] = useState<Heading[]>([]);
   const [activeId, setActiveId] = useState<string>('');
+  const [headings, setHeadings] = useState<Heading[]>([]);
 
+  // Parse headings from HTML on the client side only (DOMParser not available during SSR)
   useEffect(() => {
-    // Parse headings from HTML
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
     const headingElements = doc.querySelectorAll('h2, h3');
@@ -51,6 +51,7 @@ export function TableOfContents({ html }: TableOfContentsProps) {
       });
     });
     
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setHeadings(parsedHeadings);
   }, [html]);
 
