@@ -16,3 +16,9 @@ export type { IssueCardProps, IssueStats } from './IssueCard';
 
 export { Navigation, FooterNavigation } from './Navigation';
 export type { NavigationProps, FooterNavigationProps } from './Navigation';
+
+export { EnhancedContent } from './EnhancedContent';
+export type { EnhancedContentProps } from './EnhancedContent';
+
+export { TableOfContents } from './TableOfContents';
+export type { TableOfContentsProps } from './TableOfContents';
