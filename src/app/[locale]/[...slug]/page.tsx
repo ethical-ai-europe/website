@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { getContentBySlug, getContentSlugs } from '@/lib/markdown';
 import Link from 'next/link';
 import { locales, resolveLocale, messagesByLocale } from '@/i18n';
-import { Navigation, FooterNavigation } from '@/components';
+import { Navigation, FooterNavigation, EnhancedContent, TableOfContents } from '@/components';
 
 export const dynamic = 'force-static';
 
@@ -37,7 +37,7 @@ export default async function ContentPage({
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       {/* Navigation */}
       <Navigation 
         locale={resolvedLocale} 
@@ -46,39 +46,51 @@ export default async function ContentPage({
         showActiveState={true}
       />
 
-      {/* Content */}
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <header className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+      {/* Hero Header Section */}
+      <div className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-800 dark:to-blue-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             {content.title}
           </h1>
           {content.description && (
-            <p className="text-xl text-gray-600 dark:text-gray-300">
+            <p className="text-xl text-blue-100">
               {content.description}
             </p>
           )}
           {content.date && (
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
+            <p className="text-sm text-blue-200 mt-4">
               Last updated: {new Date(content.date).toLocaleDateString()}
             </p>
           )}
-        </header>
+        </div>
+      </div>
 
-        <div 
-          className="prose prose-lg dark:prose-invert max-w-none
-            prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white
-            prose-p:text-gray-700 dark:prose-p:text-gray-300
-            prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline
-            prose-strong:text-gray-900 dark:prose-strong:text-white
-            prose-ul:text-gray-700 dark:prose-ul:text-gray-300
-            prose-ol:text-gray-700 dark:prose-ol:text-gray-300
-            prose-li:text-gray-700 dark:prose-li:text-gray-300
-            prose-code:text-blue-600 dark:prose-code:text-blue-400
-            prose-pre:bg-gray-100 dark:prose-pre:bg-gray-800
-            prose-blockquote:border-blue-500 prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300"
-          dangerouslySetInnerHTML={{ __html: content.contentHtml }}
-        />
-      </article>
+      {/* Main Content Container */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        {/* Table of Contents for longer pages */}
+        <TableOfContents html={content.contentHtml} />
+        
+        {/* Content Card */}
+        <article className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 md:p-12 -mt-8 mb-16">
+          <div 
+            className="prose prose-lg dark:prose-invert max-w-none
+              prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white
+              prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-gray-200 dark:prose-h2:border-gray-700
+              prose-h3:mt-10 prose-h3:mb-4
+              prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-6
+              prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline
+              prose-strong:text-gray-900 dark:prose-strong:text-white
+              prose-ul:my-6 prose-ul:space-y-3 prose-ul:text-gray-700 dark:prose-ul:text-gray-300
+              prose-ol:my-6 prose-ol:text-gray-700 dark:prose-ol:text-gray-300
+              prose-li:text-gray-700 dark:prose-li:text-gray-300
+              prose-code:text-blue-600 dark:prose-code:text-blue-400
+              prose-pre:bg-gray-100 dark:prose-pre:bg-gray-800
+              prose-blockquote:border-blue-500 prose-blockquote:bg-blue-50 dark:prose-blockquote:bg-blue-900/20 prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300 prose-blockquote:rounded-r-lg prose-blockquote:py-1"
+          >
+            <EnhancedContent html={content.contentHtml} />
+          </div>
+        </article>
+      </div>
 
       {/* Footer */}
       <footer className="border-t border-gray-200 dark:border-gray-700 mt-16">
