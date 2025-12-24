@@ -19,7 +19,7 @@ You have the right to know when AI is being used to make decisions about you. Or
 ### 💡 Right to Explanation
 When an AI system makes a decision about you, you can ask: *Why?* You're entitled to a meaningful explanation of how the decision was reached.
 
-[Learn more about your right to explanation →](/en/rights-right-to-explanation)
+[Learn more about your right to explanation →](/en/rights/right-to-explanation)
 
 ### 👤 Right to Human Review
 You don't have to accept a purely automated decision. In many cases, you can request that a real person reviews the AI's decision.
@@ -34,17 +34,17 @@ AI touches more of our daily lives than most people realize. Here are situations
 ### At Work
 From productivity monitoring to AI-assisted hiring, your workplace may use AI in ways that affect you. Some practices are restricted or even banned.
 
-[Understand your workplace AI rights →](/en/rights-workplace-surveillance)
+[Understand your workplace AI rights →](/en/rights/workplace-surveillance)
 
 ### In Public Spaces
 Facial recognition and biometric surveillance have strict limits in Europe. Know what's allowed and what's not.
 
-[Learn about facial recognition rules →](/en/rights-facial-recognition)
+[Learn about facial recognition rules →](/en/rights/facial-recognition)
 
 ### When Algorithms Decide
 Applying for a loan? A job? Government benefits? Algorithms often play a role in these life-changing decisions.
 
-[Know your rights with algorithmic decisions →](/en/rights-algorithmic-decisions)
+[Know your rights with algorithmic decisions →](/en/rights/algorithmic-decisions)
 
 ## What Can I Do Right Now?
 
@@ -77,10 +77,10 @@ These laws work together to protect you. You don't need to understand every deta
 
 ## Explore Your Rights
 
-- [AI Surveillance at Work →](/en/rights-workplace-surveillance)
-- [Facial Recognition Rules →](/en/rights-facial-recognition)
-- [Algorithmic Decision-Making →](/en/rights-algorithmic-decisions)
-- [Your Right to Explanation →](/en/rights-right-to-explanation)
+- [AI Surveillance at Work →](/en/rights/workplace-surveillance)
+- [Facial Recognition Rules →](/en/rights/facial-recognition)
+- [Algorithmic Decision-Making →](/en/rights/algorithmic-decisions)
+- [Your Right to Explanation →](/en/rights/right-to-explanation)
 
 ---
 

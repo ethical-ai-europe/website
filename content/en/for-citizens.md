@@ -46,22 +46,22 @@ Everything begins with knowing your rights. This overview explains what protecti
 #### At Work: AI Surveillance
 Find out what your employer can and cannot monitor, what's banned, and what you can do if your rights are violated.
 
-[Workplace Surveillance Rights →](/en/rights-workplace-surveillance)
+[Workplace Surveillance Rights →](/en/rights/workplace-surveillance)
 
 #### As a Parent: AI in Education
 Understand how AI is used in your child's school, from learning platforms to grading systems. Know what questions to ask.
 
-[AI in Education →](/en/daily-life-education)
+[AI in Education →](/en/daily-life/education)
 
 #### When Algorithms Decide
 From loan applications to job screenings to government benefits—know your rights when AI makes decisions about your life.
 
-[Algorithmic Decision-Making →](/en/rights-algorithmic-decisions)
+[Algorithmic Decision-Making →](/en/rights/algorithmic-decisions)
 
 #### Facial Recognition
 Your face is unique. Learn about the strict limits on facial recognition in Europe and what's not allowed.
 
-[Facial Recognition Rules →](/en/rights-facial-recognition)
+[Facial Recognition Rules →](/en/rights/facial-recognition)
 
 ---
 
@@ -72,12 +72,12 @@ Want to understand the bigger picture? These pages explore the broader context.
 #### AI and the Future of Work
 Concerned about job security in an AI world? Understand how automation is changing work and what it means for you.
 
-[AI in Hiring & Recruitment →](/en/daily-life-hiring)
+[AI in Hiring & Recruitment →](/en/daily-life/hiring)
 
 #### Surveillance and Privacy
 A deeper look at how AI surveillance systems work and how they're regulated.
 
-[Right to Explanation →](/en/rights-right-to-explanation)
+[Right to Explanation →](/en/rights/right-to-explanation)
 
 ---
 

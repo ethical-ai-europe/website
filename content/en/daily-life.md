@@ -18,22 +18,22 @@ AI is increasingly used in contexts that matter most. We've created guides for f
 ### 🎓 Education
 From adaptive learning platforms to plagiarism detection, AI is transforming how students learn and how teachers teach. Parents, students, and educators all need to understand what's happening.
 
-[Explore AI in Education →](/en/daily-life-education)
+[Explore AI in Education →](/en/daily-life/education)
 
 ### 🏥 Healthcare
 AI assists with diagnosis, treatment recommendations, and administrative decisions. As a patient, you deserve to know when AI is involved in your care.
 
-[Explore AI in Healthcare →](/en/daily-life-healthcare)
+[Explore AI in Healthcare →](/en/daily-life/healthcare)
 
 ### 💼 Hiring & Recruitment
 AI screens resumes, analyzes video interviews, and ranks candidates. Job seekers and HR professionals alike need to understand these systems.
 
-[Explore AI in Hiring →](/en/daily-life-hiring)
+[Explore AI in Hiring →](/en/daily-life/hiring)
 
 ### 🏛️ Public Services
 Government agencies use AI for benefits eligibility, fraud detection, and resource allocation. These decisions can be life-changing.
 
-[Explore AI in Public Services →](/en/daily-life-public-services)
+[Explore AI in Public Services →](/en/daily-life/public-services)
 
 ## Questions to Ask in Any Context
 

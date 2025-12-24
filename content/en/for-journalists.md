@@ -52,27 +52,27 @@ AI stories are everywhere. Here are some angles worth investigating:
 #### Workplace Surveillance
 Workers are being monitored by AI in unprecedented ways. From productivity scoring to emotion detection, there are stories of workers pushing back—and of practices that cross legal lines.
 
-[Workplace Surveillance Rights →](/en/rights-workplace-surveillance)
+[Workplace Surveillance Rights →](/en/rights/workplace-surveillance)
 
 #### AI in Public Services
 When government uses AI to allocate benefits, detect fraud, or make decisions about citizens, the stakes are highest. Mistakes can devastate lives, and public trust is at risk.
 
-[AI in Public Services →](/en/daily-life-public-services)
+[AI in Public Services →](/en/daily-life/public-services)
 
 #### Hiring Discrimination
 AI hiring tools promise efficiency but can perpetuate bias. Candidates are being screened by algorithms they never see. What recourse do they have?
 
-[AI in Hiring →](/en/daily-life-hiring)
+[AI in Hiring →](/en/daily-life/hiring)
 
 #### Facial Recognition Deployment
 Where is facial recognition being used? Who authorizes it? What safeguards exist? The EU has new restrictions—are they being followed?
 
-[Facial Recognition Rules →](/en/rights-facial-recognition)
+[Facial Recognition Rules →](/en/rights/facial-recognition)
 
 #### Education AI
 Schools are adopting AI for everything from personalized learning to proctoring. Parents and students often don't know what's being used or what data is collected.
 
-[AI in Education →](/en/daily-life-education)
+[AI in Education →](/en/daily-life/education)
 
 ---
 

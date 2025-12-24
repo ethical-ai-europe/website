@@ -19,7 +19,7 @@ AI is transforming the workplace in profound ways—from automating tasks to mon
 
 What jobs are most exposed? What rights do workers have? How can we ensure the transition benefits everyone, not just those at the top?
 
-[Explore AI and the Future of Work →](/en/issues-labor-market)
+[Explore AI and the Future of Work →](/en/issues/labor-market)
 
 ### 💰 Economic Impact
 
@@ -27,7 +27,7 @@ AI generates enormous value—but for whom? The benefits of AI are not distribut
 
 Who wins and who loses in the AI economy? What policies can ensure broader prosperity?
 
-[Explore Who Benefits from AI →](/en/issues-economic-impact)
+[Explore Who Benefits from AI →](/en/issues/economic-impact)
 
 ### 🗳️ Democracy and Society
 
@@ -35,7 +35,7 @@ AI doesn't just affect individuals—it shapes our collective life. From the alg
 
 How do we govern systems that increasingly govern us? How do we maintain democratic accountability?
 
-[Explore AI, Democracy, and Society →](/en/issues-democracy-society)
+[Explore AI, Democracy, and Society →](/en/issues/democracy-society)
 
 ### 👁️ Surveillance and Privacy
 
@@ -43,7 +43,7 @@ AI supercharges surveillance capabilities, enabling monitoring at a scale and pr
 
 What are the limits? What protections exist? What can you do?
 
-[Explore Surveillance, Privacy, and AI →](/en/issues-surveillance-privacy)
+[Explore Surveillance, Privacy, and AI →](/en/issues/surveillance-privacy)
 
 ## These Issues Need Your Voice
 
