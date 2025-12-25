@@ -1,7 +1,7 @@
 ---
 title: "AI in the Public Sector"
 description: "Responsible AI deployment in government and public services"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

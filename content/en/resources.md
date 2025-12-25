@@ -1,7 +1,7 @@
 ---
 title: "AI Ethics Resources"
 description: "Curated resources for understanding and implementing ethical AI under the EU AI Act"
-date: "2024-12-10"
+date: "2025-12-25"
 language: "en"
 ---
 
@@ -223,4 +223,4 @@ A comprehensive collection of resources to help you understand, implement, and s
 
 Have a resource to suggest? This list is actively maintained. Contributions to improve this resource collection are welcome through our GitHub repository.
 
-**Last updated:** December 2024
+**Last updated:** December 2025

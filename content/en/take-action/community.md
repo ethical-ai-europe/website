@@ -1,7 +1,7 @@
 ---
 title: "Join Our Community"
 description: "You're not alone in navigating AI's impact—connect with others working for ethical AI"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

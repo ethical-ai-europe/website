@@ -1,7 +1,7 @@
 ---
 title: "AI, Democracy, and Society"
 description: "How AI is reshaping collective life, political discourse, and social dynamics"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

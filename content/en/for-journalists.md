@@ -1,7 +1,7 @@
 ---
 title: "For Journalists & Activists"
 description: "Hold AI to account"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

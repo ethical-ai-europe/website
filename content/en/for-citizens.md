@@ -1,7 +1,7 @@
 ---
 title: "For Citizens & Parents"
 description: "AI affects your family. Know your rights."
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

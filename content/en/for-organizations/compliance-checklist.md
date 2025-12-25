@@ -1,7 +1,7 @@
 ---
 title: "AI Compliance Checklist"
 description: "Practical checklist for EU AI Act compliance—inventory, classify, document, govern"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

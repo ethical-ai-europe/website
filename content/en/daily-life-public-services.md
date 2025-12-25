@@ -1,7 +1,7 @@
 ---
 title: "AI in Public Services"
 description: "Understanding when government AI makes decisions that affect your life"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

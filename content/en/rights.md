@@ -1,7 +1,7 @@
 ---
 title: "Your AI Rights in Europe"
 description: "You have the power to understand, question, and challenge AI decisions that affect your life"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

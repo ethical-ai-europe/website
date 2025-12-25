@@ -1,7 +1,7 @@
 ---
 title: "Events & Workshops"
 description: "Connect, learn, and act together at our AI rights events and workshops"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

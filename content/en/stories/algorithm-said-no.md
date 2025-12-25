@@ -1,7 +1,7 @@
 ---
 title: "When the Algorithm Said No"
 description: "How one job seeker challenged an AI hiring decision—and won."
-date: "2024-12-24"
+date: "2025-12-25"
 language: "en"
 ---
 

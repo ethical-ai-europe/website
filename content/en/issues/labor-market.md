@@ -1,7 +1,7 @@
 ---
 title: "AI and the Future of Work"
 description: "Understanding how AI is transforming jobs, workplaces, and worker rights"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

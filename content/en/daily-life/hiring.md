@@ -1,7 +1,7 @@
 ---
 title: "AI in Hiring & Recruitment"
 description: "Your rights when AI screens your resume, analyzes your interview, or decides your candidacy"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 
