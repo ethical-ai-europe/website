@@ -37,7 +37,7 @@ We've organized the most relevant content for you. Start here and build your und
 
 A comprehensive overview of how AI appears in educational settings—from adaptive learning to proctoring—and what it means for students, teachers, and parents.
 
-[**AI in Education (Daily Life) →**](/en/daily-life-education)
+[**AI in Education (Daily Life) →**](/en/daily-life/education)
 
 ---
 
@@ -46,17 +46,17 @@ A comprehensive overview of how AI appears in educational settings—from adapti
 #### Educator Guidance
 Detailed guidance specifically for teachers and school administrators, including policy templates, vendor questions, and approaches to generative AI.
 
-[AI Guidance for Educators & Schools →](/en/educators)
+[AI Guidance for Educators & Schools →](/en/for-organizations/educators)
 
 #### Algorithmic Decisions in Assessment
 When AI is used to assess students, grade work, or make placement decisions, special rules apply. Understand what's required.
 
-[Algorithmic Decision-Making Rights →](/en/rights-algorithmic-decisions)
+[Algorithmic Decision-Making Rights →](/en/rights/algorithmic-decisions)
 
 #### Your Rights as an Employee
 You're not just an educator—you're also a worker. Understand your own rights regarding AI monitoring and workplace surveillance.
 
-[Workplace Surveillance Rights →](/en/rights-workplace-surveillance)
+[Workplace Surveillance Rights →](/en/rights/workplace-surveillance)
 
 ---
 
@@ -72,7 +72,7 @@ Education doesn't exist in isolation. Understand the bigger picture of how AI is
 #### Surveillance in Schools
 A critical look at monitoring technologies in education and their impact on student development and autonomy.
 
-[Right to Explanation →](/en/rights-right-to-explanation)
+[Right to Explanation →](/en/rights/right-to-explanation)
 
 ---
 
@@ -83,12 +83,12 @@ Practical tools to implement responsible AI in your educational context.
 #### Questions to Ask Vendors
 Before adopting any AI tool, get clear answers. Our guide includes 20 essential questions covering compliance, fairness, transparency, data, and accountability.
 
-[Educator Guidance (Vendor Questions) →](/en/educators)
+[Educator Guidance (Vendor Questions) →](/en/for-organizations/educators)
 
 #### School Policy Templates
 Sample language for your school's AI policy, covering approval processes, data protection, teacher training, and parent communication.
 
-[Educator Guidance (Policy Templates) →](/en/educators)
+[Educator Guidance (Policy Templates) →](/en/for-organizations/educators)
 
 #### Professional Development
 Stay informed about evolving regulations and best practices.
@@ -139,4 +139,4 @@ The decisions you make today shape how the next generation understands and inter
 
 ---
 
-*Ready to dive deeper? Start with our [AI in Education guide](/en/daily-life-education) or explore the [Educator Guidance](/en/educators).*
+*Ready to dive deeper? Start with our [AI in Education guide](/en/daily-life/education) or explore the [Educator Guidance](/en/for-organizations/educators).*

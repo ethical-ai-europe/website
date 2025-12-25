@@ -37,7 +37,7 @@ We've organized the most relevant content for your business. Start here and go d
 
 A comprehensive, practical guide specifically for small and medium business owners and managers. Covers everything from basic AI tool use to high-risk compliance, in plain language.
 
-[**AI Guide for Small & Medium Businesses →**](/en/sme-guide)
+[**AI Guide for Small & Medium Businesses →**](/en/for-organizations/sme-guide)
 
 ---
 
@@ -46,12 +46,12 @@ A comprehensive, practical guide specifically for small and medium business owne
 #### Compliance Checklist
 A practical, checkbox-format tool to assess and track your AI compliance status. Covers inventory, classification, documentation, and governance.
 
-[AI Compliance Checklist →](/en/compliance-checklist)
+[AI Compliance Checklist →](/en/for-organizations/compliance-checklist)
 
 #### AI in Hiring
 If you use AI tools in recruitment, screening, or performance evaluation, you're likely in high-risk territory. Understand the requirements.
 
-[AI in Hiring →](/en/daily-life-hiring)
+[AI in Hiring →](/en/daily-life/hiring)
 
 #### Risk Classification
 Learn how to classify your AI use according to EU AI Act risk levels—prohibited, high-risk, limited risk, or minimal risk.
@@ -83,7 +83,7 @@ Practical next steps to get your business on track.
 #### Self-Assessment
 Use our compliance checklist to evaluate where you stand. Start with an AI inventory—you can't manage what you don't know about.
 
-[Compliance Checklist →](/en/compliance-checklist)
+[Compliance Checklist →](/en/for-organizations/compliance-checklist)
 
 #### Professional Development
 Find training, certifications, and resources to build AI competency in your organization.
@@ -154,4 +154,4 @@ Start now, start simple, and build from there. **Early preparation beats last-mi
 
 ---
 
-*Ready to get started? Begin with our [SME Guide](/en/sme-guide) or jump straight to the [Compliance Checklist](/en/compliance-checklist).*
+*Ready to get started? Begin with our [SME Guide](/en/for-organizations/sme-guide) or jump straight to the [Compliance Checklist](/en/for-organizations/compliance-checklist).*

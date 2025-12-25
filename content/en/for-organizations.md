@@ -13,16 +13,16 @@ Whether you're a small business using AI tools, a school deploying educational t
 
 ## Choose Your Path
 
-### 🏢 [Small & Medium Businesses](/en/sme-guide)
+### 🏢 [Small & Medium Businesses](/en/for-organizations/sme-guide)
 Practical guidance for SME owners and managers deploying AI without dedicated legal or compliance teams. Learn what you need to do based on how you use AI.
 
-### 🎓 [Educators & Schools](/en/educators)
+### 🎓 [Educators & Schools](/en/for-organizations/educators)
 Special considerations for AI in education—where we're shaping young minds and decisions can have lifelong impacts. Guidance on student data, fairness, and generative AI.
 
-### 🏛️ [Public Sector](/en/public-sector)
+### 🏛️ [Public Sector](/en/for-organizations/public-sector)
 Heightened obligations for government and public services, where trust and equal treatment are paramount. Framework for responsible public AI deployment.
 
-### ✅ [Compliance Checklist](/en/compliance-checklist)
+### ✅ [Compliance Checklist](/en/for-organizations/compliance-checklist)
 A practical, checkbox-format reference covering AI inventory, risk classification, transparency, and governance. Use this to track your compliance status.
 
 ---
@@ -35,12 +35,12 @@ Answer these questions to understand your obligations:
 
 | Your Situation | Typical Obligations | Start Here |
 |----------------|---------------------|------------|
-| Using general AI tools (ChatGPT, AI assistants, etc.) for internal tasks | Minimal—mostly best practices | [SME Guide](/en/sme-guide) |
-| AI integrated into customer-facing products or services | Moderate—transparency and documentation required | [SME Guide](/en/sme-guide) |
-| Building or customizing AI systems | Significant—full compliance considerations | [Compliance Checklist](/en/compliance-checklist) |
-| Using AI for HR, credit, or high-stakes decisions | Extensive—likely high-risk classification | [Compliance Checklist](/en/compliance-checklist) |
-| Deploying AI in education | Special rules—education AI is high-risk | [Educators Guide](/en/educators) |
-| Government AI affecting citizens | Strict requirements—public trust obligations | [Public Sector Guide](/en/public-sector) |
+| Using general AI tools (ChatGPT, AI assistants, etc.) for internal tasks | Minimal—mostly best practices | [SME Guide](/en/for-organizations/sme-guide) |
+| AI integrated into customer-facing products or services | Moderate—transparency and documentation required | [SME Guide](/en/for-organizations/sme-guide) |
+| Building or customizing AI systems | Significant—full compliance considerations | [Compliance Checklist](/en/for-organizations/compliance-checklist) |
+| Using AI for HR, credit, or high-stakes decisions | Extensive—likely high-risk classification | [Compliance Checklist](/en/for-organizations/compliance-checklist) |
+| Deploying AI in education | Special rules—education AI is high-risk | [Educators Guide](/en/for-organizations/educators) |
+| Government AI affecting citizens | Strict requirements—public trust obligations | [Public Sector Guide](/en/for-organizations/public-sector) |
 
 ---
 
@@ -74,7 +74,7 @@ That's the situation for most organizations. You still have responsibilities, bu
 
 Start with an inventory. What AI tools and systems does your organization use? That simple question—answered honestly—gives you the foundation for everything else.
 
-**[Use our Compliance Checklist →](/en/compliance-checklist)**
+**[Use our Compliance Checklist →](/en/for-organizations/compliance-checklist)**
 
 ---
 

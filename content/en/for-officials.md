@@ -35,7 +35,7 @@ Transparent, accountable AI use strengthens democratic legitimacy. Opaque system
 
 Comprehensive guidance specifically for government and public services—from prohibited uses to procurement to citizen communication.
 
-[**AI in the Public Sector →**](/en/public-sector)
+[**AI in the Public Sector →**](/en/for-organizations/public-sector)
 
 ---
 
@@ -44,7 +44,7 @@ Comprehensive guidance specifically for government and public services—from pr
 #### Compliance Checklist
 A practical, checkbox-format tool for tracking your AI compliance status. Covers inventory, risk classification, documentation, and governance.
 
-[AI Compliance Checklist →](/en/compliance-checklist)
+[AI Compliance Checklist →](/en/for-organizations/compliance-checklist)
 
 #### Prohibited Uses
 Certain AI applications are banned entirely—and public sector organizations must be especially vigilant. Know the hard lines.
@@ -55,7 +55,7 @@ Certain AI applications are banned entirely—and public sector organizations mu
 - Predictive policing based on profiling
 - Emotion recognition in government workplaces
 
-[Public Sector Guide (Prohibited Uses) →](/en/public-sector)
+[Public Sector Guide (Prohibited Uses) →](/en/for-organizations/public-sector)
 
 #### High-Risk Obligations
 Many public sector AI applications are classified as high-risk, requiring risk management, documentation, human oversight, and registration.
@@ -76,7 +76,7 @@ The key challenges in AI ethics—bias, privacy, transparency, employment, democ
 #### Economic Impact
 AI is reshaping economies. Public investment decisions should be informed by understanding both opportunities and risks.
 
-[AI in Hiring & Recruitment →](/en/daily-life-hiring)
+[AI in Hiring & Recruitment →](/en/daily-life/hiring)
 
 #### Democracy and AI Governance
 AI affects democratic participation and public discourse. Governance frameworks must protect democratic values.
@@ -97,7 +97,7 @@ The rights that citizens have under European law—the right to know, to explana
 #### How to Communicate About AI Use
 Templates and guidance for notifying citizens about AI, explaining systems in plain language, and documenting appeals processes.
 
-[Public Sector Guide (Communication Templates) →](/en/public-sector)
+[Public Sector Guide (Communication Templates) →](/en/for-organizations/public-sector)
 
 ---
 
@@ -108,17 +108,17 @@ Practical tools for responsible AI deployment.
 #### Procurement Guidance
 What to require from vendors: compliance documentation, fairness testing, transparency requirements, data protection, and accountability terms.
 
-[Public Sector Guide (Procurement) →](/en/public-sector)
+[Public Sector Guide (Procurement) →](/en/for-organizations/public-sector)
 
 #### Human Oversight Requirements
 How to implement meaningful human oversight—not just rubber-stamping, but genuine human judgment on AI-influenced decisions.
 
-[Public Sector Guide (Human Oversight) →](/en/public-sector)
+[Public Sector Guide (Human Oversight) →](/en/for-organizations/public-sector)
 
 #### Transparency Obligations
 Public register requirements, documentation standards, and citizen communication obligations.
 
-[Public Sector Guide (Transparency) →](/en/public-sector)
+[Public Sector Guide (Transparency) →](/en/for-organizations/public-sector)
 
 ---
 
@@ -200,4 +200,4 @@ The choice is yours to make.
 
 ---
 
-*Start with our comprehensive [Public Sector Guide](/en/public-sector) or use the [Compliance Checklist](/en/compliance-checklist) to assess your current status.*
+*Start with our comprehensive [Public Sector Guide](/en/for-organizations/public-sector) or use the [Compliance Checklist](/en/for-organizations/compliance-checklist) to assess your current status.*
