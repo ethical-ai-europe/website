@@ -1,7 +1,7 @@
 ---
 title: "Action Toolkit"
 description: "Ready-to-use resources for exercising your AI rights under the EU AI Act and GDPR"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

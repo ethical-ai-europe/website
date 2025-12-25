@@ -1,7 +1,7 @@
 ---
 title: "About the EU AI Act"
 description: "Understanding Europe's landmark AI regulation"
-date: "2024-12-10"
+date: "2025-12-25"
 language: "en"
 ---
 

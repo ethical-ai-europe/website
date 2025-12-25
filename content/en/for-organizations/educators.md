@@ -1,7 +1,7 @@
 ---
 title: "AI Guidance for Educators & Schools"
 description: "Special considerations for AI in education—protecting students while enabling innovation"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

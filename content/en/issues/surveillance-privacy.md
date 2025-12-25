@@ -1,7 +1,7 @@
 ---
 title: "Surveillance, Privacy, and AI"
 description: "Understanding how AI enables new forms of surveillance and what protections exist"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

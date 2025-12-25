@@ -1,7 +1,7 @@
 ---
 title: "For Educators"
 description: "Shape how the next generation learns with AI"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

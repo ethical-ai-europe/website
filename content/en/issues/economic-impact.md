@@ -1,7 +1,7 @@
 ---
 title: "Who Benefits from AI?"
 description: "Examining how AI's economic gains are distributed across society"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

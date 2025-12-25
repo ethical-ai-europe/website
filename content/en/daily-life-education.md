@@ -1,7 +1,7 @@
 ---
 title: "AI in Education"
 description: "Understanding AI in schools, from adaptive learning to plagiarism detection"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

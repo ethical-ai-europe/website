@@ -1,7 +1,7 @@
 ---
 title: "AI in Healthcare"
 description: "Your rights when AI is used in medical diagnosis, treatment, and care"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

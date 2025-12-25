@@ -1,7 +1,7 @@
 ---
 title: "Facial Recognition: Where It's Banned"
 description: "Understanding the strict limits on facial recognition in Europe"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

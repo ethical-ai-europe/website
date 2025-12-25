@@ -1,7 +1,7 @@
 ---
 title: "AI Guidance for Organizations"
 description: "Practical guidance for responsible AI deployment in businesses, schools, and public sector"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

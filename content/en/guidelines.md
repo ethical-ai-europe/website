@@ -1,7 +1,7 @@
 ---
 title: "AI Development Guidelines"
 description: "Practical guidelines for developing ethical and compliant AI systems"
-date: "2024-12-10"
+date: "2025-12-25"
 language: "en"
 ---
 

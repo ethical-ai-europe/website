@@ -1,7 +1,7 @@
 ---
 title: "AI Guide for Small & Medium Businesses"
 description: "Practical AI guidance for SME owners and managers—no legal team required"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "AI in Your Daily Life"
 description: "Understanding how AI affects you in education, healthcare, hiring, and public services"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

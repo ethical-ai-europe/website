@@ -1,7 +1,7 @@
 ---
 title: "Your Right to an AI Explanation"
 description: "How to get meaningful explanations when AI affects your life"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

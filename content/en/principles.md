@@ -1,7 +1,7 @@
 ---
 title: "Ethical AI Principles"
 description: "Core principles for ethical AI development and deployment"
-date: "2024-12-10"
+date: "2025-12-25"
 language: "en"
 ---
 

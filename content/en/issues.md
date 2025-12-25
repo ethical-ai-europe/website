@@ -1,7 +1,7 @@
 ---
 title: "Understanding the Issues"
 description: "AI's impact on society goes beyond any single law—explore the challenges shaping our future"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

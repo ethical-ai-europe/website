@@ -1,7 +1,7 @@
 ---
 title: "AI Surveillance at Work: Your Rights"
 description: "Understanding what employers can and cannot do with AI monitoring"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

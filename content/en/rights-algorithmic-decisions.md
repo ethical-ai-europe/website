@@ -1,7 +1,7 @@
 ---
 title: "When Algorithms Decide: Your Rights"
 description: "Your rights when AI makes important decisions about your life"
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 

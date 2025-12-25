@@ -1,7 +1,7 @@
 ---
 title: "Take Action"
 description: "Knowledge is power—but action creates change. Join the movement for ethical AI."
-date: "2024-12-11"
+date: "2025-12-25"
 language: "en"
 ---
 
