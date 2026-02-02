@@ -1,77 +1,74 @@
 ---
 title: "About the EU AI Act"
-description: "Understanding Europe's landmark AI regulation"
+description: "A practical overview of the EU’s AI regulatory framework"
 date: "2025-12-25"
 language: "en"
 ---
 
 # About the EU AI Act
 
-The European Union's Artificial Intelligence Act represents the world's first comprehensive legal framework for artificial intelligence. Adopted in 2024, it establishes harmonized rules for the development, deployment, and use of AI systems across the EU.
+The European Union’s Artificial Intelligence Act (EU AI Act) is an EU regulation that sets rules for placing, putting into service, and using certain AI systems in the EU. It is designed around a risk-based approach and introduces different obligations depending on the type of system and its intended use.
 
-## Key Objectives
+This page is a high-level summary for orientation. For authoritative wording and definitions, refer to the official legal text.
 
-The EU AI Act aims to:
+## What the Act is trying to achieve
 
-- **Ensure AI systems are safe and respect fundamental rights**
-- **Foster innovation while protecting citizens**
-- **Create legal certainty for businesses**
-- **Establish a risk-based approach to AI regulation**
+In practical terms, the EU AI Act aims to:
 
-## Risk-Based Classification
+- **Define when AI systems are subject to specific obligations**
+- **Set requirements for certain high-impact ("high-risk") use cases**
+- **Introduce transparency obligations for some systems**
+- **Provide a common baseline for enforcement and compliance in the EU**
 
-The Act categorizes AI systems into four risk levels:
+## Risk-based classification (simplified)
 
-### Unacceptable Risk
-AI systems that pose a clear threat to safety, livelihoods, and rights are prohibited. Examples include:
-- Social scoring systems by governments
-- Real-time biometric identification in public spaces (with limited exceptions)
-- AI that manipulates human behavior
+The Act groups systems and practices into categories that carry different requirements. A simplified view is:
 
-### High Risk
-Systems that significantly impact health, safety, or fundamental rights require strict compliance, including:
-- AI in critical infrastructure
-- Educational and vocational training systems
+### Prohibited practices (often described as “unacceptable risk”)
+Certain practices are restricted or prohibited under specific conditions. Examples commonly discussed include:
+- Social scoring by public authorities
+- Certain uses of real-time remote biometric identification in public spaces (with exceptions and conditions)
+- Manipulative or exploitative techniques in defined contexts
+
+### High-risk systems
+Some systems used in areas that can materially affect safety or rights are classified as “high-risk” and have stronger compliance obligations. Examples commonly include:
+- Critical infrastructure
+- Education and vocational training
 - Employment and worker management
-- Essential services (credit scoring, emergency response)
-- Law enforcement applications
-- Biometric identification systems
+- Access to certain essential services (e.g., credit)
+- Certain law enforcement and border-management contexts
+- Certain biometric systems
 
-### Limited Risk
-Systems with specific transparency obligations, such as:
-- Chatbots and conversational AI
-- Emotion recognition systems
-- Deepfakes and synthetic media
+### Transparency obligations (often described as “limited risk”)
+Some systems have specific user-facing transparency requirements, such as:
+- Chatbots and conversational interfaces
+- Emotion recognition or biometric categorization (in defined contexts)
+- Deepfakes and synthetic media disclosures
 
-### Minimal Risk
-Most AI applications with no or minimal risk, including:
-- AI-enabled video games
+### Other systems (often described as “minimal risk”)
+Many AI applications are not subject to special obligations beyond general EU law. Examples often cited include:
 - Spam filters
 - Recommendation systems
+- AI features in games
 
-## Compliance and Enforcement
+## Compliance and enforcement (high level)
 
-Organizations deploying high-risk AI systems must ensure:
-- Risk management systems
-- High-quality training data
-- Detailed documentation and record-keeping
-- Transparency and user information
-- Human oversight capabilities
-- Robustness and cybersecurity measures
+For high-risk systems, typical compliance themes include:
+- Risk management and quality management processes
+- Data governance and documentation
+- Transparency and information for users
+- Human oversight measures
+- Robustness, security, and monitoring
 
-Non-compliance can result in significant fines up to €35 million or 7% of global annual turnover.
+Penalties can be significant and depend on the type of breach.
 
-## Timeline
+## Timeline (high level)
 
-- **2024**: Act adopted and enters into force
-- **2025-2027**: Phased implementation
-- **2027**: Full application of all provisions
+Implementation is phased. Specific dates and obligations depend on the category of system and provisions that apply.
 
-## Why It Matters
+## Why this matters (neutral framing)
 
-The EU AI Act sets a global precedent for AI governance, influencing how organizations worldwide approach AI development and deployment. Understanding and complying with these regulations is essential for:
-
-- **Businesses** operating in or with the European market
-- **Developers** creating AI systems
-- **Citizens** whose rights and safety are protected
-- **Policymakers** shaping future AI regulations globally
+If you build, deploy, procure, or integrate AI systems that may fall under the EU AI Act, a basic understanding helps you:
+- scope whether a use case may be regulated
+- plan compliance work early (documentation, controls, testing)
+- avoid surprises during procurement, audits, or go-live
