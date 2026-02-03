@@ -3,6 +3,8 @@ title: "About the EU AI Act"
 description: "A practical overview of the EU’s AI regulatory framework"
 date: "2025-12-25"
 language: "en"
+image: "/images/eu-ai-act-hero.svg"
+imageAlt: "EU flag with abstract AI circuit lines"
 ---
 
 # About the EU AI Act

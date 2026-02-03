@@ -10,6 +10,8 @@ export interface MarkdownContent {
   description?: string;
   date?: string;
   language: string;
+  image?: string;
+  imageAlt?: string;
   content: string;
   contentHtml: string;
 }
@@ -20,6 +22,8 @@ export interface MarkdownMetadata {
   description?: string;
   date?: string;
   language: string;
+  image?: string;
+  imageAlt?: string;
 }
 
 const contentDirectory = path.join(process.cwd(), 'content');
@@ -104,6 +108,8 @@ export async function getContentBySlug(
       description: data.description,
       date: data.date,
       language: data.language || locale,
+      image: data.image,
+      imageAlt: data.imageAlt,
       content,
       contentHtml,
     };
@@ -154,6 +160,8 @@ export function getAllContentMetadata(locale: string): MarkdownMetadata[] {
       description: data.description,
       date: data.date,
       language: data.language || locale,
+      image: data.image,
+      imageAlt: data.imageAlt,
     });
   }
   
