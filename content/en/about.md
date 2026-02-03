@@ -11,6 +11,8 @@ The European Union’s Artificial Intelligence Act (EU AI Act) is an EU regulati
 
 This page is a high-level summary for orientation. For authoritative wording and definitions, refer to the official legal text.
 
+Official text (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+
 ## What the Act is trying to achieve
 
 In practical terms, the EU AI Act aims to:
@@ -25,13 +27,13 @@ In practical terms, the EU AI Act aims to:
 The Act groups systems and practices into categories that carry different requirements. A simplified view is:
 
 ### Prohibited practices (often described as “unacceptable risk”)
-Certain practices are restricted or prohibited under specific conditions. Examples commonly discussed include:
+Certain practices are restricted or prohibited under specific conditions. Examples often cited in summaries include:
 - Social scoring by public authorities
 - Certain uses of real-time remote biometric identification in public spaces (with exceptions and conditions)
 - Manipulative or exploitative techniques in defined contexts
 
 ### High-risk systems
-Some systems used in areas that can materially affect safety or rights are classified as “high-risk” and have stronger compliance obligations. Examples commonly include:
+Some systems used in areas that can materially affect safety or fundamental rights are classified as “high-risk” and have stronger compliance obligations. Examples often cited in summaries include:
 - Critical infrastructure
 - Education and vocational training
 - Employment and worker management
@@ -60,7 +62,7 @@ For high-risk systems, typical compliance themes include:
 - Human oversight measures
 - Robustness, security, and monitoring
 
-Penalties can be significant and depend on the type of breach.
+Penalties vary by infringement type and may include substantial administrative fines.
 
 ## Timeline (high level)
 
