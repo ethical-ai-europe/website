@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
+import Link from 'next/link';
 
 export interface NewsletterSignupProps {
   variant?: 'inline' | 'card' | 'footer';
@@ -136,12 +137,12 @@ export function NewsletterSignup({
             className="text-sm text-gray-600 dark:text-gray-400"
           >
             I agree to receive email updates and accept the{' '}
-            <a
+            <Link
               href="/privacy"
               className="text-blue-600 dark:text-blue-400 hover:underline"
             >
               privacy policy
-            </a>
+            </Link>
             . You can unsubscribe at any time. We comply with GDPR regulations.
           </label>
         </div>
