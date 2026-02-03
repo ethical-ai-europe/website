@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getContentBySlug, getContentSlugs } from '@/lib/markdown';
 import Link from 'next/link';
+import Image from 'next/image';
 import { locales, resolveLocale, messagesByLocale } from '@/i18n';
 import { Navigation, FooterNavigation, EnhancedContent, TableOfContents } from '@/components';
 
@@ -48,7 +49,7 @@ export default async function ContentPage({
 
       {/* Hero Header Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-800 dark:to-blue-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             {content.title}
           </h1>
@@ -66,22 +67,37 @@ export default async function ContentPage({
       </div>
 
       {/* Main Content Container */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Table of Contents for longer pages */}
         <TableOfContents html={content.contentHtml} />
         
         {/* Content Card */}
         <article className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 md:p-12 -mt-8 mb-16">
+          {/* Optional page image (from markdown frontmatter) */}
+          {content.image && (
+            <div className="mb-10">
+              <div className="relative w-full aspect-[16/6] overflow-hidden rounded-xl border border-white/10">
+                <Image
+                  src={content.image}
+                  alt={content.imageAlt || `${content.title} illustration`}
+                  fill
+                  priority
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          )}
+
           <div 
             className="prose prose-lg dark:prose-invert max-w-none
               prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white
-              prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-gray-200 dark:prose-h2:border-gray-700
+              prose-h2:mt-14 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-gray-200 dark:prose-h2:border-gray-700
               prose-h3:mt-10 prose-h3:mb-4
-              prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed prose-p:mb-6
+              prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-8 prose-p:mb-7
               prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline
               prose-strong:text-gray-900 dark:prose-strong:text-white
-              prose-ul:my-6 prose-ul:space-y-3 prose-ul:text-gray-700 dark:prose-ul:text-gray-300
-              prose-ol:my-6 prose-ol:text-gray-700 dark:prose-ol:text-gray-300
+              prose-ul:my-7 prose-ul:space-y-4 prose-ul:text-gray-700 dark:prose-ul:text-gray-300
+              prose-ol:my-7 prose-ol:space-y-3 prose-ol:text-gray-700 dark:prose-ol:text-gray-300
               prose-li:text-gray-700 dark:prose-li:text-gray-300
               prose-code:text-blue-600 dark:prose-code:text-blue-400
               prose-pre:bg-gray-100 dark:prose-pre:bg-gray-800
