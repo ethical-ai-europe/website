@@ -57,49 +57,49 @@ export default function HomePage({
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <IssueCard
             icon="⚖️"
-            title="Know Your Rights"
-            description="AI is making decisions about your job, health, and finances. Learn what protections you have."
+            title="Rights and safeguards"
+            description="Learn what transparency, access, and review options may apply when AI is used in high-impact contexts."
             href={withLocale('/rights')}
           />
           <IssueCard
             icon="🏠"
-            title="AI in Daily Life"
-            description="From school to healthcare to hiring—understand how AI affects the systems you rely on."
+            title="AI in daily life"
+            description="Understand how AI can affect education, healthcare, hiring, and other services you rely on."
             href={withLocale('/daily-life')}
           />
           <IssueCard
             icon="🌍"
-            title="What&apos;s at Stake"
-            description="Jobs, democracy, privacy—explore the societal questions AI is forcing us to confront."
+            title="Impacts and trade-offs"
+            description="Explore how AI systems can change outcomes for privacy, work, and public services — and what mitigations exist."
             href={withLocale('/issues')}
           />
           <IssueCard
-            icon="✊"
-            title="Make Your Voice Heard"
-            description="Exercise your rights, join the conversation, and help shape AI&apos;s future in Europe."
+            icon="🧭"
+            title="What you can do"
+            description="Practical steps for individuals and organizations: questions to ask, documentation to request, and how to escalate concerns."
             href={withLocale('/take-action')}
           />
         </div>
 
-        {/* Rights-Focused Highlights */}
+        {/* Rights and safeguards (summary) */}
         <div className="bg-blue-600 dark:bg-blue-700 rounded-lg shadow-lg p-8 text-white mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-center">Your AI Rights</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">Rights and safeguards (high level)</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             <div className="flex flex-col items-center">
               <div className="text-3xl mb-2">✓</div>
-              <div className="font-semibold">Right to know when AI affects you</div>
+              <div className="font-semibold">Notice and transparency in defined cases</div>
             </div>
             <div className="flex flex-col items-center">
               <div className="text-3xl mb-2">✓</div>
-              <div className="font-semibold">Right to explanation of AI decisions</div>
+              <div className="font-semibold">Information about purpose and limitations</div>
             </div>
             <div className="flex flex-col items-center">
               <div className="text-3xl mb-2">✓</div>
-              <div className="font-semibold">Right to human review</div>
+              <div className="font-semibold">Human oversight measures for high-impact uses</div>
             </div>
             <div className="flex flex-col items-center">
               <div className="text-3xl mb-2">✓</div>
-              <div className="font-semibold">World&apos;s strongest AI protections</div>
+              <div className="font-semibold">Risk management and documentation requirements</div>
             </div>
           </div>
         </div>
@@ -158,23 +158,23 @@ export default function HomePage({
         {/* Call to Action */}
         <div className="text-center bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-            Ready to Shape AI&apos;s Future?
+            Want a practical next step?
           </h2>
           <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-            Whether you want to understand your rights, protect your family, or join the movement for human-centered AI—your voice matters in shaping how AI works in Europe.
+            Use the checklists and examples on this site to clarify your use case, ask better questions, and document decisions early.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href={withLocale('/rights')}
               className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
             >
-              Know Your Rights
+              Explore rights
             </Link>
             <Link
               href={withLocale('/take-action')}
               className="inline-flex items-center justify-center px-8 py-3 border border-blue-600 text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 dark:bg-gray-700 dark:text-blue-400 dark:border-blue-400 dark:hover:bg-gray-600"
             >
-              Take Action
+              Practical steps
             </Link>
           </div>
         </div>
