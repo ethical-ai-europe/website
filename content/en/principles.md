@@ -1,130 +1,114 @@
 ---
-title: "Ethical AI Principles"
-description: "Core principles for ethical AI development and deployment"
+title: "AI governance principles"
+description: "Practical principles for building and deploying AI systems responsibly"
 date: "2025-12-25"
 language: "en"
 ---
 
-# Ethical AI Principles
+# AI governance principles
 
-Beyond legal compliance, ethical AI development requires adherence to fundamental principles that ensure technology serves humanity's best interests.
+This page summarizes commonly used governance principles for AI systems. The goal is to provide a practical checklist for teams building, deploying, procuring, or auditing AI—across both regulated and non-regulated use cases.
 
-## Core Principles
+These principles complement legal requirements (e.g., the EU AI Act, GDPR, sector rules). They are not a substitute for legal advice.
 
-### 1. Human Agency and Oversight
+## Core principles (practical)
 
-**AI should empower people, not replace human decision-making in critical contexts.**
+### 1) Human oversight and appropriate use
 
-- Maintain meaningful human control over AI systems
-- Ensure humans can override AI decisions when necessary
-- Design systems that augment human capabilities
-- Provide clear accountability mechanisms
+**Define when human review is required and what “override” means in practice.**
 
-### 2. Technical Robustness and Safety
+- Specify decision boundaries (what the system may do vs. what needs approval)
+- Provide escalation paths for uncertain or high-impact cases
+- Ensure operators can intervene, pause, or roll back when needed
+- Make accountability explicit (who owns outcomes)
 
-**AI systems must be reliable, secure, and safe throughout their lifecycle.**
+### 2) Robustness, safety, and security
 
-- Implement rigorous testing and validation procedures
-- Build resilience against attacks and manipulation
-- Ensure accuracy and reproducibility of results
-- Plan for graceful failure modes
-- Maintain cybersecurity standards
+**Design for predictable behavior under real-world conditions.**
 
-### 3. Privacy and Data Governance
+- Test against realistic inputs, edge cases, and distribution shift
+- Protect against common threats (prompt injection, data poisoning, abuse)
+- Define reliability targets and monitor them (accuracy, latency, availability)
+- Plan failure modes (safe defaults, graceful degradation)
 
-**Respect privacy and ensure proper data management.**
+### 3) Privacy and data governance
 
-- Implement privacy-by-design principles
-- Minimize data collection to what's necessary
-- Ensure data quality and integrity
-- Provide transparency about data usage
-- Enable user control over personal data
+**Handle data in a way that is lawful, minimal, and auditable.**
 
-### 4. Transparency
+- Use privacy-by-design; collect only what is needed for the stated purpose
+- Document data sources, licenses, retention, and access controls
+- Validate data quality and provenance; track changes over time
+- Provide clear user information where required
 
-**AI operations should be transparent and explainable.**
+### 4) Transparency and explainability
 
-- Document system capabilities and limitations
-- Make AI decision-making processes understandable
-- Disclose when users are interacting with AI
-- Provide clear information about data usage
-- Enable auditability of AI systems
+**Make the system’s capabilities, limits, and intended use understandable.**
 
-### 5. Diversity, Non-discrimination, and Fairness
+- Document what the system is for (and what it is not for)
+- Provide user-facing disclosures where appropriate
+- Maintain technical documentation for auditors and maintainers
+- Enable traceability (inputs → outputs → versions → decisions)
 
-**AI must not create or amplify discrimination.**
+### 5) Fairness and non-discrimination
 
-- Actively prevent bias in training data
-- Test for discriminatory outcomes across groups
-- Ensure diverse development teams
-- Consider accessibility for all users
-- Monitor for unfair impacts throughout deployment
+**Check for disparate impact and reduce avoidable bias.**
 
-### 6. Societal and Environmental Well-being
+- Evaluate performance across relevant user groups and contexts
+- Use mitigations where disparities are found (data, model, or process)
+- Ensure accessibility is considered in UX and outputs
+- Monitor for drift and emergent unfair outcomes after deployment
 
-**AI should benefit society and minimize environmental impact.**
+### 6) Societal and environmental considerations
 
-- Consider broader societal impacts
-- Assess environmental costs of AI systems
-- Promote sustainable AI development practices
-- Support social welfare and equality
-- Engage stakeholders in AI governance
+**Assess broader impacts that may matter in your context.**
 
-### 7. Accountability
+- Consider downstream use/misuse and stakeholder impact
+- Track and reduce unnecessary compute and energy use where feasible
+- Document trade-offs (performance vs. cost vs. footprint)
 
-**Establish clear responsibility for AI systems.**
+### 7) Accountability and redress
 
-- Define roles and responsibilities clearly
-- Implement mechanisms for redress
-- Enable external auditing when appropriate
-- Maintain comprehensive documentation
-- Ensure traceability of decisions
+**Provide mechanisms to investigate and correct issues.**
 
-## Implementing Ethical AI
+- Define ownership: product, engineering, legal, compliance, and operations
+- Create incident response playbooks (harm, security, policy violations)
+- Offer channels for complaints/appeals where appropriate
+- Keep logs and documentation sufficient for post-incident analysis
 
-### Assessment Phase
-- Conduct ethical impact assessments
-- Identify potential risks and harms
-- Engage diverse stakeholders
-- Document decision-making processes
+## How to implement (lifecycle)
 
-### Development Phase
-- Incorporate ethics into design requirements
-- Use diverse and representative data
-- Implement bias detection and mitigation
-- Build in transparency and explainability features
+### Assessment
+- Define the use case and impact level
+- Identify applicable laws, policies, and standards
+- Document risks, assumptions, and intended users
 
-### Deployment Phase
-- Monitor system performance continuously
-- Establish feedback mechanisms
-- Provide user education and support
-- Plan for incident response
+### Build
+- Translate principles into requirements (tests, controls, documentation)
+- Establish evaluation and monitoring metrics
+- Implement security and access controls
 
-### Maintenance Phase
-- Regular ethical audits
-- Update systems based on new insights
-- Adapt to changing societal norms
-- Maintain stakeholder dialogue
+### Deploy
+- Validate against acceptance criteria
+- Roll out with monitoring and rollback plans
+- Provide user guidance and operator training
 
-## Resources for Ethical AI Development
+### Operate
+- Monitor performance and incidents
+- Re-evaluate after significant changes (data/model/policy)
+- Periodically audit and update documentation
 
-- EU High-Level Expert Group on AI Ethics Guidelines
-- IEEE Ethics in Action in Autonomous and Intelligent Systems
+## References (starting points)
+
 - OECD AI Principles
 - UNESCO Recommendation on the Ethics of AI
-- National AI ethics frameworks
+- NIST AI Risk Management Framework (AI RMF)
+- ISO/IEC AI management and risk standards (where applicable)
 
-## Questions to Ask
+## Questions to use in reviews
 
-When developing or deploying AI systems, consider:
-
-1. **Purpose**: What problem does this AI solve? Is AI the right solution?
-2. **Impact**: Who will be affected? What are potential harms?
-3. **Fairness**: Does the system treat all groups equitably?
-4. **Privacy**: How is personal data protected?
-5. **Transparency**: Can decisions be explained?
-6. **Accountability**: Who is responsible when things go wrong?
-7. **Safety**: What safeguards are in place?
-8. **Sustainability**: What is the environmental impact?
-
-Remember: Ethical AI is not a one-time achievement but an ongoing commitment to responsible innovation.
+1) What is the system’s intended use, and what is out of scope?
+2) What harms are plausible, and what controls reduce them?
+3) How do we detect and respond to failures or abuse?
+4) What data is used, and is it appropriate and lawful for the purpose?
+5) What level of transparency is required for users, auditors, and operators?
+6) Who is accountable, and what is the escalation/redress path?
