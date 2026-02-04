@@ -11,9 +11,15 @@ imageAlt: "EU flag with abstract AI circuit lines"
 
 The European Union’s Artificial Intelligence Act (EU AI Act) is an EU regulation that sets rules for placing, putting into service, and using certain AI systems in the EU. It is designed around a risk-based approach and introduces different obligations depending on the type of system and its intended use.
 
-This page is a high-level summary for orientation. For authoritative wording and definitions, refer to the official legal text.
+This page is a high-level summary for orientation. It is not legal advice. For authoritative wording and definitions, refer to the official legal text.
 
 Official text (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+
+## References (starting points)
+
+- EU AI Act (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+- NIST AI Risk Management Framework (AI RMF)
+- OECD AI Principles
 
 ## What the Act is trying to achieve
 
