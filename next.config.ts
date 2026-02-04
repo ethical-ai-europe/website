@@ -46,6 +46,9 @@ const pathPrefix = isProd ? normalizedBasePath : undefined;
 
 const nextConfig: NextConfig = {
   output: 'export',
+  // GitHub Pages is a static host; disable image optimization so <Image /> works
+  // with exported assets.
+  images: { unoptimized: true },
   ...(pathPrefix
     ? {
         basePath: pathPrefix,
