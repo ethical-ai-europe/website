@@ -120,8 +120,9 @@ Define:
 - risk assessment + mitigations
 - monitoring/incident logs and postmortems
 
-## Tools and references (starting points)
+## References (starting points)
 
+- EU AI Act (EUR-Lex): https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 - NIST AI Risk Management Framework (AI RMF)
 - ISO/IEC 42001 (AI management system)
 - ISO/IEC 23894 (AI risk management)
