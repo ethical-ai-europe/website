@@ -1,243 +1,131 @@
 ---
-title: "AI Development Guidelines"
-description: "Practical guidelines for developing ethical and compliant AI systems"
+title: "AI development guidelines"
+description: "A practical, risk-based checklist for building and deploying AI systems"
 date: "2025-12-25"
 language: "en"
 ---
 
-# AI Development Guidelines
+# AI development guidelines
 
-This guide provides practical steps for developing AI systems that are both compliant with the EU AI Act and aligned with ethical principles.
+This page provides a practical checklist for building and deploying AI systems with an emphasis on risk-based governance and operational quality. It is intended for product, engineering, security, data, and compliance stakeholders.
 
-## Getting Started
+It is not legal advice. For exact obligations, refer to the applicable legal text and sector requirements.
 
-### 1. Classify Your AI System
+## Step 1: Scope the use case
 
-Determine your system's risk level according to the EU AI Act:
+Write down:
+- intended users and decisions supported/automated
+- deployment context (where/for whom it runs)
+- what could go wrong (plausible harms, misuse, and failure modes)
 
-**Is your AI system:**
-- Used in critical infrastructure, education, employment, law enforcement, or biometric identification?
-  → **High Risk** - Full compliance required
-- A chatbot, emotion recognition system, or generates synthetic content?
-  → **Limited Risk** - Transparency obligations apply
-- A spam filter, recommendation engine, or game AI?
-  → **Minimal Risk** - General best practices recommended
-- Used for social scoring or real-time biometric surveillance?
-  → **Unacceptable Risk** - Prohibited in most cases
+## Step 2: Determine whether special obligations may apply
 
-### 2. Establish Governance
+If you operate in the EU (or target EU users), some use cases may trigger additional requirements (e.g., under the EU AI Act).
 
-Create clear roles and responsibilities:
-- Appoint an AI Ethics Officer or team
-- Define decision-making authority
-- Establish review and approval processes
-- Create incident response procedures
+A simplified orientation:
+- **Potentially high-risk contexts** often include critical infrastructure, education, employment, essential services (e.g., credit), and certain biometric or public-sector uses.
+- **Transparency-focused cases** often include chatbots, synthetic media, and certain biometric categorization/emotion recognition uses.
+- Many systems may have **no special AI-specific obligations** beyond general laws (privacy, consumer protection, security), depending on the use case.
 
-## Development Checklist
+When unsure, treat this as a risk-management exercise: document your assumptions and revisit after legal/compliance review.
 
-### Data Management
+## Step 3: Establish governance (minimum viable)
 
-- [ ] **Data Quality Assessment**
-  - Verify data accuracy and completeness
-  - Document data sources and collection methods
-  - Ensure data is representative of use cases
-  - Check for historical biases in datasets
+Define responsibilities and operating rules:
+- owner for the system (product) and owner for technical controls (engineering)
+- review gates (pre-launch, major model/data changes, incident-driven)
+- incident response (who investigates, who can disable/roll back)
+- documentation standard (where artifacts live; who maintains them)
 
-- [ ] **Data Privacy**
-  - Implement GDPR compliance measures
-  - Minimize data collection
-  - Obtain proper consents
-  - Anonymize or pseudonymize when possible
-  - Document data retention and deletion policies
+## Development checklist
 
-- [ ] **Data Security**
-  - Encrypt data in transit and at rest
-  - Implement access controls
-  - Regular security audits
-  - Secure data storage infrastructure
+### Data management
 
-### Model Development
+- [ ] **Data inventory and purpose**
+  - document sources, licenses, and intended use
+  - specify what data is required vs. optional
 
-- [ ] **Documentation**
-  - Create technical documentation
-  - Document model architecture and training process
-  - Record hyperparameters and performance metrics
-  - Maintain version control
+- [ ] **Data quality and representativeness**
+  - validate coverage for expected scenarios
+  - check known gaps and document limitations
 
-- [ ] **Testing and Validation**
-  - Split data appropriately (train/validation/test)
-  - Test across diverse scenarios
-  - Validate on out-of-distribution data
-  - Conduct adversarial testing
+- [ ] **Privacy and access control**
+  - data minimization and retention rules
+  - role-based access and audit logging
+  - consent/notice where required
 
-- [ ] **Bias Detection and Mitigation**
-  - Test for disparate impact across protected groups
-  - Use fairness metrics appropriate for your use case
-  - Implement bias mitigation techniques
-  - Document limitations and known biases
+- [ ] **Security**
+  - encryption in transit/at rest where appropriate
+  - secrets management and least privilege
 
-- [ ] **Explainability**
-  - Implement interpretability features
-  - Create user-facing explanations
-  - Document model decision factors
-  - Provide confidence scores when appropriate
+### Model/system development
 
-### Risk Assessment
+- [ ] **Documentation and versioning**
+  - model/system description, intended use, out-of-scope use
+  - version control for code, data, prompts, and configurations
 
-Conduct a comprehensive AI risk assessment:
+- [ ] **Evaluation and testing**
+  - baseline metrics and acceptance criteria
+  - robustness checks (edge cases, drift, OOD)
+  - abuse testing (prompt injection, misuse scenarios)
 
-1. **Identify Risks**
-   - Technical failures
-   - Misuse scenarios
-   - Discrimination potential
-   - Privacy violations
-   - Security vulnerabilities
+- [ ] **Fairness and performance across contexts**
+  - evaluate across relevant user groups and environments
+  - record findings and mitigations (data, model, process)
 
-2. **Assess Impact**
-   - Likelihood of occurrence
-   - Severity of potential harms
-   - Affected populations
-   - Scale of impact
+- [ ] **Explainability and user communication**
+  - appropriate explanations for users/operators
+  - clear disclosures where required
 
-3. **Mitigation Strategies**
-   - Technical safeguards
-   - Human oversight mechanisms
-   - Monitoring systems
-   - Incident response plans
+### Risk assessment
 
-4. **Residual Risk**
-   - Document unavoidable risks
-   - Communicate limitations to users
-   - Plan for ongoing monitoring
+- [ ] Identify plausible risks (technical, security, privacy, misuse)
+- [ ] Estimate likelihood/impact and define mitigations
+- [ ] Define residual risk and what would trigger a re-evaluation
 
-### Human Oversight
+### Human oversight and controls
 
-Design appropriate human oversight:
+Choose the operating model and make it actionable:
+- **review-before-action** (human approves each high-impact action)
+- **monitor-and-intervene** (human supervises and can stop/roll back)
+- **set-constraints-and-audit** (human sets objectives/limits and audits outcomes)
 
-- **Human-in-the-loop**: Human reviews each decision before implementation
-- **Human-on-the-loop**: Human monitors system and can intervene
-- **Human-in-command**: Human sets objectives and constraints, monitors outcomes
+Define:
+- override/rollback steps
+- alerts and thresholds
+- operator training
 
-Ensure:
-- Clear override procedures
-- Accessible interfaces for oversight
-- Training for human operators
-- Alert mechanisms for anomalies
+## Deployment checklist
 
-### Transparency Requirements
-
-For limited and high-risk systems:
-
-- [ ] Clearly disclose AI use to end users
-- [ ] Provide information about system capabilities and limitations
-- [ ] Explain decision-making logic in accessible language
-- [ ] Disclose data sources and processing methods
-- [ ] Label synthetic or AI-generated content
-- [ ] Provide contact information for questions
-
-## Deployment Guidelines
-
-### Pre-Deployment
-
-- [ ] Final testing in production-like environment
-- [ ] User acceptance testing
-- [ ] Security penetration testing
-- [ ] Documentation review and completion
-- [ ] Training materials for users and operators
-- [ ] Incident response plan ready
+### Pre-deployment
+- [ ] run a release checklist (security, privacy, performance)
+- [ ] verify documentation is up to date
+- [ ] test in production-like conditions
+- [ ] prepare rollback and incident comms
 
 ### Launch
+- [ ] staged rollout if feasible
+- [ ] monitor early signals (errors, drift, user feedback)
 
-- [ ] Gradual rollout when possible
-- [ ] Monitor initial performance closely
-- [ ] Gather user feedback
-- [ ] Be prepared to roll back if needed
-- [ ] Communicate clearly with stakeholders
+### Post-deployment
+- [ ] continuous monitoring (quality, drift, abuse, incidents)
+- [ ] periodic review/audit and documentation updates
+- [ ] change management for model/data/policy updates
 
-### Post-Deployment
+## Documentation to keep (practical set)
 
-- [ ] **Continuous Monitoring**
-  - Track performance metrics
-  - Monitor for drift in data or model behavior
-  - Check for emerging biases
-  - Review user feedback and complaints
+- system description + intended use/out-of-scope
+- data sources and governance notes
+- evaluation results and acceptance criteria
+- risk assessment + mitigations
+- monitoring/incident logs and postmortems
 
-- [ ] **Regular Audits**
-  - Conduct periodic ethical audits
-  - Review security measures
-  - Assess compliance with regulations
-  - Update documentation
+## Tools and references (starting points)
 
-- [ ] **Maintenance**
-  - Retrain models as needed
-  - Update security patches
-  - Refine based on real-world performance
-  - Document all changes
-
-## Compliance Documentation
-
-Maintain comprehensive records:
-
-### Technical Documentation
-- System architecture diagrams
-- Data flow diagrams
-- Model specifications
-- Training procedures
-- Testing results and metrics
-
-### Risk Management
-- Risk assessment reports
-- Mitigation strategies
-- Incident logs and responses
-- Audit reports
-
-### Operational Documentation
-- User manuals
-- Operator training materials
-- Standard operating procedures
-- Change management logs
-
-### Compliance Records
-- Conformity assessments
-- Third-party certifications
-- Regulatory correspondence
-- Legal reviews
-
-## Tools and Resources
-
-### Development Tools
-- **Bias Detection**: AI Fairness 360, Fairlearn, What-If Tool
-- **Explainability**: LIME, SHAP, InterpretML
-- **Privacy**: Differential Privacy libraries, Federated Learning frameworks
-- **Testing**: Great Expectations, DeepChecks, MLTest
-
-### Standards and Frameworks
-- ISO/IEC 42001 - AI Management System
-- ISO/IEC 23894 - AI Risk Management
-- IEEE 7000 Series - AI Ethics Standards
-- NIST AI Risk Management Framework
-
-### Assessment Templates
-- EU Conformity Assessment templates
-- Ethical Impact Assessment frameworks
-- Data Protection Impact Assessment templates
-- Algorithm auditing checklists
-
-## Support and Training
-
-Invest in your team:
-- Provide regular ethics training
-- Stay updated on regulatory changes
-- Participate in AI ethics communities
-- Share learnings across projects
-- Build a culture of responsibility
-
-## Getting Help
-
-If you need assistance:
-- Consult with AI ethics experts
-- Engage with EU AI Act compliance consultants
-- Join industry working groups
+- NIST AI Risk Management Framework (AI RMF)
+- ISO/IEC 42001 (AI management system)
+- ISO/IEC 23894 (AI risk management)
+- OECD AI Principles
 - Participate in standard-setting bodies
 - Connect with academic researchers
 
