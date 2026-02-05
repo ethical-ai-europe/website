@@ -7,9 +7,9 @@ language: "en"
 
 # AI and the Future of Work
 
-If you're worried about AI and your job, you're not alone. Surveys consistently show that concern about automation is widespread, cutting across industries, skill levels, and demographics. This anxiety is neither irrational nor unfounded—AI is genuinely transforming work in profound ways.
+AI can change the workplace through automation, decision support, and monitoring. Effects vary widely by sector, task type, and how systems are deployed.
 
-But the story is more complex than "robots are coming for your job." Understanding what's actually happening—and what remains uncertain—is essential for navigating this transition and advocating for policies that work for everyone.
+This page summarizes common patterns seen in research and practice, plus the main uncertainties teams and policymakers are still debating. The goal is clarity: what is likely, what is contested, and what mitigations are available.
 
 ## What We Know
 
