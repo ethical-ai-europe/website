@@ -1,85 +1,66 @@
 ---
-title: "Take Action"
-description: "Knowledge is power—but action creates change. Join the movement for ethical AI."
+title: "Practical steps"
+description: "Concrete ways to document, ask questions, and escalate concerns when AI affects decisions."
 date: "2025-12-25"
 language: "en"
 ---
 
-# Take Action
+# Practical steps
 
-**Knowledge is power—but action creates change.**
+This section collects practical, low-friction actions you can take when AI systems affect decisions about you, your organization, or the services you rely on.
 
-You've learned about your rights. You understand the issues. Now it's time to make a difference.
+The goal is not activism—it’s clarity and follow-through: understand what applies, request the right information, keep records, and know when to escalate.
 
-This isn't just a toolkit—it's an invitation to join a movement. Across Europe, people are standing up for their rights, demanding transparency from AI systems, and shaping the policies that will govern technology for generations to come.
+## Four practical pathways
 
-Whether you're protecting your own rights or fighting for your community, every action matters. Start where you are, use what you have, do what you can.
+### 1) Rights and requests
 
-## Four Pathways to Action
+Templates and checklists to help you request information, explanations, or human review where applicable.
 
-### 🛡️ Protect Your Rights
+- template letters for requesting information and documentation
+- checklists for common AI-affected scenarios
+- guidance for filing complaints or escalating internally
+- documentation tips (what to save and why)
 
-Ready-to-use tools to exercise your rights under the EU AI Act and GDPR.
+[Access the toolkit →](/en/take-action/toolkit)
 
-- **Template letters** for requesting information, explanations, and human review
-- **Checklists** for common AI encounters
-- **Step-by-step guides** for filing complaints
-- **Documentation tips** for building your case
+### 2) Stay informed
 
-[Access the Action Toolkit →](/en/take-action/toolkit)
+Brief updates on changes and interpretations as the EU AI Act is implemented.
 
-### 📚 Get Informed
+- periodic digest (regulation + practical takeaways)
+- links to primary sources and reputable summaries
+- update notes for this site’s checklists
 
-AI moves fast—stay ahead of the changes that affect you.
+[Subscribe to updates →](/en/take-action/newsletter)
 
-- **Weekly digest** of AI rights news
-- **Policy updates** as the EU AI Act is implemented
-- **Practical tips** you can use immediately
-- **Action alerts** when your voice is needed
+### 3) Compare notes
 
-[Subscribe to Updates →](/en/take-action/newsletter)
+If you want to share experiences or learn how others handled similar situations, community discussions can help.
 
-### 💬 Join the Conversation
+- share patterns and pitfalls (without exposing personal data)
+- ask questions and learn from examples
+- contribute improvements to this open-source site
 
-You're not alone. Connect with others navigating AI's impact on their lives.
+[Community →](/en/take-action/community)
 
-- **Share experiences** and learn from others
-- **Ask questions** in a supportive community
-- **Find local groups** in your area
-- **Contribute** to this open-source project
+### 4) Workshops and events
 
-[Join Our Community →](/en/take-action/community)
+Occasional sessions focused on practical compliance and governance.
 
-### 🏛️ Shape the Future
+- workshops on documentation, risk assessment, and oversight
+- discussions with practitioners
 
-The rules are still being written—make sure your voice is heard.
+[Events & workshops →](/en/take-action/events)
 
-- **Attend workshops** and policy discussions
-- **Host events** in your community
-- **Connect with advocates** across Europe
-- **Participate in consultations** on AI policy
+## Quick start
 
-[Explore Events & Workshops →](/en/take-action/events)
+Pick one:
 
-## Every Action Counts
-
-You don't need to do everything. Pick one action that feels right for you:
-
-**⏱️ 5 minutes**: Sign up for our newsletter to stay informed
-**⏱️ 15 minutes**: Download a template letter and customize it for your situation
-**⏱️ 30 minutes**: Join our community and introduce yourself
-**⏱️ 1 hour**: Attend an online workshop on your rights
-
-The point is to start. Every person who exercises their rights, asks questions, or joins the conversation strengthens the movement for ethical AI.
-
-## What's Happening Now
-
-The EU AI Act is being implemented right now. New requirements are taking effect, organizations are adapting, and your rights are becoming real.
-
-This is a critical moment. The precedents being set today will shape how AI affects our lives for decades. Your voice matters more than ever.
+- **5 minutes**: bookmark the relevant checklist and note where AI appears in your workflow
+- **15 minutes**: use a template request letter and customize it
+- **30 minutes**: write a short risk/impact note (what the system does, who it affects, what could go wrong)
 
 ---
 
-**Ready to begin?**
-
-[Get the Action Toolkit →](/en/take-action/toolkit) | [Stay Informed →](/en/take-action/newsletter) | [Join the Community →](/en/take-action/community)
+[Toolkit →](/en/take-action/toolkit) | [Updates →](/en/take-action/newsletter) | [Community →](/en/take-action/community)
