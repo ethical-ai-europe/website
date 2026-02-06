@@ -83,7 +83,7 @@ export default function HomePage({
 
         {/* Rights and safeguards (summary) */}
         <div className="bg-blue-600 dark:bg-blue-700 rounded-lg shadow-lg p-8 text-white mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-center">Rights and safeguards (high level)</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">Rights and Safeguards Overview</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             <div className="flex flex-col items-center">
               <div className="text-3xl mb-2">✓</div>
