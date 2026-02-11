@@ -7,12 +7,12 @@ export default createMiddleware({
 
   // Used when no locale matches
   defaultLocale: 'en',
-  
+
   // Don't redirect when user is on default locale
   localePrefix: 'as-needed'
 });
 
 export const config = {
   // Match only internationalized pathnames
-  matcher: ['/', '/(en)/:path*']
+  matcher: ['/', ...locales.map((locale) => `/${locale}/:path*`)]
 };
