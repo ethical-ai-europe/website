@@ -72,7 +72,7 @@ export default async function ContentPage({
         <TableOfContents html={content.contentHtml} />
         
         {/* Content Card */}
-        <article className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 md:p-12 -mt-8 mb-16">
+        <article className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 sm:p-8 md:p-12 -mt-8 mb-16">
           {/* Optional page image (from markdown frontmatter) */}
           {content.image && (
             <div className="mb-10">
@@ -89,10 +89,10 @@ export default async function ContentPage({
           )}
 
           <div 
-            className="prose prose-lg dark:prose-invert max-w-none
+            className="prose dark:prose-invert max-w-none
               prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white
-              prose-h2:mt-14 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-gray-200 dark:prose-h2:border-gray-700
-              prose-h3:mt-10 prose-h3:mb-4
+              prose-h2:mt-12 prose-h2:mb-5 prose-h2:pb-3 prose-h2:border-b prose-h2:border-gray-200 dark:prose-h2:border-gray-700
+              prose-h3:mt-9 prose-h3:mb-3
               prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-8 prose-p:mb-7
               prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline
               prose-strong:text-gray-900 dark:prose-strong:text-white
@@ -101,7 +101,8 @@ export default async function ContentPage({
               prose-li:text-gray-700 dark:prose-li:text-gray-300
               prose-code:text-blue-600 dark:prose-code:text-blue-400
               prose-pre:bg-gray-100 dark:prose-pre:bg-gray-800
-              prose-blockquote:border-blue-500 prose-blockquote:bg-blue-50 dark:prose-blockquote:bg-blue-900/20 prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300 prose-blockquote:rounded-r-lg prose-blockquote:py-1"
+              prose-blockquote:border-blue-500 prose-blockquote:bg-blue-50 dark:prose-blockquote:bg-blue-900/20 prose-blockquote:text-gray-700 dark:prose-blockquote:text-gray-300 prose-blockquote:rounded-r-lg prose-blockquote:py-1
+              prose-sm sm:prose-base lg:prose-lg"
           >
             <EnhancedContent html={content.contentHtml} />
           </div>
