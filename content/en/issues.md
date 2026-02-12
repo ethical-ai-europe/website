@@ -52,6 +52,6 @@ AI can enable more scalable surveillance, including biometric identification and
 ## How to use this section
 
 If you want a concrete next step:
-- start with **Rights and safeguards** for user-facing obligations and options: [/en/rights](/en/rights)
-- use **Practical steps** for documentation, requests, and escalation: [/en/take-action](/en/take-action)
+- start with **Rights and safeguards** for user-facing obligations and options: [Rights and safeguards →](/en/rights)
+- use **Practical steps** for documentation, requests, and escalation: [Practical steps →](/en/take-action)
 
