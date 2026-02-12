@@ -7,9 +7,9 @@ language: "en"
 
 # Surveillance, Privacy, and AI
 
-AI supercharges surveillance capabilities. What once required armies of human watchers can now be automated. What once could be observed only fleetingly can now be recorded, analyzed, and never forgotten. What once was private—our movements, behaviors, relationships, even emotions—can now be inferred at scale.
+AI can enable surveillance at greater scale by automating identification, classification, and behavioral inference. Whether this is lawful or appropriate depends on the context, purpose, safeguards, and applicable rules.
 
-This isn't a dystopian future; it's the present reality in many contexts. Understanding what's happening, what protections exist, and what you can do is essential for anyone who values privacy and freedom.
+This page summarizes common AI-enabled surveillance capabilities, typical risk concerns (false matches, overreach, chilling effects), and the types of safeguards and legal constraints that are often discussed.
 
 ## Forms of AI-Enabled Surveillance
 

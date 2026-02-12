@@ -7,9 +7,9 @@ language: "en"
 
 # Who Benefits from AI?
 
-AI is generating enormous economic value—improving productivity, enabling new products and services, and transforming industries. But economic value doesn't distribute itself. The central question isn't whether AI creates wealth, but who captures it.
+AI can generate economic value through productivity gains and new products, but outcomes depend on market structure, adoption patterns, and who controls key inputs (data, compute, distribution channels, and talent).
 
-This matters because the distribution of AI's benefits will shape our society for decades. Will AI be a rising tide that lifts all boats, or will it deepen existing inequalities? The answer isn't predetermined—it depends on choices we make now.
+This page summarizes common questions about concentration, competition, and dependencies in AI supply chains. It aims to describe trade-offs and plausible scenarios rather than argue for a specific policy stance.
 
 ## The Concentration Question
 
