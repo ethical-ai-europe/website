@@ -81,12 +81,34 @@ A deeper look at how AI surveillance systems work and how they're regulated.
 
 ---
 
+### 👶 Children and AI: What Parents Need to Know
+
+AI affects children in ways that deserve special attention—and European law gives children extra protections.
+
+#### In the Classroom
+Schools and educational platforms are increasingly using AI for adaptive learning, automated grading, plagiarism detection, and even attention monitoring. These are classified as **high-risk** under the EU AI Act, meaning stricter safeguards apply. As a parent, you have the right to ask:
+- Which AI tools does the school use?
+- What data is collected about my child, and who has access?
+- How are AI-generated assessments reviewed by teachers?
+
+#### Content Recommendations
+Social media and video platforms use recommendation algorithms that are not designed with children's wellbeing in mind—they are designed for engagement. Some platforms must apply stricter limits on profiling and recommending content to minors. Check platform settings and use parental controls where available.
+
+#### Age Verification and Data
+Age verification requirements are growing across European platforms. Regardless of age, children's personal data carries stronger GDPR protections. Platforms must have a lawful basis to process it, and data minimisation rules apply.
+
+[Read about AI in education →](/en/daily-life/education)
+
+---
+
 ### 🎯 Take Action
 
 Ready to do something? Here's how you can protect yourself and your family.
 
 #### Practical Tools
 Template letters, scripts for conversations, and step-by-step guides to exercise your rights.
+
+[Action Toolkit →](/en/take-action/toolkit)
 
 [Take Action →](/en/take-action)
 
