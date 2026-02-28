@@ -78,10 +78,10 @@ AI is reshaping economies. Public investment decisions should be informed by und
 
 [AI in Hiring & Recruitment →](/en/daily-life/hiring)
 
-#### Democracy and AI Governance
-AI affects democratic participation and public discourse. Governance frameworks must protect democratic values.
+#### Policy Tools and Standards
+Guidance on impact assessments, regulatory sandboxes, and technical standards.
 
-[AI Ethics Principles →](/en/principles)
+[Development Guidelines →](/en/guidelines)
 
 ---
 
@@ -122,7 +122,65 @@ Public register requirements, documentation standards, and citizen communication
 
 ---
 
-## Quick Reference: AI Classification
+## Policy Tools for Implementation
+
+### Fundamental Rights and Algorithmic Impact Assessments
+Before deploying high-risk AI, public organisations should conduct a **Fundamental Rights Impact Assessment (FRIA)**. This involves:
+- Identifying which fundamental rights the system could affect
+- Assessing the likelihood and severity of adverse impacts
+- Documenting mitigation measures
+- Consulting affected communities where appropriate
+
+The EU AI Act requires deployers of high-risk AI in public services to carry out a FRIA before deployment.
+
+### Regulatory Sandboxes
+The EU AI Act establishes **AI regulatory sandboxes** — controlled environments where organisations can test AI systems under supervision before full deployment. These allow:
+- Testing in real conditions with regulatory oversight
+- Identifying compliance issues early
+- Developing evidence for risk assessments
+- Demonstrating commitment to responsible deployment
+
+Contact your national AI authority to understand sandbox availability in your jurisdiction.
+
+### Technical Standards
+Several European and international standards bodies are developing AI standards:
+- **CEN/CENELEC** (European standards) — developing standards aligned with the EU AI Act
+- **ISO/IEC JTC 1/SC 42** — international AI standards including risk management and bias testing
+- **ENISA** (EU Agency for Cybersecurity) — guidance on AI security
+
+### Governance Principles
+The ethical and governance principles that should underpin public sector AI deployment.
+
+[AI Governance Principles →](/en/principles)
+
+[Development Guidelines →](/en/guidelines)
+
+---
+
+## Inter-Agency Coordination
+
+### Sharing Governance Burden
+Few public bodies have all the expertise needed for responsible AI deployment in-house. Effective governance often requires coordination:
+
+**Within your organisation:**
+- Designate an AI coordination function (not necessarily a separate team—this can be a working group)
+- Ensure legal, IT, service delivery, and communications teams are all involved in AI decisions
+- Create an escalation path for novel or high-risk deployment decisions
+
+**Across government:**
+- Share AI impact assessments and risk registers with central digital or AI authorities
+- Coordinate procurement requirements to benefit from collective bargaining power and shared standards
+- Join cross-government AI working groups if available in your jurisdiction
+
+**With external bodies:**
+- Engage with your national data protection authority on compliance questions
+- Participate in consultations on national AI strategies
+- Report significant AI-related incidents to relevant authorities
+
+### Central Coordination Resources
+Many EU member states are establishing national AI strategies and coordination mechanisms. Check your government's digital or technology ministry for guidance specific to your jurisdiction.
+
+---
 
 | Classification | Description | Public Sector Examples | Key Requirements |
 |----------------|-------------|------------------------|------------------|
