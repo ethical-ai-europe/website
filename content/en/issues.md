@@ -1,11 +1,11 @@
 ---
-title: "Impacts and trade-offs"
+title: "Impacts and Trade-offs"
 description: "How AI can affect work, privacy, markets, and public life — beyond any single regulation"
 date: "2025-12-25"
 language: "en"
 ---
 
-# Impacts and trade-offs
+# Impacts and Trade-offs
 
 AI affects society through many channels: how decisions are made, what information is surfaced, how work is organized, and how services are delivered. Regulation (including the EU AI Act) covers part of this landscape, but broader questions remain relevant for product teams, organizations, and individuals.
 
