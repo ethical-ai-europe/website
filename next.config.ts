@@ -49,6 +49,9 @@ const nextConfig: NextConfig = {
   // GitHub Pages is a static host; disable image optimization so <Image /> works
   // with exported assets.
   images: { unoptimized: true },
+  // Expose the resolved base path to app code so frontmatter image paths can be
+  // prefixed correctly.  Only set in production because dev runs without a basePath.
+  ...(isProd ? { env: { NEXT_PUBLIC_BASE_PATH: normalizedBasePath } } : {}),
   ...(pathPrefix
     ? {
         basePath: pathPrefix,
