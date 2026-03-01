@@ -37,6 +37,8 @@ export default async function ContentPage({
     notFound();
   }
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
       {/* Navigation */}
@@ -78,7 +80,11 @@ export default async function ContentPage({
             <div className="mb-10">
               <div className="relative w-full aspect-[16/6] overflow-hidden rounded-xl border border-white/10">
                 <Image
-                  src={content.image}
+                  src={
+                    content.image.startsWith('/') && basePath && basePath !== '/'
+                      ? `${basePath}${content.image}`
+                      : content.image
+                  }
                   alt={content.imageAlt || `${content.title} illustration`}
                   fill
                   priority
