@@ -110,17 +110,59 @@ Bring up AI ethics with your students. What do they think about these tools? Wha
 
 ---
 
-## Professional Community
+### 📖 AI Literacy: Frameworks and Teaching Approaches
 
-### Connect with Fellow Educators
-Join conversations with other educators navigating these same challenges. Share experiences, resources, and strategies.
+Teaching students to think critically about AI is increasingly considered a core educational competency. Here are some practical approaches:
 
-*Community features coming soon.*
+**Understand before you use:** Before introducing AI tools, help students understand what they are—statistical systems trained on data, not oracles or intelligence. Demystifying AI reduces both uncritical adoption and unfounded fear.
 
-### Stay Updated
-Education AI regulations are evolving. Subscribe to stay informed about new requirements and best practices.
+**Process-centred assessment:** Focus on the learning process, not just outputs. Ask students to document their reasoning, revisions, and sources—making it easier to assess genuine learning regardless of which tools they use.
 
-*Newsletter signup coming soon.*
+**Discuss the model:** For LLM-based tools, discuss with students how language models work, what hallucination means, and why outputs must be verified. This builds critical evaluation skills.
+
+**Use the EU AI Act as a teaching case:** The regulation itself is excellent curriculum material—it raises questions about how we define risk, who is protected, what transparency means, and who should be accountable.
+
+**Framework resources to explore:**
+- UNESCO's AI Competency Framework for Students
+- The European Commission's DigComp framework (includes AI literacy)
+- Council of Europe guidance on AI and education
+
+---
+
+### ⚖️ Ethical Considerations When Using AI in Teaching
+
+Using AI tools in your classroom raises real ethical questions worth thinking through:
+
+**Transparency with students:** Are students aware when AI tools are involved in shaping their learning experience or assessments? Transparency is both ethically important and a legal requirement for certain systems.
+
+**Equity and access:** Not all students have equal access to AI tools at home. Policies that require AI-assisted work may disadvantage students without home access.
+
+**Data collection:** Many AI educational tools collect detailed data on student behaviour—reading speed, time on task, responses to questions. Ask vendors what data is collected, who owns it, and how long it is kept.
+
+**Autonomy and critical thinking:** There is a reasonable concern that heavy AI integration can reduce the productive struggle that builds real understanding. Balance is important.
+
+**Student wellbeing:** Monitoring and surveillance tools (attention tracking, emotion recognition) raise particular concerns. Some forms are restricted or prohibited under European law.
+
+---
+
+### 📚 Resources for Educators
+
+**Discussion prompts for the classroom:**
+- "If an algorithm decides who gets into a university programme, what should it consider? What should it never consider?"
+- "A company claims their AI tool is fair. What evidence would you need to believe them?"
+- "Who should be responsible when an AI system makes a mistake that harms someone?"
+
+**Recommended reading:**
+- The EU AI Act (European Commission official text and summaries)
+- UNESCO Recommendation on the Ethics of AI (2021)
+- "The Alignment Problem" by Brian Christian (accessible introduction to AI challenges)
+- AlgorithmWatch reports on AI in public life
+
+**Key pages on this site:**
+- [AI in Education →](/en/daily-life/education)
+- [Student and citizen rights →](/en/rights)
+- [AI governance principles →](/en/principles)
+- [Daily life and AI →](/en/daily-life)
 
 ---
 
