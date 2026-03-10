@@ -124,7 +124,63 @@ The EU AI Act is being phased in:
 
 ---
 
-## How to Contribute
+### 🔍 How to Investigate AI Systems
+
+Investigating algorithmic systems requires a mix of traditional journalism skills and new techniques:
+
+**Freedom of information and access requests**
+Public sector AI systems may be subject to transparency and access-to-information laws. In many EU member states you can request:
+- Details of AI systems used in government decision-making
+- Impact assessments and risk registers for high-risk AI
+- Procurement contracts with AI vendors
+- Audit logs and accuracy statistics
+
+The EU AI Act itself creates transparency obligations: providers of high-risk AI must maintain documentation, and deployers must log use. These records can be requested.
+
+**Technical approaches**
+- **Algorithmic auditing:** Test a system yourself or with affected communities by submitting varied inputs and documenting outputs
+- **Source code requests:** Some jurisdictions require public disclosure of algorithms used in public services
+- **Crowdsourced data collection:** Coordinate affected individuals to document their experiences (hiring tools, benefits algorithms, content moderation)
+- **Public registers:** The EU AI Act will require registration of high-risk AI systems in a public database
+
+**Interviewing affected communities**
+The best AI stories are human stories. Find the people affected by a system—those denied benefits, screened out in hiring, flagged by fraud detection, or monitored at work. Their experience is both newsworthy and legally relevant (organizations must have evidence that systems aren't discriminating).
+
+**Research resources**
+- AlgorithmWatch's AI observatory
+- AI Now Institute's annual reports
+- The EU AI database (once launched)
+- National regulatory databases (DPA enforcement decisions)
+
+---
+
+### 📋 Source Guide: Who to Talk To
+
+**Regulators and enforcement bodies**
+- National data protection authorities (DPAs) — already enforce GDPR and have growing AI mandates
+- The European Data Protection Board (EDPB) — coordinates national DPAs
+- National AI regulatory authorities (as they are established)
+- Sector regulators (financial services, healthcare, telecoms)
+
+**Academics and researchers**
+- University AI ethics centres (multiple in Germany, Netherlands, UK, France)
+- The Alan Turing Institute
+- AI policy researchers at think tanks (Bruegel, the Foundation for European Progressive Studies)
+
+**Civil society**
+- AlgorithmWatch (algorithmic accountability reporting and research)
+- Access Now (digital rights, policy advocacy)
+- European Digital Rights (EDRi) (umbrella for 50+ organisations)
+- The Ada Lovelace Institute (research on AI and society)
+- Amnesty Tech (human rights and technology)
+
+**Affected communities and advocates**
+- Workers' organizations (for workplace surveillance stories)
+- Disability rights organizations (for accessibility and discrimination angles)
+- Migrant support organizations (for AI in border and immigration contexts)
+- Consumer organizations
+
+---
 
 We believe in collaborative investigation. If you're working on AI accountability:
 

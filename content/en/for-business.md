@@ -74,6 +74,11 @@ The ethical framework underlying the EU AI Act. Understanding these principles h
 
 [AI Ethics Principles →](/en/principles)
 
+#### Development Guidelines
+Technical and operational guidelines for building and deploying AI responsibly.
+
+[Development Guidelines →](/en/guidelines)
+
 ---
 
 ### 🎯 Take Action
@@ -97,7 +102,37 @@ Know when you need professional assistance and where to find it—from official 
 
 ---
 
-## 3 Steps to Start Today
+## Common Business AI Use Cases and Their Regulatory Status
+
+Understanding how the EU AI Act treats different use cases helps you focus compliance effort where it matters:
+
+| Use Case | Risk Level | Key Requirements |
+|----------|------------|------------------|
+| AI chatbot on website | Limited risk | Disclose AI to users |
+| Email spam filters, fraud detection | Minimal risk | No specific obligations |
+| AI in hiring and CV screening | **High risk** | Full compliance required |
+| Credit scoring for customers | **High risk** | Full compliance required |
+| AI for content recommendation | Limited/minimal | Platform-dependent |
+| AI-generated marketing content | Limited risk | Label AI-generated content |
+| Biometric identification | **Prohibited/High risk** | Strict limits or ban |
+
+*This is a general guide. Your specific use case may have sector-specific rules (financial services, healthcare, etc.) that apply in addition to the EU AI Act.*
+
+---
+
+## Penalties for Non-Compliance
+
+The EU AI Act sets significant financial penalties:
+
+- **Violations involving prohibited AI practices:** Up to €35 million or 7% of global annual turnover (whichever is higher)
+- **Other violations of core obligations:** Up to €15 million or 3% of global annual turnover
+- **Providing incorrect, incomplete, or misleading information:** Up to €7.5 million or 1.5% of global annual turnover
+
+For SMEs and startups, regulators have discretion to apply proportionate penalties. But the trajectory is clear: non-compliance will become increasingly costly as enforcement ramps up after 2026.
+
+**The earlier you start, the lower your compliance cost.** Building documentation, governance, and oversight into your processes now is far cheaper than retrofitting after enforcement begins.
+
+---
 
 ### 1. Create an AI Inventory
 Make a simple list: What AI tools and systems does your business use? For each one, note the purpose, vendor, and data involved.
