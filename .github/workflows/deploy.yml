@@ -38,6 +38,7 @@ jobs:
         run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: "1"
+          BASELINE_BROWSER_MAPPING_IGNORE_OLD_DATA: "true"
           GITHUB_REPOSITORY: ${{ github.repository }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
