@@ -7,9 +7,9 @@ language: "en"
 
 # AI, Democracy, and Society
 
-AI doesn't just affect individuals—it shapes our collective life. The algorithms that determine what we see online, the systems that moderate our speech, the tools that can generate convincing fake content—these technologies are transforming the environment in which democracy and society function.
+AI can influence public discourse via ranking and recommendation systems, moderation tooling, and synthetic media generation. These technologies can change what information is surfaced, how quickly it spreads, and how difficult it is to assess provenance.
 
-This isn't simply about technology. It's about power: who has it, who exercises it, and how we as citizens can maintain meaningful control over the systems that increasingly govern our shared spaces.
+This page focuses on practical questions: what risks are commonly discussed, what evidence exists, and what mitigations (technical and governance) are typically proposed.
 
 ## The Information Environment
 
