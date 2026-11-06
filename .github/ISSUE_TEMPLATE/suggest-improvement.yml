@@ -1,0 +1,31 @@
+name: Suggest an improvement
+description: Something unclear, wrong or missing on the site? Or want to help translate? No technical knowledge needed.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping make the site clearer. If something confused you, it has probably confused others too.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of suggestion is this?
+      options:
+        - Something is unclear or hard to understand
+        - Something is wrong or out of date
+        - A topic is missing
+        - I'd like to help translate
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Which page? (optional)
+      description: Paste the link, or describe where you were on the site.
+  - type: textarea
+    id: details
+    attributes:
+      label: Tell us more
+      description: What did you expect, and what would make it better? For translations, tell us which language.
+    validations:
+      required: true
