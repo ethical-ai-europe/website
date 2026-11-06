@@ -16,9 +16,25 @@ export interface IssueCardProps {
   /** Position in a numbered grid (1-based). */
   index?: number;
   stats?: IssueStats[];
+  /** Visible "Read more" link text. */
+  readMoreLabel?: string;
+  /** Accessible name for the "Read more" link. */
+  readMoreAriaLabel?: string;
+  /** Page is only available in English; shown after the outcome line. */
+  fallbackNote?: string;
 }
 
-export function IssueCard({ title, description, outcome, href, index, stats }: IssueCardProps) {
+export function IssueCard({
+  title,
+  description,
+  outcome,
+  href,
+  index,
+  stats,
+  readMoreLabel = 'Read more',
+  readMoreAriaLabel,
+  fallbackNote,
+}: IssueCardProps) {
   return (
     <article className="flex flex-col border-t border-ink pt-6">
       {index !== undefined && (
@@ -33,6 +49,7 @@ export function IssueCard({ title, description, outcome, href, index, stats }: I
       </h3>
       <p className="mt-4 text-muted">{description}</p>
       {outcome && <p className="mt-4 font-semibold text-ink">{outcome}</p>}
+      {fallbackNote && <p className="mt-2 text-sm text-muted">{fallbackNote}</p>}
       {stats && stats.length > 0 && (
         <dl className="mt-5 flex flex-wrap gap-6">
           {stats.map((stat) => (
@@ -43,8 +60,8 @@ export function IssueCard({ title, description, outcome, href, index, stats }: I
           ))}
         </dl>
       )}
-      <Link href={href} className="text-link mt-6 self-start inline-flex items-center gap-2" aria-label={`Read more: ${title}`}>
-        Read more <ArrowUpRight />
+      <Link href={href} className="text-link mt-6 self-start inline-flex items-center gap-2" aria-label={readMoreAriaLabel ?? `${readMoreLabel}: ${title}`}>
+        {readMoreLabel} <ArrowUpRight />
       </Link>
     </article>
   );

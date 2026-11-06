@@ -8,10 +8,24 @@ export interface StoryCardProps {
   country?: string;
   href: string;
   isAnonymous?: boolean;
+  readStoryLabel?: string;
+  anonymousLabel?: string;
+  /** Page is only available in English, e.g. "(in English)". */
+  fallbackNote?: string;
 }
 
-export function StoryCard({ title, excerpt, category, country, href, isAnonymous = false }: StoryCardProps) {
-  const tags = [category, country, isAnonymous ? 'Anonymous' : undefined].filter(Boolean);
+export function StoryCard({
+  title,
+  excerpt,
+  category,
+  country,
+  href,
+  isAnonymous = false,
+  readStoryLabel = 'Read the story',
+  anonymousLabel = 'Anonymous',
+  fallbackNote,
+}: StoryCardProps) {
+  const tags = [category, country, isAnonymous ? anonymousLabel : undefined].filter(Boolean);
   return (
     <article className="border-t border-ink pt-6">
       <p className="eyebrow">{tags.join(' · ')}</p>
@@ -22,8 +36,9 @@ export function StoryCard({ title, excerpt, category, country, href, isAnonymous
       </h3>
       <p className="mt-4 text-lg text-muted max-w-2xl">{excerpt}</p>
       <Link href={href} className="text-link mt-6 inline-flex items-center gap-2">
-        Read the story <ArrowUpRight />
+        {readStoryLabel} <ArrowUpRight />
       </Link>
+      {fallbackNote && <p className="mt-2 text-sm text-muted">{fallbackNote}</p>}
     </article>
   );
 }

@@ -3,7 +3,9 @@ import { notFound } from 'next/navigation';
 import { contentExists, getContentBySlug, getContentSlugs } from '@/lib/markdown';
 import Link from 'next/link';
 import Image from 'next/image';
-import { locales, resolveLocale, messagesByLocale } from '@/i18n';
+import { setRequestLocale } from 'next-intl/server';
+import { defaultLocale, format, locales, resolveLocale, messagesByLocale, type Locale } from '@/i18n';
+import { chromeProps, hreflangAlternates } from '@/lib/localized-links';
 import { Navigation, SiteFooter, EnhancedContent, TableOfContents } from '@/components';
 import { LEGACY_REDIRECTS, OG_IMAGE, ORG_NAME, SITE_NAME, absoluteUrl } from '@/lib/site';
 
@@ -15,7 +17,9 @@ export function generateStaticParams() {
   const params: { locale: string; slug: string[] }[] = [];
 
   locales.forEach((locale) => {
-    const slugs = [...getContentSlugs(locale), ...Object.keys(LEGACY_REDIRECTS)];
+    // Legacy flat URLs only ever existed in English.
+    const legacy = locale === defaultLocale ? Object.keys(LEGACY_REDIRECTS) : [];
+    const slugs = [...getContentSlugs(locale), ...legacy];
     slugs.forEach((slug) => {
       // Split nested slugs into array segments
       params.push({ locale, slug: slug.split('/') });
@@ -30,11 +34,16 @@ function humanize(segment: string): string {
   return words.charAt(0).toUpperCase() + words.slice(1);
 }
 
+function sectionName(segment: string, locale: Locale): string {
+  const sections: Record<string, string> = messagesByLocale[locale].page.sections;
+  return sections[segment] ?? humanize(segment);
+}
+
 export async function generateMetadata({ params }: { params: PageParams }): Promise<Metadata> {
   const { locale, slug } = await params;
   const resolvedLocale = resolveLocale(locale);
   const slugPath = slug.join('/');
-  const target = LEGACY_REDIRECTS[slugPath];
+  const target = resolvedLocale === defaultLocale ? LEGACY_REDIRECTS[slugPath] : undefined;
 
   if (target) {
     return {
@@ -47,17 +56,18 @@ export async function generateMetadata({ params }: { params: PageParams }): Prom
   if (!content) return {};
 
   const path = `/${resolvedLocale}/${slugPath}`;
+  const { site } = messagesByLocale[resolvedLocale];
   return {
     title: content.title,
     description: content.description,
-    alternates: { canonical: path },
+    alternates: { canonical: path, languages: hreflangAlternates(`/${slugPath}`) },
     openGraph: {
       type: 'article',
       url: path,
       title: content.title,
       description: content.description,
       siteName: SITE_NAME,
-      locale: resolvedLocale,
+      locale: site.ogLocale,
       images: [OG_IMAGE],
       ...(content.date ? { modifiedTime: new Date(content.date).toISOString() } : {}),
     },
@@ -77,10 +87,12 @@ export default async function ContentPage({
 }) {
   const { locale, slug } = await params;
   const resolvedLocale = resolveLocale(locale);
+  setRequestLocale(resolvedLocale);
+  const m = messagesByLocale[resolvedLocale];
   // Join the slug array back into a path string
   const slugPath = slug.join('/');
 
-  const legacyTarget = LEGACY_REDIRECTS[slugPath];
+  const legacyTarget = resolvedLocale === defaultLocale ? LEGACY_REDIRECTS[slugPath] : undefined;
   if (legacyTarget) {
     // A static host can't send HTTP 301s, so render a meta-refresh page
     // (works without JavaScript) that points at the canonical URL.
@@ -90,14 +102,14 @@ export default async function ContentPage({
       <main className="max-w-xl mx-auto p-8 text-center">
         <meta httpEquiv="refresh" content={`0; url=${targetHref}`} />
         <p>
-          This page has moved to <Link href={target} className="text-link">{target}</Link>.
+          {m.page.moved} <Link href={target} className="text-link">{target}</Link>.
         </p>
       </main>
     );
   }
 
   const content = await getContentBySlug(slugPath, resolvedLocale);
-  const { nav, site } = messagesByLocale[resolvedLocale];
+  const chrome = chromeProps(resolvedLocale, `/${slugPath}`);
 
   if (!content) {
     notFound();
@@ -107,9 +119,9 @@ export default async function ContentPage({
 
   const pageUrl = absoluteUrl(`/${resolvedLocale}/${slugPath}`);
   const breadcrumbItems = [
-    { name: 'Home', url: absoluteUrl(`/${resolvedLocale}`) },
+    { name: m.page.home, url: absoluteUrl(`/${resolvedLocale}`) },
     ...slug.map((segment, i) => ({
-      name: i === slug.length - 1 ? content.title : humanize(segment),
+      name: i === slug.length - 1 ? content.title : sectionName(segment, resolvedLocale),
       url: absoluteUrl(`/${resolvedLocale}/${slug.slice(0, i + 1).join('/')}`),
     })),
   ];
@@ -138,7 +150,7 @@ export default async function ContentPage({
     },
   ];
 
-  const section = slug.length > 1 && contentExists(slug[0], resolvedLocale) ? { name: humanize(slug[0]), href: `/${resolvedLocale}/${slug[0]}` } : null;
+  const section = slug.length > 1 && contentExists(slug[0], resolvedLocale) ? { name: sectionName(slug[0], resolvedLocale), href: `/${resolvedLocale}/${slug[0]}` } : null;
 
   return (
     <div className="min-h-screen bg-paper">
@@ -146,13 +158,13 @@ export default async function ContentPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
       />
-      <Navigation locale={resolvedLocale} siteTitle={site.title} nav={nav} showActiveState={true} />
+      <Navigation {...chrome.navigation} showActiveState={true} />
 
       {/* Page header */}
       <header className="border-b border-line">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-14 md:pt-24 md:pb-20">
-          <nav aria-label="Breadcrumb" className="eyebrow flex flex-wrap gap-2">
-            <Link href={`/${resolvedLocale}`} className="hover:text-accent">Home</Link>
+          <nav aria-label={m.page.breadcrumb} className="eyebrow flex flex-wrap gap-2">
+            <Link href={`/${resolvedLocale}`} className="hover:text-accent">{m.page.home}</Link>
             {section && (
               <>
                 <span aria-hidden="true">/</span>
@@ -168,9 +180,9 @@ export default async function ContentPage({
           )}
           {content.date && (
             <p className="mt-6 text-sm text-muted">
-              Last updated{' '}
+              {m.page.lastUpdated}{' '}
               <time dateTime={content.date}>
-                {new Date(content.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+                {new Date(content.date).toLocaleDateString(m.page.dateLocale, { day: 'numeric', month: 'long', year: 'numeric' })}
               </time>
             </p>
           )}
@@ -187,7 +199,7 @@ export default async function ContentPage({
                     ? `${basePath}${content.image}`
                     : content.image
                 }
-                alt={content.imageAlt || `${content.title} illustration`}
+                alt={content.imageAlt || format(m.page.imageAlt, { title: content.title })}
                 fill
                 priority
                 className="object-cover"
@@ -199,10 +211,10 @@ export default async function ContentPage({
           </div>
           <div className="mt-20 pt-8 border-t border-ink flex flex-wrap gap-x-8 gap-y-4 justify-between">
             <Link href={section ? section.href : `/${resolvedLocale}`} className="text-link">
-              ← Back to {section ? section.name : 'home'}
+              {section ? format(m.page.backTo, { section: section.name }) : m.page.backHome}
             </Link>
             <Link href={`/${resolvedLocale}/take-action`} className="text-link">
-              What you can do →
+              {m.page.whatYouCanDo}
             </Link>
           </div>
         </article>
@@ -211,7 +223,7 @@ export default async function ContentPage({
         </aside>
       </main>
 
-      <SiteFooter locale={resolvedLocale} nav={nav} siteTitle={site.title} />
+      <SiteFooter {...chrome.footer} />
     </div>
   );
 }

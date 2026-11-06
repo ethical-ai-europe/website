@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export interface TableOfContentsProps {
   html: string;
@@ -20,6 +21,7 @@ interface Heading {
  * - Only shows if page has 3+ headings
  */
 export function TableOfContents({ html }: TableOfContentsProps) {
+  const t = useTranslations('toc');
   const [activeId, setActiveId] = useState<string>('');
   const [headings, setHeadings] = useState<Heading[]>([]);
 
@@ -106,8 +108,8 @@ export function TableOfContents({ html }: TableOfContentsProps) {
   };
 
   return (
-    <nav className="sticky top-28 max-h-[calc(100vh-9rem)] overflow-y-auto" aria-label="On this page">
-      <p className="eyebrow mb-4">On this page</p>
+    <nav className="sticky top-28 max-h-[calc(100vh-9rem)] overflow-y-auto" aria-label={t('label')}>
+      <p className="eyebrow mb-4">{t('label')}</p>
       <ul className="border-l border-line text-[15px]">
         {headings.map(({ id, text, level }) => (
           <li key={id}>
