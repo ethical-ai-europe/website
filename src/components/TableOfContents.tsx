@@ -106,28 +106,26 @@ export function TableOfContents({ html }: TableOfContentsProps) {
   };
 
   return (
-    <nav className="hidden xl:block fixed right-8 top-32 w-64 max-h-[calc(100vh-10rem)] overflow-y-auto">
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border border-gray-200 dark:border-gray-700">
-        <h2 className="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
-          On This Page
-        </h2>
-        <ul className="space-y-2 text-sm">
-          {headings.map(({ id, text, level }) => (
-            <li key={id} style={{ paddingLeft: level === 3 ? '1rem' : '0' }}>
-              <button
-                onClick={() => handleClick(id)}
-                className={`text-left w-full py-1 transition-colors hover:text-blue-600 dark:hover:text-blue-400 ${
-                  activeId === id
-                    ? 'text-blue-600 dark:text-blue-400 font-medium'
-                    : 'text-gray-600 dark:text-gray-400'
-                }`}
-              >
-                {text}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
+    <nav className="sticky top-28 max-h-[calc(100vh-9rem)] overflow-y-auto" aria-label="On this page">
+      <p className="eyebrow mb-4">On this page</p>
+      <ul className="border-l border-line text-[15px]">
+        {headings.map(({ id, text, level }) => (
+          <li key={id}>
+            <button
+              onClick={() => handleClick(id)}
+              className={`-ml-px block w-full text-left border-l py-1.5 transition-colors ${
+                level === 3 ? 'pl-7' : 'pl-4'
+              } ${
+                activeId === id
+                  ? 'border-accent text-ink'
+                  : 'border-transparent text-muted hover:text-ink'
+              }`}
+            >
+              {text}
+            </button>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 }

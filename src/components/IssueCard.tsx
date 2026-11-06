@@ -8,74 +8,53 @@ export interface IssueStats {
 export interface IssueCardProps {
   title: string;
   description: string;
-  icon: string;
+  /** Short outcome line shown in ink below the description. */
+  outcome?: string;
+  /** Kept for backwards compatibility; not rendered in the editorial layout. */
+  icon?: string;
   href: string;
+  /** Position in a numbered grid (1-based). */
+  index?: number;
   stats?: IssueStats[];
 }
 
-export function IssueCard({
-  title,
-  description,
-  icon,
-  href,
-  stats,
-}: IssueCardProps) {
+export function IssueCard({ title, description, outcome, href, index, stats }: IssueCardProps) {
   return (
-    <Link
-      href={href}
-      className="group block bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 overflow-hidden focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-    >
-      <article className="p-6">
-        <div className="flex items-start gap-4">
-          <span
-            className="text-3xl flex-shrink-0"
-            role="img"
-            aria-hidden="true"
-          >
-            {icon}
-          </span>
-          <div className="flex-1">
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-              {title}
-            </h3>
-            <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
-              {description}
-            </p>
-            {stats && stats.length > 0 && (
-              <div className="flex flex-wrap gap-4 pt-3 border-t border-gray-100 dark:border-gray-700">
-                {stats.map((stat, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-lg font-bold text-blue-600 dark:text-blue-400">
-                      {stat.value}
-                    </div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-        <div className="mt-4 flex items-center text-blue-600 dark:text-blue-400 text-sm font-medium group-hover:text-blue-700 dark:group-hover:text-blue-300">
-          Learn more
-          <svg
-            className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </div>
-      </article>
-    </Link>
+    <article className="flex flex-col border-t border-ink pt-6">
+      {index !== undefined && (
+        <span className="text-sm font-semibold text-sage tabular-nums">
+          {String(index).padStart(2, '0')}
+        </span>
+      )}
+      <h3 className="mt-4 font-serif text-[1.75rem] leading-tight text-ink">
+        <Link href={href} className="hover:text-accent transition-colors">
+          {title}
+        </Link>
+      </h3>
+      <p className="mt-4 text-muted">{description}</p>
+      {outcome && <p className="mt-4 font-semibold text-ink">{outcome}</p>}
+      {stats && stats.length > 0 && (
+        <dl className="mt-5 flex flex-wrap gap-6">
+          {stats.map((stat) => (
+            <div key={stat.label}>
+              <dt className="text-xs text-muted">{stat.label}</dt>
+              <dd className="font-serif text-2xl text-ink">{stat.value}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
+      <Link href={href} className="text-link mt-6 self-start inline-flex items-center gap-2" aria-label={`Read more: ${title}`}>
+        Read more <ArrowUpRight />
+      </Link>
+    </article>
+  );
+}
+
+export function ArrowUpRight({ className = 'h-3.5 w-3.5' }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+      <path d="M5 11L11 5M6 5h5v5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }
 
