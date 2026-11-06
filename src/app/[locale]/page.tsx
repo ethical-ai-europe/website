@@ -3,8 +3,45 @@ import Link from 'next/link';
 import { resolveLocale, messagesByLocale } from '@/i18n';
 import { Navigation, FooterNavigation, IssueCard, StoryCard } from '@/components';
 import { PersonaSelector } from '@/components/PersonaSelector';
+import type { Metadata } from 'next';
+import { OG_IMAGE, ORG_GITHUB, ORG_NAME, SITE_DESCRIPTION, SITE_NAME, absoluteUrl } from '@/lib/site';
 
 export const dynamic = 'force-static';
+
+export const metadata: Metadata = {
+  alternates: { canonical: '/en' },
+  // openGraph is replaced (not merged) per segment, so restate the defaults.
+  openGraph: {
+    type: 'website',
+    url: '/en',
+    siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    locale: 'en',
+    images: [OG_IMAGE],
+  },
+};
+
+const homeJsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: ORG_NAME,
+    alternateName: SITE_NAME,
+    url: absoluteUrl('/en'),
+    sameAs: [ORG_GITHUB],
+    areaServed: 'EU',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: absoluteUrl('/en'),
+    inLanguage: 'en',
+    publisher: { '@type': 'Organization', name: ORG_NAME },
+  },
+];
 
 export default function HomePage({
   params,
@@ -18,6 +55,10 @@ export default function HomePage({
   
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd).replace(/</g, '\\u003c') }}
+      />
       {/* Navigation */}
       <Navigation 
         locale={resolvedLocale} 
@@ -149,9 +190,6 @@ export default function HomePage({
               category="Workplace"
               href={withLocale('/stories/algorithm-said-no')}
             />
-            <p className="text-center text-gray-500 dark:text-gray-400 text-sm mt-3 italic">
-              Coming soon
-            </p>
           </div>
         </div>
 
