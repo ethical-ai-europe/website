@@ -34,6 +34,10 @@ export const metadata: Metadata = {
     images: [OG_IMAGE.url],
   },
   robots: { index: true, follow: true },
+  verification: {
+    // Bing Webmaster Tools ownership (also verified via public/BingSiteAuth.xml)
+    other: { 'msvalidate.01': 'AC963FA281BEB94DCD1E6155794C08F4' },
+  },
 };
 
 // This is just a root layout that doesn't render anything
