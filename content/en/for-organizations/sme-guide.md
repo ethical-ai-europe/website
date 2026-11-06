@@ -22,7 +22,7 @@ You don't need a legal team or a dedicated compliance department. You need to un
 Whatever AI you use, these apply now:
 
 1. **No prohibited AI.** For example, no AI that reads employees' or job candidates' emotions (banned at work since February 2025, except for medical or safety reasons).
-2. **AI literacy.** You must *take measures to support* AI literacy among your staff. That means practical steps like a short training session, written guidelines on which tools to use and how, and a person staff can ask. You don't have to guarantee any particular level of expertise.
+2. **AI literacy.** You must *take measures to support* AI literacy among your staff. That means practical steps like a short training session, written guidelines on which tools to use and how, and a person staff can ask. You don't have to guarantee any particular level of expertise. (Need a starting point? Training providers such as [aitrainer.dk](https://aitrainer.dk), run by this site's founder, offer short practical courses.)
 3. **Transparency** (since 2 August 2026) if you use AI with customers or the public: tell people when they are talking to a chatbot, label deepfakes, and label AI-generated text published to inform the public on matters of public interest (unless a person has reviewed it and takes editorial responsibility). Ordinary marketing copy is generally not covered.
 4. **From 2 December 2026:** a new ban on AI that creates intimate or sexually explicit images of real people without consent. Make sure no tool you use or offer can be used for this.
 

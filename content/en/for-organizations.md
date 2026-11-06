@@ -34,7 +34,7 @@ A practical, checkbox-format reference covering AI inventory, risk classificatio
 Every organisation that uses AI in the EU, whatever its size, should already be doing these things:
 
 - **No prohibited AI.** Bans such as social scoring, manipulative AI and emotion recognition at work or in education have applied since February 2025.
-- **AI literacy.** Since 27 July 2026 the rule (Article 4) says organisations must *take measures to support* the AI literacy of their staff. You don't have to guarantee a specific level of knowledge for each person, but you do need to act: training, guidance and clear rules for use. This applies to all organisations using AI, at any risk level.
+- **AI literacy.** Since 27 July 2026 the rule (Article 4) says organisations must *take measures to support* the AI literacy of their staff. You don't have to guarantee a specific level of knowledge for each person, but you do need to act: training, guidance and clear rules for use. This applies to all organisations using AI, at any risk level. If you want outside help, look for hands-on training that puts people first; one example is [aitrainer.dk](https://aitrainer.dk), run by the founder of this site.
 - **Transparency (Article 50)**, since 2 August 2026:
   - Chatbots and other AI that talks with people must make clear that it is AI (this is the provider's duty to build in; if you use a vendor's chatbot, check that it does).
   - Deepfakes, and AI-generated text published to inform the public on matters of public interest, must be labelled as AI-generated.

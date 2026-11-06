@@ -177,7 +177,7 @@ export default async function ContentPage({
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 grid gap-12 xl:grid-cols-[minmax(0,46rem)_16rem] xl:justify-between">
+      <main id="main-content" className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 grid gap-12 xl:grid-cols-[minmax(0,46rem)_16rem] xl:justify-between">
         <article className="min-w-0">
           {content.image && (
             <div className="relative mb-12 w-full aspect-[16/7] overflow-hidden rounded-lg">

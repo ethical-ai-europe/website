@@ -120,6 +120,6 @@ Every push to `main` builds and deploys to GitHub Pages automatically. See also 
 
 ## Who's behind this
 
-**European Center for Ethical and Human Centric AI.** An open initiative from Denmark, working for a Europe where AI is used responsibly and people stay at the centre.
+**European Center for Ethical and Human Centric AI.** Initiated by Stefano Vincenti ([aitrainer.dk](https://aitrainer.dk)), who trains organisations to use AI with people first. An open initiative from Denmark, working for a Europe where AI is used responsibly and people stay at the centre.
 
 Licensed under [MIT](LICENSE).

@@ -40,6 +40,13 @@ export function Navigation({ locale, siteTitle, nav, showActiveState = false }: 
   };
 
   return (
+    <>
+    <a
+      href="#main-content"
+      className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"
+    >
+      Skip to content
+    </a>
     <nav
       className="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur supports-[backdrop-filter]:bg-paper/85"
       role="navigation"
@@ -111,6 +118,7 @@ export function Navigation({ locale, siteTitle, nav, showActiveState = false }: 
         </div>
       )}
     </nav>
+    </>
   );
 }
 

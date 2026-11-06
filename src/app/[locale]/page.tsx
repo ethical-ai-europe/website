@@ -31,6 +31,7 @@ const homeJsonLd = [
     alternateName: SITE_NAME,
     url: absoluteUrl('/en'),
     sameAs: [ORG_GITHUB],
+    founder: { '@type': 'Person', name: 'Stefano Vincenti', url: 'https://aitrainer.dk' },
     areaServed: 'EU',
   },
   {
@@ -76,7 +77,7 @@ export default function HomePage({
       />
       <Navigation locale={resolvedLocale} siteTitle={site.title} nav={nav} />
 
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="relative overflow-hidden">
           <HeroLines className="pointer-events-none absolute -right-24 top-10 hidden md:block h-[560px] w-[560px] text-sage-light" />
