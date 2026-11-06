@@ -1,15 +1,17 @@
 ---
 title: "AI governance principles"
-description: "Practical principles for building and deploying AI systems responsibly"
-date: "2025-12-25"
+description: "Practical, human-first principles for building and using AI systems responsibly"
+date: "2026-11-06"
 language: "en"
 ---
 
 # AI governance principles
 
-This page summarizes commonly used governance principles for AI systems. The goal is to provide a practical checklist for teams building, deploying, procuring, or auditing AI—across both regulated and non-regulated use cases.
+This page summarises commonly used governance principles for AI systems. The goal is a practical checklist for teams building, deploying, buying or auditing AI, whether or not a specific law applies to the use case.
 
-These principles complement legal requirements (e.g., the EU AI Act, GDPR, sector rules). They are not a substitute for legal advice.
+The starting point is simple: AI can serve people, not just profit. A system that saves money but treats people unfairly is not a success. The human factor is key, because people decide what a system is for, check its output and take responsibility for the result. Ethics, in this sense, is practical: it shows up in everyday choices about data, testing, oversight and how you answer when someone asks "why?".
+
+These principles complement legal requirements such as the EU AI Act, GDPR and sector rules. Some of them are already legal duties: for example, every organisation using AI must take measures to support the AI literacy of its staff, and the AI Act's transparency rules have applied since 2 August 2026. See the [AI Act timeline](/en/timeline) for what applies when. This page is not legal advice.
 
 ## Core principles (practical)
 
@@ -21,15 +23,16 @@ These principles complement legal requirements (e.g., the EU AI Act, GDPR, secto
 - Provide escalation paths for uncertain or high-impact cases
 - Ensure operators can intervene, pause, or roll back when needed
 - Make accountability explicit (who owns outcomes)
+- Train the people doing the oversight: human review only works if reviewers understand the system's limits and feel free to disagree with it
 
 ### 2) Robustness, safety, and security
 
-**Design for predictable behavior under real-world conditions.**
+**Design for predictable behaviour under real-world conditions.**
 
-- Test against realistic inputs, edge cases, and distribution shift
+- Test against realistic inputs, edge cases, and distribution shift (when real-world data drifts away from what the system was trained on)
 - Protect against common threats (prompt injection, data poisoning, abuse)
 - Define reliability targets and monitor them (accuracy, latency, availability)
-- Plan failure modes (safe defaults, graceful degradation)
+- Plan failure modes (safe defaults, graceful degradation: failing safely rather than suddenly)
 
 ### 3) Privacy and data governance
 
@@ -45,7 +48,7 @@ These principles complement legal requirements (e.g., the EU AI Act, GDPR, secto
 **Make the system’s capabilities, limits, and intended use understandable.**
 
 - Document what the system is for (and what it is not for)
-- Provide user-facing disclosures where appropriate
+- Tell people when they are dealing with AI (for chatbots and deepfakes this is a legal duty under the AI Act since 2 August 2026)
 - Maintain technical documentation for auditors and maintainers
 - Enable traceability (inputs → outputs → versions → decisions)
 
@@ -55,6 +58,7 @@ These principles complement legal requirements (e.g., the EU AI Act, GDPR, secto
 
 - Evaluate performance across relevant user groups and contexts
 - Use mitigations where disparities are found (data, model, or process)
+- If you need sensitive data to detect and correct bias, the amended AI Act (Article 4a) allows this only under strict safeguards, including deletion afterwards
 - Ensure accessibility is considered in UX and outputs
 - Monitor for drift and emergent unfair outcomes after deployment
 
@@ -72,7 +76,7 @@ These principles complement legal requirements (e.g., the EU AI Act, GDPR, secto
 
 - Define ownership: product, engineering, legal, compliance, and operations
 - Create incident response playbooks (harm, security, policy violations)
-- Offer channels for complaints/appeals where appropriate
+- Offer channels for complaints and appeals, and make sure a real person answers them
 - Keep logs and documentation sufficient for post-incident analysis
 
 ## How to implement (lifecycle)
@@ -90,19 +94,21 @@ These principles complement legal requirements (e.g., the EU AI Act, GDPR, secto
 ### Deploy
 - Validate against acceptance criteria
 - Roll out with monitoring and rollback plans
-- Provide user guidance and operator training
+- Provide user guidance and operator training (this also supports your AI literacy duty)
 
 ### Operate
 - Monitor performance and incidents
 - Re-evaluate after significant changes (data/model/policy)
 - Periodically audit and update documentation
 
-## References (starting points)
+## Further frameworks
 
 - OECD AI Principles
 - UNESCO Recommendation on the Ethics of AI
 - NIST AI Risk Management Framework (AI RMF)
 - ISO/IEC AI management and risk standards (where applicable)
+
+More links are collected on the [resources page](/en/resources).
 
 ## Questions to use in reviews
 
@@ -112,3 +118,10 @@ These principles complement legal requirements (e.g., the EU AI Act, GDPR, secto
 4) What data is used, and is it appropriate and lawful for the purpose?
 5) What level of transparency is required for users, auditors, and operators?
 6) Who is accountable, and what is the escalation/redress path?
+7) Who are the people affected, and would they consider the outcome fair if they could see how it was reached?
+
+## Sources
+
+- [AI Act, Regulation (EU) 2024/1689 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+- [Digital Omnibus on AI, Regulation (EU) 2026/1744 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)
+- [European Commission: AI Act policy page](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)

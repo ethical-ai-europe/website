@@ -1,7 +1,7 @@
 ---
 title: "AI in Healthcare"
 description: "Your rights when AI is used in medical diagnosis, treatment, and care"
-date: "2025-12-25"
+date: "2026-11-06"
 language: "en"
 ---
 
@@ -12,7 +12,7 @@ AI is increasingly used in healthcare—from reading medical scans to recommendi
 ## How AI Is Used in Healthcare
 
 ### Diagnosis Support
-AI analyzes medical images like X-rays, MRIs, and CT scans to help detect conditions such as cancer, diabetic retinopathy, or fractures. These systems assist doctors—they don't replace them.
+AI analyzes medical images like X-rays, MRIs, and CT scans to help detect conditions such as cancer, diabetic retinopathy, or fractures. These systems are meant to assist doctors, not replace them.
 
 ### Triage and Prioritization
 AI helps determine which patients need urgent attention, whether in emergency departments, appointment scheduling, or reviewing test results.
@@ -46,9 +46,11 @@ AI accelerates the identification of potential treatments and helps personalize 
 - **Privacy concerns**: Health data is sensitive and must be protected
 - **Uneven regulation**: Some AI health tools fall outside medical device oversight
 
-## EU AI Act: Medical AI Is High-Risk
+## What the Law Says Today (November 2026)
 
-Under the EU AI Act, AI systems used as safety components of medical devices, or that are medical devices themselves, are classified as **high-risk**. This means:
+### Medical AI under the EU AI Act: high-risk, but later
+
+Under the EU AI Act (the European Union's law on artificial intelligence), AI systems used as safety components of medical devices, or that are medical devices themselves, are classified as **high-risk** when the device must be checked by an independent body (a "notified body") under the EU medical device rules, which is the case for most diagnostic and treatment software. The extra AI Act requirements for this kind of AI were due in August 2027. In July 2026 the EU postponed them, and they now apply from **2 August 2028**. When they apply, they will require:
 
 ✓ **Rigorous testing**: AI must be validated for accuracy and safety
 
@@ -56,33 +58,49 @@ Under the EU AI Act, AI systems used as safety components of medical devices, or
 
 ✓ **Human oversight**: Healthcare professionals must remain in control of decisions
 
-✓ **Transparency**: Patients and providers should understand AI's role
+✓ **Transparency**: Hospitals and clinicians using the AI must receive clear instructions on its role and limits
 
 ✓ **Post-market monitoring**: Ongoing surveillance for problems after deployment
 
-✓ **CE marking**: Medical AI devices must meet EU standards
+✓ **CE marking**: The EU safety mark showing a product meets EU standards
 
-## Your Rights as a Patient
+In the meantime, AI that counts as a medical device is still covered by the EU's existing medical device safety rules.
 
-When AI is involved in your healthcare, you have important rights:
+AI used to decide access to essential services, such as public healthcare, can also be high-risk under a different category. Those rules now apply from **2 December 2027**. Emergency patient triage systems and AI used to price life and health insurance are also high-risk from 2 December 2027.
 
-### Right to Informed Consent
-You should be told when AI is used in your diagnosis or treatment. Consent to care includes understanding how decisions are made.
+### What already protects you now
 
-### Right to Human Oversight
+✓ **Chatbots must say they are AI** (since 2 August 2026). A symptom-checker or mental health chatbot must make clear you are talking to a machine, unless that is already obvious. See [When AI must tell you it's AI](/en/rights/ai-transparency).
+
+✓ **Banned practices** (since February 2025), such as AI that manipulates people or exploits their vulnerabilities in ways that cause or are likely to cause significant harm.
+
+✓ **Your health data rights (GDPR)**. Health data gets extra protection. You can access your records, and you have the right to a meaningful explanation and human review of significant decisions made solely by a machine.
+
+✓ **New product liability rules** (for products placed on the market from 9 December 2026). The updated EU Product Liability Directive covers software, including AI. In plain terms: if a defective AI product released after that date causes you injury or certain other damage, it becomes easier to claim compensation from the company responsible. Older products remain under the previous rules.
+
+**The bottom line:** the delay means fewer AI Act duties for medical AI right now, but your doctor remains responsible for your care. AI can support a diagnosis; it should not replace the conversation with a human professional. If something feels off, ask your doctor to explain it in their own words.
+
+## What You Can Expect and Ask For as a Patient
+
+Your rights as a patient come mainly from national patient-rights law and the GDPR. Details vary by country, but you can generally expect the following:
+
+### Informed Consent
+You can ask whether AI was used in your diagnosis or treatment. Informed consent to care means understanding the basis for important decisions.
+
+### Human Oversight
 AI should assist healthcare professionals, not replace them. A qualified human should review AI-influenced decisions about your care.
 
-### Right to Second Opinions
-If you're uncertain about an AI-assisted diagnosis or recommendation, you can seek another medical opinion.
+### Second Opinions
+If you're uncertain about an AI-assisted diagnosis or recommendation, you can ask about getting another medical opinion. Whether and how this is covered depends on your national health system.
 
-### Right to Explanation
+### Explanation
 You can ask how a recommendation was reached, including what role AI played.
 
 ### Right to Your Medical Records
 You have the right to access your health data, including information generated by AI systems.
 
-### Right to Object
-If you have concerns about AI being used in your care, discuss this with your healthcare provider.
+### Raising Concerns
+If you have concerns about AI being used in your care, say so and discuss this with your healthcare provider. You can ask whether an alternative is possible.
 
 ## Questions to Ask Your Doctor
 
@@ -119,6 +137,7 @@ The mental health app market has grown rapidly, but oversight hasn't kept pace:
 - Unclear data sharing practices
 - No human professional involvement for serious concerns
 - Chatbots presented as equivalent to therapy
+- Chatbots that don't make clear you are talking to an AI (required since August 2026)
 
 ✓ **Better practices:**
 - Apps that complement (not replace) professional care
@@ -143,10 +162,12 @@ Healthcare providers should be especially vigilant about AI accuracy for these g
 
 AI is sometimes used to approve or deny coverage, authorize treatments, or prioritize access. These decisions:
 
-- Should have meaningful human review
+- Should have meaningful human review (under the GDPR you can ask for it when a significant decision is made solely by a machine)
 - Can be appealed
-- Must be explained to patients
+- Must be explained to patients in a meaningful way, not with jargon or code
 - Cannot discriminate against protected groups
+
+Where AI decides access to essential public or private services, such as public healthcare or benefits, the AI Act's high-risk rules apply from 2 December 2027. Your GDPR and anti-discrimination rights apply already.
 
 ## What Healthcare Providers Must Do
 
@@ -154,6 +175,7 @@ If you work in healthcare, your obligations include:
 
 **Understand the tools you use**
 - Know when AI is part of your workflow
+- Take part in the AI literacy measures your organisation must take (an AI Act duty since February 2025)
 - Understand the limitations of AI systems
 - Stay informed about system updates and changes
 
@@ -185,6 +207,8 @@ If you work in healthcare, your obligations include:
 - Seek second opinions if you have concerns
 - Report problems to healthcare providers and regulators
 - Access your medical records to understand what's documented
+- Ask to speak to a person if you are dealing with a chatbot and need real help
+- If an AI product harmed you, keep records: for products placed on the market from 9 December 2026, new EU product liability rules cover software and AI
 
 **As a healthcare worker:**
 - Advocate for transparency about AI tools in your workplace
@@ -201,3 +225,10 @@ If you work in healthcare, your obligations include:
 ---
 
 [← Back to AI in Daily Life](/en/daily-life) | [AI in Hiring →](/en/daily-life/hiring)
+
+## Sources
+
+- [EU AI Act, Regulation (EU) 2024/1689 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+- [Amending regulation (EU) 2026/1744, the Digital Omnibus on AI (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)
+- [Council of the EU: AI Act timeline](https://www.consilium.europa.eu/en/policies/artificial-intelligence-act/timeline-artificial-intelligence/)
+- [European Commission: Transparency obligations under Article 50 (FAQ)](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)

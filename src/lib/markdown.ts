@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkGfm from 'remark-gfm';
 
 export interface MarkdownContent {
   slug: string;
@@ -113,6 +114,7 @@ export async function getContentBySlug(
 
     // Convert markdown to HTML
     const processedContent = await remark()
+      .use(remarkGfm) // tables, task lists, strikethrough, autolinks
       .use(html, { sanitize: false })
       .process(content);
     const contentHtml = withBasePath(processedContent.toString());

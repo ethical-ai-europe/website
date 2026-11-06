@@ -1,7 +1,7 @@
 ---
 title: "AI in Public Services"
 description: "Understanding when government AI makes decisions that affect your life"
-date: "2025-12-25"
+date: "2026-11-06"
 language: "en"
 ---
 
@@ -24,7 +24,7 @@ AI identifies returns for audit, detects potential fraud, and automates assessme
 Risk assessment tools predict which families may be at risk for child abuse or neglect, informing caseworker decisions.
 
 ### Predictive Policing
-Algorithms identify "hot spots" for crime or individuals deemed high-risk, directing police resources and attention.
+Algorithms identify "hot spots" for crime or individuals deemed high-risk, directing police resources and attention. Since February 2025, the AI Act bans AI that predicts whether a specific person will commit a crime based solely on profiling or personality traits. Place-based "hot spot" tools are not banned, but they raise serious concerns.
 
 ### Immigration and Border Control
 AI is used in visa applications, asylum decisions, and border surveillance, including facial recognition and document verification.
@@ -46,17 +46,16 @@ Public sector AI is especially consequential because:
 
 ### Fraud Detection Errors
 
-One of the most notorious examples occurred in the Netherlands, where an AI fraud detection system wrongly accused thousands of families of welfare fraud. The scandal ("toeslagenaffaire"):
+One of the most notorious examples occurred in the Netherlands. In the childcare benefits scandal ("toeslagenaffaire"), the Tax Administration wrongly treated tens of thousands of parents as fraudsters. A risk-scoring algorithm that used nationality as a risk indicator helped select families for scrutiny, and harsh rules and practices did the rest. The scandal:
 
 - Devastated families who had to repay benefits they were entitled to
-- Used discriminatory indicators including dual nationality
+- Used discriminatory indicators, including nationality; the Dutch Data Protection Authority later fined the Tax Administration
 - Lacked meaningful human oversight
 - Led to the resignation of the Dutch government in 2021
 
 This is not an isolated case. Similar problems have emerged in:
-- Australian "Robodebt" scheme (debt recovery based on faulty calculations)
-- UK Universal Credit automated decisions
-- Multiple U.S. state benefit systems
+- Australia's "Robodebt" scheme (automated debt notices based on unlawful income averaging, condemned by a Royal Commission in 2023)
+- UK Universal Credit, where automated calculations caused documented hardship
 
 ### Discriminatory Outcomes
 
@@ -71,68 +70,84 @@ The efficiency AI offers can come at the cost of fairness—and government has a
 
 ## EU AI Act: Public Sector AI Protections
 
-The EU AI Act takes special care with government AI use:
+The EU AI Act (the European Union's law on artificial intelligence) takes special care with government AI use. It entered into force in 2024 and its rules apply in stages. In July 2026 the EU postponed some dates. Here is where things stand in November 2026.
 
-### High-Risk Categories
+### High-Risk Categories (rules apply from 2 December 2027)
 
-The following public sector uses are classified as **high-risk** and subject to strict requirements:
+The following public sector uses are classified as **high-risk**. The strict requirements for them were originally due in August 2026; they now apply from **2 December 2027**. For high-risk systems that public authorities were already using before then, the final deadline to comply is **2 August 2030**.
 
-- AI in law enforcement (crime prediction, lie detection, risk assessment)
+- AI in law enforcement (for example assessing the risk that someone will become a victim or reoffend, when not based solely on profiling; lie detectors; evaluating evidence)
 - AI in migration, asylum, and border control
 - AI in education access decisions
-- AI in access to essential public services and benefits
-- AI in democratic processes
+- AI in access to essential public services and benefits (and private services such as credit scoring)
+- AI in justice and democratic processes
 
-### Prohibited Uses
+### Prohibited Uses (in force since February 2025)
 
-Some government AI applications are **banned entirely**:
+Some government AI applications are **banned entirely**, and these bans already apply:
 
-- Social scoring by public authorities
+- Social scoring
 - Untargeted scraping of facial images for recognition databases
-- Real-time remote biometric identification in public spaces (with limited exceptions)
-- AI that manipulates behavior or exploits vulnerabilities
+- Real-time remote biometric identification in public spaces by police (with limited exceptions)
+- AI that manipulates behavior or exploits vulnerabilities in ways that cause or are likely to cause significant harm
+- AI that sorts people by their biometric data (such as their face) to infer their race, political opinions, trade union membership, religion, sex life or sexual orientation
+- AI that predicts whether a specific person will commit a crime based solely on profiling or personality traits
+- Emotion recognition in workplaces and education (with narrow medical or safety exceptions)
 
-### Requirements for Permitted High-Risk Systems
+From **2 December 2026**, a new ban applies to AI that creates sexual or intimate images of real people without their consent. See [Intimate deepfakes](/en/rights/intimate-deepfakes).
 
-Government agencies using high-risk AI must:
+### Transparency (in force since 2 August 2026)
 
-✓ **Register in an EU database**: Public accountability for AI deployment
+If a government chatbot answers your questions, it must make clear that you are talking to an AI, unless that is already obvious. AI-generated deepfakes, and AI-generated text published to inform the public about matters of public interest, must be labelled. See [When AI must tell you it's AI](/en/rights/ai-transparency).
 
-✓ **Conduct conformity assessments**: Verify systems meet legal requirements
+### Requirements for Permitted High-Risk Systems (from 2 December 2027)
 
-✓ **Ensure human oversight**: Meaningful human involvement in decisions
+Once the high-risk rules apply, government agencies using high-risk AI must:
 
-✓ **Test for bias**: Check for discriminatory outcomes
+✓ **Register their use in an EU database**: Public accountability for AI deployment
 
-✓ **Maintain transparency**: Citizens should understand when AI is used
+✓ **Use only checked systems**: Only systems that have passed the provider's conformity assessment (the check that a system meets the legal requirements)
 
-✓ **Enable access to remedies**: Clear paths for appeal and redress
+✓ **Ensure human oversight**: Assign trained staff with real authority to oversee the system
+
+✓ **Monitor and keep logs**: Watch how the system performs and keep its records
+
+✓ **Inform people**: Tell people when high-risk AI is used in decisions about them
+
+✓ **Assess the impact on people's rights**: Carry out a "fundamental rights impact assessment" (a check of how the system could affect people's rights) before first use
+
+People affected will also gain a right to an explanation of the AI's role in such decisions (AI Act Article 86) and can complain to the market surveillance authority (the national body that enforces the AI Act). All of this applies from 2 December 2027.
+
+### What This Means for You Today
+
+The delay means that, for now, public authorities have fewer formal AI Act duties for systems like benefit or fraud-detection tools. But you are not unprotected. The bans and transparency rules apply already. Data protection law (GDPR) gives you rights when significant decisions are made solely by a machine, and administrative law and equality law still require fair, lawful and non-discriminatory decisions. Above all, a government decision should always have a responsible human behind it. **If a decision affects your livelihood, ask for a person to review it.**
 
 ## Your Rights When Government Uses AI
 
 ### Right to Know
 
-You have the right to know when AI is used in decisions about you. This includes:
+You have the right to be told when a significant decision about you is made solely by automated means (GDPR). National administrative law often also requires public bodies to give reasons for their decisions, whatever tools they use. From 2 December 2027, the AI Act adds duties for public bodies using high-risk AI to inform the people affected. This can include:
 
 - Eligibility determinations
 - Fraud risk assessments
 - Prioritization or scoring
-- Any automated component in decision-making
 
 Ask directly if you're not told.
 
 ### Right to Explanation
 
-You can request an explanation of:
+For significant decisions made solely by automated means, you have the right to a meaningful explanation. In other cases, you can still ask, and administrative law often requires reasons. You can request an explanation of:
 
 - What factors the AI considered
 - How your case was assessed
 - What data about you was used
 - Why you received a particular outcome
 
+This is backed by EU case law. In *SCHUFA* (C-634/21, 2023), the EU Court of Justice found that an automated score which strongly shapes a decision can itself count as an automated decision under GDPR Article 22. In *Dun & Bradstreet Austria* (C-203/22, 2025), it said you are entitled to a meaningful explanation of the procedure and principles actually used, so that you can understand and contest the outcome. Handing over a complex formula is not enough.
+
 ### Right to Human Review
 
-For significant decisions, you can request that a person reviews your case—not just rubber-stamps the AI output, but genuinely reconsiders.
+For significant decisions made solely by a machine, you can request that a person reviews your case: not just rubber-stamping the AI output, but genuinely reconsidering it.
 
 ### Right to Challenge
 
@@ -149,7 +164,7 @@ If AI has harmed you, you may be entitled to:
 
 - Correction of the decision
 - Compensation for damages
-- Assurance that errors are fixed for others
+- Possibly, changes to the system so the error is not repeated
 
 ## How to Challenge Automated Decisions
 
@@ -166,7 +181,7 @@ Ask the government agency in writing:
 > 3. What personal data about me was used in this process?
 > 4. What are the consequences of this processing for me?
 >
-> Please respond within one month as required by law.
+> Please respond within one month as required by law (extendable by up to two further months in complex cases).
 
 ### Step 2: Request Human Review
 
@@ -234,7 +249,9 @@ If you work in government and are involved with AI systems:
 
 ### Before Deployment
 
-- **Conduct impact assessments**: Evaluate effects on rights and vulnerable populations
+- **Conduct impact assessments**: Evaluate effects on rights and vulnerable populations (a fundamental rights impact assessment becomes mandatory for high-risk systems; the EU AI Office is to provide a template questionnaire)
+- **Build AI literacy**: Your organisation must already take steps to help staff understand AI (since February 2025)
+- **Check your inventory**: Systems already in use must comply with high-risk rules by 2 August 2030 at the latest; new ones from 2 December 2027
 - **Test for bias**: Ensure systems work fairly across all groups served
 - **Plan for oversight**: Design meaningful human involvement, not rubber-stamping
 - **Ensure transparency**: Can you explain the system to those affected?
@@ -303,3 +320,11 @@ Public servants have professional and ethical obligations that may require diffi
 ---
 
 [← Back to AI in Daily Life](/en/daily-life) | [Your AI Rights →](/en/rights)
+
+## Sources
+
+- [EU AI Act, Regulation (EU) 2024/1689 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+- [Amending regulation (EU) 2026/1744, the Digital Omnibus on AI (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)
+- [Court of Justice, Case C-634/21 SCHUFA](https://curia.europa.eu/juris/liste.jsf?num=C-634/21)
+- [Court of Justice, Case C-203/22 Dun & Bradstreet Austria](https://curia.europa.eu/juris/liste.jsf?num=C-203/22)
+- [European Commission: Transparency obligations under Article 50 (FAQ)](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)

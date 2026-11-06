@@ -1,192 +1,130 @@
 ---
 title: "Stay Informed"
-description: "AI is evolving fast—stay ahead with updates on your rights, policy changes, and action opportunities"
-date: "2025-12-25"
+description: "How to keep up with the EU AI Act and your rights, using official sources while our newsletter is still in planning."
+date: "2026-11-06"
 language: "en"
 ---
 
 # Stay Informed
 
-**AI is evolving fast—stay ahead.**
+**AI rules are changing. Here is how to keep up without the noise.**
 
-New AI systems are deployed every day. Regulations are being implemented. Enforcement actions are happening across Europe. To protect your rights and participate in shaping AI's future, you need to stay informed.
-
-Our newsletter cuts through the noise to bring you what matters: practical updates you can use, not just news you scroll past.
+The EU AI Act is being rolled out in phases, and it was amended in 2026. Some rules already apply, others were delayed, and guidance is still being published. Staying informed helps you know what you can ask for today, and helps organisations prepare for what is coming.
 
 ---
 
-## Subscribe to Our Newsletter
+## Newsletter: not available yet
 
-*Newsletter signup coming soon. In the meantime, [join our community](/en/take-action/community) to stay connected.*
+We would like to offer a short, practical newsletter, but **there is no newsletter or signup yet**. We will not collect email addresses until we can run it properly and protect your data.
 
-<!-- 
-Newsletter signup form placeholder:
+If you would like to see a newsletter, or want to help make one, tell us through a [GitHub improvement suggestion](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml).
 
-<form action="/subscribe" method="post">
-  <input type="email" name="email" placeholder="Your email address" required>
-  <button type="submit">Subscribe</button>
-</form>
--->
+### What we would aim to cover
 
-### What You'll Receive
+📰 **Plain-language digest**: what changed in the rules and what it means for people
 
-📰 **AI Rights Digest**: A curated summary of the most important developments affecting your rights
+🔧 **Practical tips**: updated templates and guidance on this site
 
-🔧 **Practical Tips**: Actionable advice you can use immediately—new templates, updated guidance, real examples
-
-📅 **Event Announcements**: Upcoming workshops, discussions, and community meetups
-
-🚨 **Action Alerts**: When your voice is needed—consultations, campaigns, urgent issues
-
-### How Often
-
-Choose what works for you:
-
-- **Weekly Brief** — Stay on top of fast-moving developments
-- **Monthly Roundup** — The essential updates without the overwhelm
-
-*You can change your preference or unsubscribe at any time.*
+🚨 **Opportunities to have your say**: public consultations from EU and national bodies
 
 ---
 
-## What We Cover
+## What is worth following
 
-### EU AI Act Implementation
+### EU AI Act implementation
 
-The world's first comprehensive AI law is being rolled out now. We track:
+The key dates and what they mean are on our [AI Act timeline](/en/timeline). Things to watch over the coming months:
 
-- **Deadlines and milestones** as requirements come into force
-- **Guidance documents** from EU authorities and national regulators
-- **Compliance developments** across sectors
-- **Emerging interpretations** of key provisions
+- **2 December 2026**: a new ban on AI that creates intimate images of real people without consent ("nudifier" apps)
+- **Final Commission guidelines on high-risk AI**: a draft was published in May 2026; the final version has not yet been adopted
+- **More harmonised standards**: the first one, on quality management, was cited in October 2026; others are still in progress
+- **National authorities**: many EU countries were late in naming who supervises the AI Act in their country
 
-### Enforcement Actions and Cases
+### Enforcement and court cases
 
-When regulators take action, we cover it:
+AI Act enforcement powers have applied since 2 August 2026. We are not aware of any AI Act fine having been imposed so far, and we will not report one until it is confirmed by an official source.
 
-- **Data protection authority decisions** on AI-related complaints
-- **Fines and sanctions** for violations
-- **Court cases** setting important precedents
-- **Patterns and trends** in enforcement
+Court rulings under GDPR already matter for AI decisions. For example, the EU Court of Justice has ruled that you have a right to a meaningful explanation of how an automated decision about you was reached, where the decision is made solely by automated means and has legal or similarly significant effects (Dun & Bradstreet Austria, C-203/22, February 2025). See the [right to explanation](/en/rights/right-to-explanation).
 
-### New AI Deployments
+### Related laws coming into effect
 
-AI is appearing in new places every day:
+- **Platform Work Directive**: EU countries must put it into national law by 2 December 2026. It gives platform workers rights on algorithmic management, including human review of automated decisions.
+- **Product Liability Directive**: applies to products placed on the market from 9 December 2026 and covers software, including AI.
+- **GDPR changes**: proposals to amend GDPR, including the rules on automated decisions, are still being negotiated. Nothing has changed yet.
 
-- **Workplace AI** — New monitoring and decision systems
-- **Public services** — Government AI affecting citizens
-- **Consumer products** — AI in apps and services you use
-- **High-risk applications** — AI in healthcare, education, finance
+### Community stories
 
-### Tools and Resources
-
-We share resources to help you take action:
-
-- **New templates and guides** as they're developed
-- **Updated legal information** as regulations evolve
-- **Recommended tools** for protecting your rights
-- **Lessons from the community** — what's working
-
-### Community Stories
-
-Real experiences from real people:
-
-- **How people exercised their rights** — what worked, what didn't
-- **Outcomes of complaints and challenges**
-- **Tips from others** navigating similar situations
-- **Victories worth celebrating**
+Real experiences help others. If you have challenged an AI-influenced decision, or tried to, you can [share your story](https://github.com/ethical-ai-europe/website/issues/new?template=share-a-story.yml). Please leave out personal data.
 
 ---
 
-## Sample Newsletter Content
+## Where to check for yourself
 
-Here's a taste of what you can expect:
+You do not need to wait for anyone's newsletter. These official sources publish updates directly:
 
----
-
-> ### This Week in AI Rights
->
-> **📢 Big news:** France's CNIL fined a major retailer €3.2M for using AI-based emotion recognition on employees without proper consent or transparency. This is one of the first significant fines under the new AI Act provisions. [What this means for workers →]
->
-> **📋 New resource:** We've updated our template letter for requesting information about workplace AI to reflect the latest CNIL guidance. [Get the updated template →]
->
-> **📅 Coming up:** Online workshop on "AI in Hiring: Your Rights as a Job Applicant" — Thursday 7pm CET. Free for all. [Register now →]
->
-> **💡 Tip of the week:** When you request human review of an AI decision, always ask for written confirmation of who conducted the review and what factors they considered. This creates accountability.
->
-> **🎉 Community win:** A reader in Germany successfully challenged an automated benefits decision after using our request template. The human review found the algorithm hadn't accounted for their updated circumstances. Benefits were reinstated with back-payment.
+- [European Commission: AI Act policy page](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) for guidelines, codes of practice and news
+- [AI Act Service Desk](https://ai-act-service-desk.ec.europa.eu/) for official answers to common questions
+- [Council of the EU: AI Act timeline](https://www.consilium.europa.eu/en/policies/artificial-intelligence-act/timeline-artificial-intelligence/) for the legislative steps
+- Your national data protection authority, for GDPR guidance and decisions in your country
 
 ---
 
 ## Our Privacy Commitment
 
-We take your data seriously. Here's what we do—and don't do—with your email:
+When we do launch a newsletter, these are the rules we will follow:
 
-### ✅ What We Do
+### ✅ What We Will Do
 
-- Send you the newsletter you signed up for
-- Use your email to provide account-related information
+- Send only the newsletter you signed up for
 - Store your email securely with appropriate protection
-- Promptly process unsubscribe requests
+- Process unsubscribe requests promptly
 
-### ❌ What We Don't Do
+### ❌ What We Won't Do
 
-- Sell your email to third parties
-- Share your email with advertisers
-- Send unsolicited promotional emails
-- Track your behavior across the web
+- Sell or share your email with advertisers or other third parties
+- Track your behaviour across the web
 - Keep your email after you unsubscribe
 
 ### Your Rights
 
-Under GDPR, you have the right to:
-- Access the data we hold about you
-- Correct inaccurate information
-- Request deletion of your data
-- Unsubscribe at any time
-
-Every email includes a one-click unsubscribe link. We honor all requests promptly.
+Under GDPR, you have the right to access, correct and delete the data we hold about you, and to unsubscribe at any time.
 
 ---
 
 ## Other Ways to Follow
 
-Not ready to subscribe? There are other ways to stay connected:
+### 💬 Contribute on GitHub
 
-### 🔗 RSS Feed
+- [Share a story](https://github.com/ethical-ai-europe/website/issues/new?template=share-a-story.yml)
+- [Suggest an improvement](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml)
+- [Community page](/en/take-action/community)
 
-For those who prefer RSS:
-- *RSS feed is planned for a future update. In the meantime, [join our community](/en/take-action/community) to stay connected.*
+### 🔗 RSS and social media
 
-### 💬 Community Updates
+Not available yet. We will add them here if and when they exist.
 
-Join our community for real-time discussion and updates:
-- [Join Our Community →](/en/take-action/community)
+### 📖 This website
 
-### 🐦 Social Media
+Pages show the date they were last updated. Useful starting points:
 
-Follow us for news and updates:
-- *Social media links coming soon*
-
-### 📖 Website
-
-Check back regularly for new content:
-- [Resources →](/en/resources)
-- [Events →](/en/take-action/events)
-- [Your Rights →](/en/rights)
+- [AI Act timeline](/en/timeline)
+- [Resources](/en/resources)
+- [Your Rights](/en/rights)
 
 ---
 
 ## Why It Matters
 
-The AI landscape is changing rapidly. In the time it takes you to read this page:
+AI systems already help decide who gets a job interview, a loan or a benefit. The law sets a floor, but whether AI actually serves people depends on people: those who build and use it, and those who ask questions about it.
 
-- Multiple AI systems have made decisions affecting people's lives
-- New AI tools have been deployed in workplaces across Europe
-- Organizations are deciding how to (or whether to) comply with AI regulations
+**Knowing your rights is the first step.** It helps make sure AI works for everyone, not just the organisations that build and deploy it.
 
-**Staying informed isn't optional anymore.** It's how you protect yourself and contribute to a future where AI serves everyone—not just the organizations that build and deploy it.
+## Sources
+
+- [European Commission: AI Act policy page](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
+- [Digital Omnibus on AI, Regulation (EU) 2026/1744 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)
+- [AI Act Service Desk](https://ai-act-service-desk.ec.europa.eu/)
 
 ---
 
-[Subscribe Now ↑](#subscribe-to-our-newsletter) | [← Back to Take Action](/en/take-action)
+[← Back to Take Action](/en/take-action)
