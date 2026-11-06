@@ -1,0 +1,165 @@
+{
+  "site": {
+    "title": "Ethical AI in Europe",
+    "description": "Forstå etisk og lovlig brug af AI under AI-forordningen",
+    "tagline": "Din guide til AI-forordningen",
+    "metaDescription": "En praktisk guide i et klart sprog til EU's AI-forordning: dine rettigheder, når AI træffer beslutninger om dig, hvordan AI påvirker din hverdag, og hvad organisationer skal gøre.",
+    "ogLocale": "da_DK"
+  },
+  "languages": {
+    "label": "Sprog",
+    "en": "English",
+    "da": "Dansk",
+    "inEnglish": "(på engelsk)",
+    "inEnglishShort": "EN",
+    "inEnglishTitle": "Denne side findes kun på engelsk"
+  },
+  "nav": {
+    "home": "Forside",
+    "rights": "Dine AI-rettigheder",
+    "dailyLife": "AI i hverdagen",
+    "forOrganizations": "For organisationer",
+    "issues": "Temaer",
+    "takeAction": "Det kan du gøre",
+    "euAiAct": "AI-forordningen",
+    "about": "Om AI-forordningen",
+    "principles": "Principper for god styring",
+    "guidelines": "Retningslinjer for udvikling",
+    "resources": "Ressourcer",
+    "menu": "Menu",
+    "close": "Luk menu",
+    "mainLabel": "Hovedmenu",
+    "footerLabel": "Sidefodsmenu",
+    "skipToContent": "Spring til indhold"
+  },
+  "home": {
+    "eyebrow": "AI-forordningen · Forklaret i et klart sprog",
+    "hero": {
+      "title": "Forstå, hvordan AI bliver reguleret i Europa",
+      "subtitle": "En praktisk guide til EU's AI-forordning, styring af AI og hvordan det påvirker din hverdag — med klare forklaringer og tjeklister, du kan bruge."
+    },
+    "cta": {
+      "rights": "Se dine rettigheder",
+      "action": "Det kan du gøre"
+    },
+    "topics": {
+      "heading": "Hvor AI møder dit liv",
+      "rights": {
+        "title": "Rettigheder og beskyttelse",
+        "description": "Hvilke muligheder du kan have for gennemsigtighed, indsigt og en ny vurdering, når AI bruges i vigtige situationer.",
+        "outcome": "Vid, hvad du kan bede om."
+      },
+      "dailyLife": {
+        "title": "AI i hverdagen",
+        "description": "Hvordan AI påvirker uddannelse, sundhed, ansættelser og de offentlige ydelser, du er afhængig af.",
+        "outcome": "Se, hvor AI allerede er i brug."
+      },
+      "issues": {
+        "title": "Konsekvenser og afvejninger",
+        "description": "Hvordan AI ændrer forholdene for privatliv, arbejde og demokrati, og hvad der kan gøres ved det.",
+        "outcome": "Forstå, hvad der står på spil."
+      },
+      "takeAction": {
+        "title": "Det kan du gøre",
+        "description": "Spørgsmål, du kan stille, dokumentation, du kan bede om, og hvordan du går videre med en bekymring.",
+        "outcome": "Gør bekymring til handling."
+      }
+    },
+    "safeguards": {
+      "heading": "Det kræver loven",
+      "intro": "AI-forordningen giver pligter til dem, der udvikler og bruger AI. Dette er de beskyttelser, der betyder mest for de mennesker, det går ud over.",
+      "link": "Om AI-forordningen",
+      "items": [
+        "Besked og gennemsigtighed, når AI bruges i bestemte situationer.",
+        "Oplysninger om, hvad et AI-system skal bruges til, og hvor dets begrænsninger er.",
+        "Menneskeligt tilsyn, når AI bruges til vigtige beslutninger.",
+        "Risikostyring og dokumentation hos dem, der tager AI i brug."
+      ]
+    },
+    "personas": {
+      "heading": "Start der, hvor du er",
+      "intro": "Vælg den rolle, der passer bedst på dig. Hver guide forklarer, hvad der gælder for dig, og hvad du kan gøre."
+    },
+    "mission": {
+      "eyebrow": "Derfor findes siden",
+      "heading": "AI kan tjene mennesker, ikke kun profit.",
+      "body1": "AI er allerede med til at afgøre, hvem der kommer til jobsamtale, hvilken patient der bliver set først, og om en ansøgning bliver godkendt. Når det eneste spørgsmål er, om det kan betale sig, bliver mennesker glemt.",
+      "body2": "Vi tror på AI, hvor mennesket kommer først: mennesker bevarer kontrollen, beslutninger kan forklares, og du behøver ikke være ingeniør for at få indflydelse."
+    },
+    "story": {
+      "eyebrow": "Udvalgt historie",
+      "title": "Da algoritmen sagde nej",
+      "excerpt": "Hvad du gør, når et AI-system afviser dig til et job: din ret til en forklaring og til at få en menneskelig vurdering, trin for trin.",
+      "category": "Arbejdsliv"
+    },
+    "quickLinks": {
+      "eyebrow": "Hvad bringer dig hertil?",
+      "workplace": "AI på min arbejdsplads",
+      "school": "Mit barns skole bruger AI",
+      "business": "Jeg vil tage AI i brug i min virksomhed",
+      "rights": "Jeg vil forstå mine rettigheder"
+    }
+  },
+  "personas": {
+    "citizen": {
+      "label": "Borger eller forælder",
+      "description": "Se, hvordan AI påvirker din hverdag og din familie"
+    },
+    "educator": {
+      "label": "Underviser",
+      "description": "Find materialer til at undervise i etisk brug af AI"
+    },
+    "business": {
+      "label": "Virksomhedsejer",
+      "description": "Forstå, hvad AI-forordningen kræver af din virksomhed"
+    },
+    "journalist": {
+      "label": "Journalist eller aktivist",
+      "description": "Find research og materialer til fortalerarbejde"
+    },
+    "official": {
+      "label": "Offentligt ansat",
+      "description": "Få vejledning om politik og implementering"
+    }
+  },
+  "cards": {
+    "readMore": "Læs mere",
+    "readMoreAria": "Læs mere: {title}",
+    "readStory": "Læs historien",
+    "anonymous": "Anonym"
+  },
+  "page": {
+    "breadcrumb": "Brødkrumme",
+    "home": "Forside",
+    "lastUpdated": "Senest opdateret",
+    "dateLocale": "da-DK",
+    "backTo": "← Tilbage til {section}",
+    "backHome": "← Tilbage til forsiden",
+    "whatYouCanDo": "Det kan du gøre →",
+    "moved": "Denne side er flyttet til",
+    "imageAlt": "Illustration: {title}",
+    "sections": {
+      "rights": "Rettigheder",
+      "daily-life": "Hverdagen",
+      "issues": "Temaer",
+      "for-organizations": "For organisationer",
+      "take-action": "Det kan du gøre",
+      "stories": "Historier"
+    }
+  },
+  "toc": {
+    "label": "På denne side"
+  },
+  "footer": {
+    "tagline": "AI forandrer Europa. Du har rettigheder. En guide i et klart sprog til at bruge AI etisk og til at kræve noget bedre.",
+    "explore": "Udforsk",
+    "about": "Om os",
+    "euAiAct": "AI-forordningen",
+    "principles": "Vores principper",
+    "resources": "Ressourcer",
+    "github": "Bidrag på GitHub",
+    "organization": "European Center for Ethical and Human Centric AI",
+    "disclaimer": "Oplysende materiale. Ikke juridisk rådgivning.",
+    "initiatedBy": "Startet af Stefano Vincenti,"
+  }
+}

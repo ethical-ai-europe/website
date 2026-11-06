@@ -4,40 +4,78 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
+export interface NavigationLink {
+  key: string;
+  label: string;
+  href: string;
+  /** Page is not translated; the link goes to the English page. */
+  fallback?: boolean;
+}
+
+export interface LanguageOption {
+  locale: string;
+  label: string;
+  href: string;
+  current: boolean;
+}
+
 export interface NavigationProps {
   locale: string;
   siteTitle: string;
-  nav: {
-    rights: string;
-    dailyLife: string;
-    forOrganizations: string;
-    issues: string;
-    takeAction: string;
-    euAiAct: string;
+  links: NavigationLink[];
+  languages: LanguageOption[];
+  labels: {
     menu: string;
     close: string;
+    mainLabel: string;
+    skipToContent: string;
+    languageLabel: string;
+    inEnglishShort: string;
+    inEnglishTitle: string;
   };
   showActiveState?: boolean;
 }
 
-const navItems = [
-  { key: 'rights', href: '/rights' },
-  { key: 'dailyLife', href: '/daily-life' },
-  { key: 'forOrganizations', href: '/for-organizations' },
-  { key: 'issues', href: '/issues' },
-  { key: 'takeAction', href: '/take-action' },
-  { key: 'euAiAct', href: '/about' },
-] as const;
-
-export function Navigation({ locale, siteTitle, nav, showActiveState = false }: NavigationProps) {
+export function Navigation({ locale, siteTitle, links, languages, labels, showActiveState = false }: NavigationProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  const withLocale = (path: string) => `/${locale}${path}`;
 
   const isActive = (href: string) => {
     if (!showActiveState) return false;
-    return pathname === withLocale(href) || pathname.startsWith(withLocale(href + '/'));
+    return pathname === href || pathname.startsWith(href + '/');
   };
+
+  const fallbackMarker = (link: NavigationLink) =>
+    link.fallback ? (
+      <span className="ml-1 align-super text-[10px] font-semibold text-muted" title={labels.inEnglishTitle}>
+        {labels.inEnglishShort}
+      </span>
+    ) : null;
+
+  const languageSwitcher = (
+    <ul className="flex items-center gap-1 text-sm font-medium" aria-label={labels.languageLabel}>
+      {languages.map((lang) => (
+        <li key={lang.locale}>
+          {lang.current ? (
+            <span aria-current="true" className="rounded px-2 py-1 bg-ink text-paper" lang={lang.locale}>
+              {lang.locale.toUpperCase()}
+            </span>
+          ) : (
+            <Link
+              href={lang.href}
+              hrefLang={lang.locale}
+              lang={lang.locale}
+              title={lang.label}
+              className="rounded px-2 py-1 text-ink/80 hover:text-ink hover:bg-surface"
+            >
+              <span aria-hidden="true">{lang.locale.toUpperCase()}</span>
+              <span className="sr-only">{lang.label}</span>
+            </Link>
+          )}
+        </li>
+      ))}
+    </ul>
+  );
 
   return (
     <>
@@ -45,25 +83,25 @@ export function Navigation({ locale, siteTitle, nav, showActiveState = false }: 
       href="#main-content"
       className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-ink focus:px-4 focus:py-2 focus:text-paper"
     >
-      Skip to content
+      {labels.skipToContent}
     </a>
     <nav
       className="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur supports-[backdrop-filter]:bg-paper/85"
-      role="navigation"
-      aria-label="Main navigation"
+      aria-label={labels.mainLabel}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-[76px] items-center gap-8">
-          <Link href={withLocale('')} className="flex items-center gap-3 shrink-0 text-ink">
+        <div className="flex justify-between h-[76px] items-center gap-6">
+          <Link href={`/${locale}`} className="flex items-center gap-3 shrink-0 text-ink">
             <BrandMark className="h-8 w-8 text-sage" />
             <span className="font-serif text-[1.35rem] leading-none tracking-tight">{siteTitle}</span>
           </Link>
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-7">
-            {navItems.map((item) => (
+          <div className="hidden lg:flex items-center gap-6">
+            {links.map((item) => (
               <Link
                 key={item.key}
-                href={withLocale(item.href)}
+                href={item.href}
+                hrefLang={item.fallback ? 'en' : undefined}
                 className={`text-[15px] font-medium transition-colors underline-offset-[6px] decoration-1 ${
                   isActive(item.href)
                     ? 'text-ink underline decoration-accent'
@@ -71,12 +109,15 @@ export function Navigation({ locale, siteTitle, nav, showActiveState = false }: 
                 }`}
                 aria-current={isActive(item.href) ? 'page' : undefined}
               >
-                {nav[item.key as keyof typeof nav]}
+                {item.label}
+                {fallbackMarker(item)}
               </Link>
             ))}
+            <div className="border-l border-line pl-4">{languageSwitcher}</div>
           </div>
-          {/* Mobile menu button */}
-          <div className="lg:hidden">
+          {/* Mobile: language switcher + menu button */}
+          <div className="lg:hidden flex items-center gap-3">
+            {languageSwitcher}
             <button
               type="button"
               className="inline-flex items-center justify-center p-2 -mr-2 text-ink hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
@@ -84,7 +125,7 @@ export function Navigation({ locale, siteTitle, nav, showActiveState = false }: 
               aria-expanded={mobileMenuOpen}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              <span className="sr-only">{mobileMenuOpen ? nav.close : nav.menu}</span>
+              <span className="sr-only">{mobileMenuOpen ? labels.close : labels.menu}</span>
               {mobileMenuOpen ? (
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -102,15 +143,17 @@ export function Navigation({ locale, siteTitle, nav, showActiveState = false }: 
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-line bg-paper" id="mobile-menu">
           <ul className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
-            {navItems.map((item) => (
+            {links.map((item) => (
               <li key={item.key} className="border-b border-line last:border-0">
                 <Link
-                  href={withLocale(item.href)}
+                  href={item.href}
+                  hrefLang={item.fallback ? 'en' : undefined}
                   className={`block py-3 font-serif text-xl ${isActive(item.href) ? 'text-accent' : 'text-ink'}`}
                   aria-current={isActive(item.href) ? 'page' : undefined}
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  {nav[item.key as keyof typeof nav]}
+                  {item.label}
+                  {fallbackMarker(item)}
                 </Link>
               </li>
             ))}
@@ -140,30 +183,25 @@ export function BrandMark({ className = '' }: { className?: string }) {
 }
 
 export interface FooterNavigationProps {
-  locale: string;
-  nav: {
-    rights: string;
-    dailyLife: string;
-    forOrganizations: string;
-    issues: string;
-    takeAction: string;
-    euAiAct: string;
-  };
+  links: NavigationLink[];
+  label: string;
+  /** Appended to links that go to an English-only page, e.g. "(in English)". */
+  inEnglish: string;
 }
 
-export function FooterNavigation({ locale, nav }: FooterNavigationProps) {
-  const withLocale = (path: string) => `/${locale}${path}`;
-
+export function FooterNavigation({ links, label, inEnglish }: FooterNavigationProps) {
   return (
-    <nav aria-label="Footer navigation">
+    <nav aria-label={label}>
       <ul className="flex flex-col gap-3">
-        {navItems.map((item) => (
+        {links.map((item) => (
           <li key={item.key}>
             <Link
-              href={withLocale(item.href)}
+              href={item.href}
+              hrefLang={item.fallback ? 'en' : undefined}
               className="text-on-dark-muted hover:text-on-dark transition-colors"
             >
-              {nav[item.key as keyof typeof nav]}
+              {item.label}
+              {item.fallback && <span className="text-sm"> {inEnglish}</span>}
             </Link>
           </li>
         ))}

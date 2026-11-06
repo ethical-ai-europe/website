@@ -1,7 +1,18 @@
 {
   "site": {
     "title": "Ethical AI in Europe",
-    "description": "Understanding ethical and lawful AI use under the EU AI Act"
+    "description": "Understanding ethical and lawful AI use under the EU AI Act",
+    "tagline": "Your guide to the EU AI Act",
+    "metaDescription": "A practical, plain-language guide to the EU AI Act: your rights when AI makes decisions about you, how AI affects daily life, and what organisations must do.",
+    "ogLocale": "en_GB"
+  },
+  "languages": {
+    "label": "Language",
+    "en": "English",
+    "da": "Dansk",
+    "inEnglish": "(in English)",
+    "inEnglishShort": "EN",
+    "inEnglishTitle": "This page is only available in English"
   },
   "nav": {
     "home": "Home",
@@ -16,9 +27,13 @@
     "guidelines": "Development Guidelines",
     "resources": "Resources",
     "menu": "Menu",
-    "close": "Close menu"
+    "close": "Close menu",
+    "mainLabel": "Main navigation",
+    "footerLabel": "Footer navigation",
+    "skipToContent": "Skip to content"
   },
   "home": {
+    "eyebrow": "EU AI Act · Plain-language guide",
     "hero": {
       "title": "Understand how AI is regulated in Europe",
       "subtitle": "A practical guide to the EU AI Act, AI governance, and everyday impacts — with clear explanations and actionable checklists."
@@ -26,6 +41,125 @@
     "cta": {
       "rights": "Explore your rights",
       "action": "Practical steps"
+    },
+    "topics": {
+      "heading": "Where AI meets your life",
+      "rights": {
+        "title": "Rights and safeguards",
+        "description": "What transparency, access and review options may apply when AI is used in high-impact contexts.",
+        "outcome": "Know what you can ask for."
+      },
+      "dailyLife": {
+        "title": "AI in daily life",
+        "description": "How AI affects education, healthcare, hiring and the public services you rely on.",
+        "outcome": "See where AI is already at work."
+      },
+      "issues": {
+        "title": "Impacts and trade-offs",
+        "description": "How AI changes outcomes for privacy, work and democracy, and which mitigations exist.",
+        "outcome": "Understand what is at stake."
+      },
+      "takeAction": {
+        "title": "What you can do",
+        "description": "Questions to ask, documentation to request and how to escalate a concern.",
+        "outcome": "Turn concern into action."
+      }
+    },
+    "safeguards": {
+      "heading": "What the law asks for",
+      "intro": "The EU AI Act sets duties for those who build and deploy AI. These are the safeguards that matter most to the people affected.",
+      "link": "About the EU AI Act",
+      "items": [
+        "Notice and transparency when AI is used in defined cases.",
+        "Information about an AI system’s purpose and limitations.",
+        "Human oversight for high-impact uses.",
+        "Risk management and documentation by those who deploy AI."
+      ]
+    },
+    "personas": {
+      "heading": "Start where you are",
+      "intro": "Pick the role that fits you best. Each guide explains what applies to you and what to do next."
+    },
+    "mission": {
+      "eyebrow": "Why this exists",
+      "heading": "AI can serve people, not just profit.",
+      "body1": "AI already helps decide who gets an interview, which patient is seen first and whether a claim is approved. When the only question is whether it pays, people get left out.",
+      "body2": "We believe in AI that is human first: people stay in charge, decisions can be explained, and you don’t need to be an engineer to have a say."
+    },
+    "story": {
+      "eyebrow": "Featured story",
+      "title": "When the algorithm said no",
+      "excerpt": "What to do when an AI system turns you down for a job: your right to an explanation and to a human review, step by step.",
+      "category": "Workplace"
+    },
+    "quickLinks": {
+      "eyebrow": "What brought you here?",
+      "workplace": "AI at my workplace",
+      "school": "My child’s school uses AI",
+      "business": "I’m deploying AI in my business",
+      "rights": "I want to understand my rights"
     }
+  },
+  "personas": {
+    "citizen": {
+      "label": "Citizen or parent",
+      "description": "Learn how AI affects your daily life and family"
+    },
+    "educator": {
+      "label": "Educator",
+      "description": "Discover resources for teaching about AI ethics"
+    },
+    "business": {
+      "label": "Business Owner",
+      "description": "Understand AI compliance for your organization"
+    },
+    "journalist": {
+      "label": "Journalist or activist",
+      "description": "Find research and advocacy resources"
+    },
+    "official": {
+      "label": "Public Official",
+      "description": "Access policy guidance and implementation tools"
+    }
+  },
+  "cards": {
+    "readMore": "Read more",
+    "readMoreAria": "Read more: {title}",
+    "readStory": "Read the story",
+    "anonymous": "Anonymous"
+  },
+  "page": {
+    "breadcrumb": "Breadcrumb",
+    "home": "Home",
+    "lastUpdated": "Last updated",
+    "dateLocale": "en-GB",
+    "backTo": "← Back to {section}",
+    "backHome": "← Back to home",
+    "whatYouCanDo": "What you can do →",
+    "moved": "This page has moved to",
+    "imageAlt": "{title} illustration",
+    "sections": {
+      "rights": "Rights",
+      "daily-life": "Daily life",
+      "issues": "Issues",
+      "for-organizations": "For organizations",
+      "take-action": "Take action",
+      "stories": "Stories"
+    }
+  },
+  "toc": {
+    "label": "On this page"
+  },
+  "footer": {
+    "tagline": "AI is changing Europe. You have rights. A plain-language guide to using AI ethically, and to demanding better.",
+    "explore": "Explore",
+    "about": "About",
+    "euAiAct": "The EU AI Act",
+    "principles": "Our principles",
+    "resources": "Resources",
+    "github": "Contribute on GitHub",
+    "organization": "European Center for Ethical and Human Centric AI",
+    "disclaimer": "Educational resource. Not legal advice.",
+    "initiatedBy": "Initiated by Stefano Vincenti,"
   }
 }
