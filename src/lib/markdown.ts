@@ -29,6 +29,21 @@ export interface MarkdownMetadata {
 const contentDirectory = path.join(process.cwd(), 'content');
 
 /**
+ * Markdown content links to site pages with root-relative URLs such as
+ * `/en/rights`. The site is deployed under a base path (e.g. `/website` on
+ * GitHub Pages), which Next.js only adds to <Link> components, not to raw HTML.
+ * Prefix root-relative href/src attributes so in-content links resolve.
+ */
+export function withBasePath(html: string): string {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
+  if (!basePath || basePath === '/') return html;
+  return html.replace(
+    /\b(href|src)="\/(?!\/)/g,
+    (_match, attr: string) => `${attr}="${basePath}/`
+  );
+}
+
+/**
  * Recursively get all markdown files in a directory
  */
 function getMarkdownFilesRecursive(dir: string, baseDir: string): string[] {
@@ -100,7 +115,7 @@ export async function getContentBySlug(
     const processedContent = await remark()
       .use(html, { sanitize: false })
       .process(content);
-    const contentHtml = processedContent.toString();
+    const contentHtml = withBasePath(processedContent.toString());
 
     return {
       slug,

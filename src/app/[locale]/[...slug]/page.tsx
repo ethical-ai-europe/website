@@ -1,35 +1,101 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getContentBySlug, getContentSlugs } from '@/lib/markdown';
 import Link from 'next/link';
 import Image from 'next/image';
 import { locales, resolveLocale, messagesByLocale } from '@/i18n';
 import { Navigation, FooterNavigation, EnhancedContent, TableOfContents } from '@/components';
+import { LEGACY_REDIRECTS, OG_IMAGE, ORG_NAME, SITE_NAME, absoluteUrl } from '@/lib/site';
 
 export const dynamic = 'force-static';
 
+type PageParams = Promise<{ locale: string; slug: string[] }>;
+
 export function generateStaticParams() {
   const params: { locale: string; slug: string[] }[] = [];
-  
+
   locales.forEach((locale) => {
-    const slugs = getContentSlugs(locale);
+    const slugs = [...getContentSlugs(locale), ...Object.keys(LEGACY_REDIRECTS)];
     slugs.forEach((slug) => {
       // Split nested slugs into array segments
       params.push({ locale, slug: slug.split('/') });
     });
   });
-  
+
   return params;
+}
+
+function humanize(segment: string): string {
+  const words = segment.replace(/-/g, ' ');
+  return words.charAt(0).toUpperCase() + words.slice(1);
+}
+
+export async function generateMetadata({ params }: { params: PageParams }): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const resolvedLocale = resolveLocale(locale);
+  const slugPath = slug.join('/');
+  const target = LEGACY_REDIRECTS[slugPath];
+
+  if (target) {
+    return {
+      robots: { index: false, follow: true },
+      alternates: { canonical: `/${resolvedLocale}/${target}` },
+    };
+  }
+
+  const content = await getContentBySlug(slugPath, resolvedLocale);
+  if (!content) return {};
+
+  const path = `/${resolvedLocale}/${slugPath}`;
+  return {
+    title: content.title,
+    description: content.description,
+    alternates: { canonical: path },
+    openGraph: {
+      type: 'article',
+      url: path,
+      title: content.title,
+      description: content.description,
+      siteName: SITE_NAME,
+      locale: resolvedLocale,
+      images: [OG_IMAGE],
+      ...(content.date ? { modifiedTime: new Date(content.date).toISOString() } : {}),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: content.title,
+      description: content.description,
+      images: [OG_IMAGE.url],
+    },
+  };
 }
 
 export default async function ContentPage({
   params,
 }: {
-  params: Promise<{ locale: string; slug: string[] }>;
+  params: PageParams;
 }) {
   const { locale, slug } = await params;
   const resolvedLocale = resolveLocale(locale);
   // Join the slug array back into a path string
   const slugPath = slug.join('/');
+
+  const legacyTarget = LEGACY_REDIRECTS[slugPath];
+  if (legacyTarget) {
+    // A static host can't send HTTP 301s, so render a meta-refresh page
+    // (works without JavaScript) that points at the canonical URL.
+    const target = `/${resolvedLocale}/${legacyTarget}`;
+    const targetHref = `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${target}`.replace(/^\/\//, '/');
+    return (
+      <main className="max-w-xl mx-auto p-8 text-center">
+        <meta httpEquiv="refresh" content={`0; url=${targetHref}`} />
+        <p>
+          This page has moved to <Link href={target} className="text-blue-600 underline">{target}</Link>.
+        </p>
+      </main>
+    );
+  }
+
   const content = await getContentBySlug(slugPath, resolvedLocale);
   const { nav, site } = messagesByLocale[resolvedLocale];
 
@@ -39,8 +105,45 @@ export default async function ContentPage({
 
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
+  const pageUrl = absoluteUrl(`/${resolvedLocale}/${slugPath}`);
+  const breadcrumbItems = [
+    { name: 'Home', url: absoluteUrl(`/${resolvedLocale}`) },
+    ...slug.map((segment, i) => ({
+      name: i === slug.length - 1 ? content.title : humanize(segment),
+      url: absoluteUrl(`/${resolvedLocale}/${slug.slice(0, i + 1).join('/')}`),
+    })),
+  ];
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: content.title,
+      description: content.description,
+      inLanguage: resolvedLocale,
+      url: pageUrl,
+      mainEntityOfPage: pageUrl,
+      ...(content.date ? { dateModified: content.date } : {}),
+      author: { '@type': 'Organization', name: ORG_NAME },
+      publisher: { '@type': 'Organization', name: ORG_NAME },
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbItems.map((item, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: item.name,
+        item: item.url,
+      })),
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
+      />
       {/* Navigation */}
       <Navigation 
         locale={resolvedLocale} 
