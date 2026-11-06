@@ -19,7 +19,7 @@ const defaultPersonas: Persona[] = [
   {
     id: 'citizen',
     icon: '👨‍👩‍👧‍👦',
-    label: 'Citizen/Parent',
+    label: 'Citizen or parent',
     description: 'Learn how AI affects your daily life and family',
     href: '/for-citizens',
   },
@@ -40,7 +40,7 @@ const defaultPersonas: Persona[] = [
   {
     id: 'journalist',
     icon: '📰',
-    label: 'Journalist/Activist',
+    label: 'Journalist or activist',
     description: 'Find research and advocacy resources',
     href: '/for-journalists',
   },
@@ -60,38 +60,31 @@ export function PersonaSelector({
   const withLocale = (path: string) => `/${locale}${path}`;
 
   return (
-    <section className="py-12" aria-labelledby="persona-selector-heading">
-      <h2
-        id="persona-selector-heading"
-        className="text-2xl md:text-3xl font-bold text-center text-gray-900 dark:text-white mb-8"
-      >
-        I am a...
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-        {personas.map((persona) => (
-          <Link
-            key={persona.id}
-            href={withLocale(persona.href)}
-            className="group block p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-          >
-            <div className="text-center">
-              <span
-                className="text-4xl mb-3 block"
-                role="img"
-                aria-hidden="true"
-              >
-                {persona.icon}
-              </span>
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+    <section aria-labelledby="persona-selector-heading">
+      <ul className="border-t border-ink">
+        {personas.map((persona, i) => (
+          <li key={persona.id} className="border-b border-line">
+            <Link
+              href={withLocale(persona.href)}
+              className="group grid grid-cols-[2.5rem_1fr_auto] md:grid-cols-[3.5rem_16rem_1fr_auto] items-baseline gap-x-4 py-6 focus:outline-none focus-visible:bg-surface"
+            >
+              <span className="font-serif text-xl text-sage tabular-nums">{String(i + 1).padStart(2, '0')}</span>
+              <span className="font-serif text-2xl text-ink group-hover:text-accent transition-colors">
                 {persona.label}
-              </h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">
+              </span>
+              <span className="col-start-2 md:col-start-3 row-start-2 md:row-start-1 mt-1 md:mt-0 text-muted">
                 {persona.description}
-              </p>
-            </div>
-          </Link>
+              </span>
+              <span
+                aria-hidden="true"
+                className="col-start-3 md:col-start-4 row-start-1 text-accent transition-transform group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </Link>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

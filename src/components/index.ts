@@ -22,3 +22,6 @@ export type { EnhancedContentProps } from './EnhancedContent';
 
 export { TableOfContents } from './TableOfContents';
 export type { TableOfContentsProps } from './TableOfContents';
+
+export { SiteFooter } from './SiteFooter';
+export type { SiteFooterProps } from './SiteFooter';

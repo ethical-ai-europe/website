@@ -63,14 +63,13 @@ export function EnhancedContent({ html }: EnhancedContentProps) {
       if (EMOJI_PATTERN.test(text)) {
         h2.classList.add('animate-fade-in');
         h2.style.animationDelay = `${index * 0.1}s`;
-        h2.classList.add('bg-gradient-to-r', 'from-blue-50', 'to-transparent', 'dark:from-blue-900/20', 'dark:to-transparent', 'px-4', 'py-3', 'rounded-lg', '-mx-4');
       }
     });
 
     // Enhance horizontal rules as gradient dividers
     const hrElements = content.querySelectorAll('hr');
     hrElements.forEach((hr) => {
-      hr.classList.add('border-0', 'h-1', 'bg-gradient-to-r', 'from-transparent', 'via-blue-400', 'to-transparent', 'my-12', 'rounded');
+      hr.setAttribute('aria-hidden', 'true');
     });
 
     // Auto-detect and style callout patterns
@@ -96,7 +95,7 @@ export function EnhancedContent({ html }: EnhancedContentProps) {
     listItems.forEach((li) => {
       const text = li.textContent || '';
       if (text.startsWith('✓') || text.startsWith('✔')) {
-        li.classList.add('text-green-700', 'dark:text-green-400', 'font-medium');
+        li.classList.add('is-check');
       }
     });
 

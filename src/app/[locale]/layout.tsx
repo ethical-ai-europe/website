@@ -1,21 +1,23 @@
 import type { ReactNode } from 'react';
 import { NextIntlClientProvider } from 'next-intl';
-import localFont from 'next/font/local';
+import { Instrument_Sans, Newsreader } from 'next/font/google';
 import { locales, messagesByLocale } from '@/i18n';
 import '../globals.css';
 
 export const dynamic = 'force-static';
 
-const geistSans = localFont({
-  src: '../fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
+const instrumentSans = Instrument_Sans({
+  subsets: ['latin', 'latin-ext'],
+  variable: '--font-instrument-sans',
+  display: 'swap',
 });
 
-const geistMono = localFont({
-  src: '../fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
+const newsreader = Newsreader({
+  subsets: ['latin', 'latin-ext'],
+  variable: '--font-newsreader',
+  weight: 'variable',
+  style: ['normal', 'italic'],
+  display: 'swap',
 });
 
 export function generateStaticParams() {
@@ -29,7 +31,7 @@ export default function LocaleLayout({ children }: { children: ReactNode }) {
 
   return (
     <html lang={locale}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${instrumentSans.variable} ${newsreader.variable} bg-paper text-ink antialiased`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
