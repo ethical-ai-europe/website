@@ -96,13 +96,13 @@ export function Navigation({ locale, siteTitle, links, languages, labels, showAc
             <span className="font-serif text-[1.35rem] leading-none tracking-tight">{siteTitle}</span>
           </Link>
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden xl:flex items-center gap-5 whitespace-nowrap">
             {links.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}
                 hrefLang={item.fallback ? 'en' : undefined}
-                className={`text-[15px] font-medium transition-colors underline-offset-[6px] decoration-1 ${
+                className={`whitespace-nowrap text-[14.5px] font-medium transition-colors underline-offset-[6px] decoration-1 ${
                   isActive(item.href)
                     ? 'text-ink underline decoration-accent'
                     : 'text-ink/80 hover:text-ink hover:underline decoration-underline'
@@ -113,10 +113,10 @@ export function Navigation({ locale, siteTitle, links, languages, labels, showAc
                 {fallbackMarker(item)}
               </Link>
             ))}
-            <div className="border-l border-line pl-4">{languageSwitcher}</div>
+            <div className="border-l border-line pl-3">{languageSwitcher}</div>
           </div>
           {/* Mobile: language switcher + menu button */}
-          <div className="lg:hidden flex items-center gap-3">
+          <div className="xl:hidden flex items-center gap-3">
             {languageSwitcher}
             <button
               type="button"
@@ -141,7 +141,7 @@ export function Navigation({ locale, siteTitle, links, languages, labels, showAc
       </div>
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-line bg-paper" id="mobile-menu">
+        <div className="xl:hidden border-t border-line bg-paper" id="mobile-menu">
           <ul className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
             {links.map((item) => (
               <li key={item.key} className="border-b border-line last:border-0">
