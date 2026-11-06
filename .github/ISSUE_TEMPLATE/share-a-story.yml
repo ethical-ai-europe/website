@@ -1,0 +1,45 @@
+name: Share a story
+description: Tell us how AI affected a decision about you, your family or your work. No technical knowledge needed.
+title: "Story: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing. Real experiences help others recognise when AI is involved in decisions about them.
+        **Please leave out names and personal details**, both your own and other people's. Everything you write here is public.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where did this happen?
+      options:
+        - Work or job application
+        - School or education
+        - Healthcare
+        - Public services or benefits
+        - Banking, insurance or credit
+        - Online platform or social media
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: story
+    attributes:
+      label: What happened?
+      description: In your own words. What was decided, and how did you find out AI was involved?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: How did it turn out?
+      description: Were you able to get an explanation, ask a person, or challenge the decision?
+  - type: input
+    id: country
+    attributes:
+      label: Country (optional)
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Permission
+      options:
+        - label: The project may quote this story (without identifying details) on the website.

@@ -174,8 +174,30 @@ export default function HomePage({
           <PersonaSelector locale={resolvedLocale} />
         </section>
 
+        {/* Mission */}
+        <section className="bg-sage text-on-dark">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-28 grid gap-12 md:grid-cols-[1.35fr_1fr] md:items-end">
+            <div>
+              <p className="eyebrow !text-sage-light">Why this exists</p>
+              <h2 className="display mt-6 text-4xl md:text-6xl">
+                AI can serve people, not just profit.
+              </h2>
+            </div>
+            <div className="text-on-dark-muted space-y-5 text-lg">
+              <p>
+                AI already helps decide who gets an interview, which patient is seen first and whether a claim is approved.
+                When the only question is whether it pays, people get left out.
+              </p>
+              <p className="text-on-dark">
+                We believe in AI that is human first: people stay in charge, decisions can be explained, and you don&apos;t
+                need to be an engineer to have a say.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Featured story + quick links */}
-        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 md:pb-32 grid gap-16 md:grid-cols-[1.35fr_1fr]">
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 grid gap-16 md:grid-cols-[1.35fr_1fr]">
           <div>
             <p className="eyebrow mb-6">Featured story</p>
             <StoryCard
