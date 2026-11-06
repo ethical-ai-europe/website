@@ -29,7 +29,8 @@
     "menu": "Menu",
     "close": "Luk menu",
     "mainLabel": "Hovedmenu",
-    "footerLabel": "Sidefodsmenu"
+    "footerLabel": "Sidefodsmenu",
+    "skipToContent": "Spring til indhold"
   },
   "home": {
     "eyebrow": "AI-forordningen · Forklaret i et klart sprog",
@@ -158,6 +159,7 @@
     "resources": "Ressourcer",
     "github": "Bidrag på GitHub",
     "organization": "European Center for Ethical and Human Centric AI",
-    "disclaimer": "Oplysende materiale. Ikke juridisk rådgivning."
+    "disclaimer": "Oplysende materiale. Ikke juridisk rådgivning.",
+    "initiatedBy": "Startet af Stefano Vincenti,"
   }
 }

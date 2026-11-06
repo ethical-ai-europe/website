@@ -69,6 +69,7 @@ export default async function HomePage({ params }: { params: PageParams }) {
       alternateName: SITE_NAME,
       url: absoluteUrl(`/${resolvedLocale}`),
       sameAs: [ORG_GITHUB],
+      founder: { '@type': 'Person', name: 'Stefano Vincenti', url: 'https://aitrainer.dk' },
       areaServed: 'EU',
     },
     {
@@ -100,7 +101,7 @@ export default async function HomePage({ params }: { params: PageParams }) {
       />
       <Navigation {...chrome.navigation} />
 
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="relative overflow-hidden">
           <HeroLines className="pointer-events-none absolute -right-24 top-10 hidden md:block h-[560px] w-[560px] text-sage-light" />

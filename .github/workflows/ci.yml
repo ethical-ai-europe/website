@@ -39,3 +39,8 @@ jobs:
           NEXT_TELEMETRY_DISABLED: "1"
           BASELINE_BROWSER_MAPPING_IGNORE_OLD_DATA: "true"
           GITHUB_REPOSITORY: ${{ github.repository }}
+
+      - name: Check internal links
+        run: npm run check-links
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}

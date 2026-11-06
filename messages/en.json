@@ -18,7 +18,7 @@
     "home": "Home",
     "rights": "Your AI Rights",
     "dailyLife": "AI in Daily Life",
-    "forOrganizations": "For Organizations",
+    "forOrganizations": "For Organisations",
     "issues": "Issues",
     "takeAction": "Practical Steps",
     "euAiAct": "EU AI Act",
@@ -29,7 +29,8 @@
     "menu": "Menu",
     "close": "Close menu",
     "mainLabel": "Main navigation",
-    "footerLabel": "Footer navigation"
+    "footerLabel": "Footer navigation",
+    "skipToContent": "Skip to content"
   },
   "home": {
     "eyebrow": "EU AI Act · Plain-language guide",
@@ -158,6 +159,7 @@
     "resources": "Resources",
     "github": "Contribute on GitHub",
     "organization": "European Center for Ethical and Human Centric AI",
-    "disclaimer": "Educational resource. Not legal advice."
+    "disclaimer": "Educational resource. Not legal advice.",
+    "initiatedBy": "Initiated by Stefano Vincenti,"
   }
 }

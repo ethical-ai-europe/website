@@ -99,6 +99,7 @@ export function chromeProps(locale: Locale, path: string) {
         menu: m.nav.menu,
         close: m.nav.close,
         mainLabel: m.nav.mainLabel,
+        skipToContent: m.nav.skipToContent,
         languageLabel: m.languages.label,
         inEnglishShort: m.languages.inEnglishShort,
         inEnglishTitle: m.languages.inEnglishTitle,

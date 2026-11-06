@@ -8,6 +8,7 @@ export interface SiteFooterProps {
   aboutLinks: NavigationLink[];
   labels: {
     tagline: string;
+    initiatedBy: string;
     explore: string;
     about: string;
     github: string;
@@ -29,6 +30,12 @@ export function SiteFooter({ locale, siteTitle, links, aboutLinks, labels }: Sit
               <span className="font-serif text-2xl">{siteTitle}</span>
             </Link>
             <p className="mt-5 max-w-sm text-on-dark-muted">{labels.tagline}</p>
+            <p className="mt-4 text-sm text-on-dark-muted">
+              {labels.initiatedBy}{' '}
+              <a href="https://aitrainer.dk" className="underline decoration-white/30 underline-offset-4 hover:text-on-dark">
+                aitrainer.dk
+              </a>
+            </p>
           </div>
           <div>
             <p className="eyebrow !text-sage-light mb-5">{labels.explore}</p>
