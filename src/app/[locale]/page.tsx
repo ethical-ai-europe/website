@@ -81,14 +81,14 @@ export default function HomePage({
         <section className="relative overflow-hidden">
           <HeroLines className="pointer-events-none absolute -right-24 top-10 hidden md:block h-[560px] w-[560px] text-sage-light" />
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 md:pt-32 md:pb-32">
-            <p className="eyebrow animate-fade-in">EU AI Act · Plain-language guide</p>
-            <h1 className="display mt-6 text-[2.75rem] sm:text-6xl md:text-7xl lg:text-[5.25rem] text-ink max-w-4xl animate-fade-in">
+            <p className="eyebrow">EU AI Act · Plain-language guide</p>
+            <h1 className="display mt-6 text-[2.75rem] sm:text-6xl md:text-7xl lg:text-[5.25rem] text-ink max-w-4xl">
               {t('hero.title')}
             </h1>
-            <p className="mt-8 text-lg md:text-xl text-muted max-w-2xl leading-relaxed animate-fade-in">
+            <p className="mt-8 text-lg md:text-xl text-muted max-w-2xl leading-relaxed">
               {t('hero.subtitle')}
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8 animate-fade-in">
+            <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-8">
               <Link
                 href={withLocale('/rights')}
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-7 py-3.5 text-[15px] font-medium text-paper hover:bg-accent transition-colors"

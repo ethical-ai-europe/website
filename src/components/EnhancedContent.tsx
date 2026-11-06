@@ -56,13 +56,10 @@ export function EnhancedContent({ html }: EnhancedContentProps) {
       }
     });
 
-    // Enhance emoji headings (h2 with emoji at the start)
-    h2Elements.forEach((h2, index) => {
-      const text = h2.textContent || '';
-      // Check if starts with emoji
-      if (EMOJI_PATTERN.test(text)) {
-        h2.classList.add('animate-fade-in');
-        h2.style.animationDelay = `${index * 0.1}s`;
+    // Mark emoji headings (h2 with emoji at the start) for styling hooks
+    h2Elements.forEach((h2) => {
+      if (EMOJI_PATTERN.test(h2.textContent || '')) {
+        h2.classList.add('has-emoji');
       }
     });
 
@@ -74,19 +71,17 @@ export function EnhancedContent({ html }: EnhancedContentProps) {
 
     // Auto-detect and style callout patterns
     const paragraphs = content.querySelectorAll('p');
-    paragraphs.forEach((p, index) => {
+    paragraphs.forEach((p) => {
       const text = p.textContent || '';
-      
+
       // Red flag warnings (🚩)
       if (text.startsWith('🚩')) {
-        p.classList.add('callout-warning', 'animate-fade-in');
-        p.style.animationDelay = `${index * 0.05}s`;
+        p.classList.add('callout-warning');
       }
-      
+
       // Tips (💡)
       if (text.startsWith('💡')) {
-        p.classList.add('callout-tip', 'animate-fade-in');
-        p.style.animationDelay = `${index * 0.05}s`;
+        p.classList.add('callout-tip');
       }
     });
 
