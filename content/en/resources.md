@@ -1,43 +1,75 @@
 ---
 title: "AI Ethics Resources"
 description: "Curated resources for understanding and implementing ethical AI under the EU AI Act"
-date: "2025-12-25"
+date: "2026-11-06"
 language: "en"
 ---
 
 # AI Ethics Resources
 
-A comprehensive collection of resources to help you understand, implement, and stay current with ethical AI development and EU AI Act compliance.
+A curated collection of resources to help you understand the EU AI Act, use AI in ways that serve people, and stay current as the rules roll out.
+
+Start with the official sources. For a plain-language overview of what applies when, see our [AI Act timeline](/en/timeline).
 
 ## Official EU Resources
 
 ### Primary Legislation
 
-- **[EU AI Act Official Text](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689)** - The complete legal text of the EU Artificial Intelligence Act, published in the Official Journal of the European Union.
+- **[EU AI Act, Regulation (EU) 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)** - The legal text of the EU Artificial Intelligence Act in the Official Journal (EUR-Lex).
 
-- **[European Commission AI Portal](https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence)** - Official EU policy information on artificial intelligence, including updates, news, and guidance.
+- **[Digital Omnibus on AI, Regulation (EU) 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)** - The 2026 amending regulation. It delays the high-risk deadlines, rewrites the AI literacy rule, adds a ban on non-consensual intimate deepfakes and makes other changes. In force since 27 July 2026.
 
-- **[EU AI Office](https://digital-strategy.ec.europa.eu/en/policies/ai-office)** - The central body responsible for coordinating AI policy implementation across the EU.
+- **[Council Decision (EU) 2026/1080](https://eur-lex.europa.eu/eli/dec/2026/1080/oj)** - The EU's ratification of the Council of Europe Framework Convention on AI and Human Rights.
 
-### Guidance Documents
+### Official Information and Help
+
+- **[European Commission: AI Act policy page](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)** - The Commission's hub for the AI Act, with guidelines, codes of practice and news.
+
+- **[AI Act Service Desk and Single Information Platform](https://ai-act-service-desk.ec.europa.eu/)** - Official help desk and information platform for questions about applying the AI Act.
+
+- **[EU AI Office](https://digital-strategy.ec.europa.eu/en/policies/ai-office)** - The EU body that supervises general-purpose AI models (and, since 2026, certain AI systems built on them and AI in very large online platforms) and coordinates AI Act implementation.
+
+- **[Council of the EU: AI Act timeline](https://www.consilium.europa.eu/en/policies/artificial-intelligence-act/timeline-artificial-intelligence/)** - Key steps in the legislative history of the AI Act.
+
+- **[Council press release: final green light for the Digital Omnibus on AI (29 June 2026)](https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/)** - Summary of what the 2026 amendment changes.
+
+### Commission Guidance on the AI Act
+
+All Commission guidelines are non-binding. The EU Court of Justice gives the authoritative interpretation.
+
+- **[Transparency obligations under Article 50: FAQ](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)** - Questions and answers on chatbot disclosure, deepfake labelling and marking AI-generated content. Guidelines on Article 50 were published on 20 July 2026.
+
+- **[Draft guidelines on classifying high-risk AI systems](https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems)** - Published 19 May 2026 for public consultation. This is a draft; the final version has not yet been adopted.
+
+- Other Commission guidance, available from the [AI Act policy page](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai): guidelines on prohibited AI practices (February 2025), guidelines on the definition of an AI system (February 2025), the General-Purpose AI Code of Practice (July 2025) and the Code of Practice on transparency of AI-generated content (2026).
+
+### Implementation in Member States
+
+- **[National implementation tracker (artificialintelligenceact.eu)](https://artificialintelligenceact.eu/national-implementation-plans/)** - An independent tracker of which countries have named their AI Act authorities. As of mid-June 2026, only 9 of 27 had named both market surveillance and notifying authorities.
+
+- **[Denmark: national AI Act law, Lov nr. 467 af 14. maj 2025](https://www.retsinformation.dk/eli/lta/2025/467)** - In force since 2 August 2025. The Danish Agency for Digital Government (Digitaliseringsstyrelsen) is the single point of contact and a market surveillance authority; the Danish Data Protection Agency (Datatilsynet) supervises certain bans.
+
+### Ethics Guidance (background)
 
 - **[High-Level Expert Group on AI Ethics Guidelines](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai)** - The foundational ethics guidelines that informed the EU AI Act, covering trustworthy AI principles.
 
 - **[AI HLEG Assessment List for Trustworthy AI (ALTAI)](https://digital-strategy.ec.europa.eu/en/library/assessment-list-trustworthy-artificial-intelligence-altai-self-assessment)** - A practical tool for self-assessing the trustworthiness of AI systems.
 
-- **[Coordinated Plan on AI](https://digital-strategy.ec.europa.eu/en/policies/plan-ai)** - EU-wide coordination on AI policy, investment, and innovation.
+- **[Coordinated Plan on AI](https://digital-strategy.ec.europa.eu/en/policies/plan-ai)** - EU-wide coordination on AI policy, investment, and innovation (2021 review).
 
 ## International Standards
 
 ### Technical Standards
 
+EU harmonised standards for the AI Act are being developed. The first, EN 18286 on quality management systems for AI Act purposes, was cited in the Official Journal in October 2026. The ISO/IEC standards below are international and useful, but they are not the same as EU harmonised standards.
+
 - **[ISO/IEC 42001:2023](https://www.iso.org/standard/81230.html)** - Artificial Intelligence Management System standard, providing requirements for establishing, implementing, and maintaining an AI management system.
 
-- **[ISO/IEC 23894:2023](https://www.iso.org/standard/77304.html)** - Guidance on risk management for organizations developing, providing, or using AI systems.
+- **[ISO/IEC 23894:2023](https://www.iso.org/standard/77304.html)** - Guidance on risk management for organisations developing, providing, or using AI systems.
 
 - **[ISO/IEC TR 24028:2020](https://www.iso.org/standard/77608.html)** - Overview of trustworthiness in AI, including concepts and terminology.
 
-- **[ISO/IEC 38507:2022](https://www.iso.org/standard/56641.html)** - Governance implications of the use of AI by organizations.
+- **[ISO/IEC 38507:2022](https://www.iso.org/standard/56641.html)** - Governance implications of the use of AI by organisations.
 
 ### IEEE Standards
 
@@ -51,23 +83,25 @@ A comprehensive collection of resources to help you understand, implement, and s
 
 ## Government and Regulatory Bodies
 
-### National AI Authorities
+### National bodies with useful AI guidance (not necessarily AI Act authorities)
+
+To find who supervises the AI Act in your country, use the [national implementation tracker](https://artificialintelligenceact.eu/national-implementation-plans/).
 
 - **[German Federal Office for Information Security (BSI)](https://www.bsi.bund.de/EN/Home/home_node.html)** - German cybersecurity authority with AI security guidance.
 
-- **[French National AI Strategy (CNIL)](https://www.cnil.fr/en/artificial-intelligence)** - France's data protection authority with AI guidance.
+- **[CNIL: Artificial intelligence](https://www.cnil.fr/en/topics/artificial-intelligence-ai)** - Guidance on AI and personal data from France's data protection authority.
 
-- **[ICO AI Guidance (UK)](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/)** - UK Information Commissioner's Office guidance on AI and data protection.
+- **[ICO AI Guidance (UK)](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/)** - UK Information Commissioner's Office guidance on AI and data protection. Useful background, but note the UK is outside the EU and the AI Act.
 
-- **[Dutch Algorithm Register](https://algoritmes.overheid.nl/)** - Netherlands' pioneering transparency initiative for government AI systems.
+- **[Dutch Algorithm Register](https://algoritmes.overheid.nl/)** - Netherlands' public register of algorithms (including AI) used by government bodies.
 
-### International Organizations
+### International Organisations
 
 - **[OECD AI Policy Observatory](https://oecd.ai/)** - Comprehensive AI policy resources, country profiles, and international frameworks.
 
 - **[UNESCO Recommendation on AI Ethics](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics)** - The first global standard on AI ethics adopted by 193 countries.
 
-- **[Council of Europe AI Framework](https://www.coe.int/en/web/artificial-intelligence)** - Human rights-focused AI governance work.
+- **[Council of Europe AI Framework](https://www.coe.int/en/web/artificial-intelligence)** - Human rights-focused AI governance work, including the Framework Convention on AI and Human Rights, which the EU ratified in 2026.
 
 ## Academic and Research Resources
 
@@ -75,9 +109,9 @@ A comprehensive collection of resources to help you understand, implement, and s
 
 - **[AI Now Institute](https://ainowinstitute.org/)** - Research institute studying the social implications of AI.
 
-- **[Partnership on AI](https://partnershiponai.org/)** - Multi-stakeholder organization addressing AI's most important and difficult challenges.
+- **[Partnership on AI](https://partnershiponai.org/)** - Multi-stakeholder organisation addressing AI's most important and difficult challenges.
 
-- **[Center for AI Safety](https://www.safe.ai/)** - Research organization focused on reducing societal-scale risks from AI.
+- **[Center for AI Safety](https://www.safe.ai/)** - Research organisation focused on reducing societal-scale risks from AI.
 
 - **[The Alan Turing Institute](https://www.turing.ac.uk/research/research-areas/ai-ethics-and-society)** - UK's national institute for data science and AI, with strong ethics research.
 
@@ -95,19 +129,19 @@ A comprehensive collection of resources to help you understand, implement, and s
 
 ### Bias Detection and Fairness
 
-- **[AI Fairness 360 (IBM)](https://aif360.mybluemix.net/)** - Open-source toolkit for examining, reporting, and mitigating bias in machine learning models.
+- **[AI Fairness 360 (IBM)](https://github.com/Trusted-AI/AIF360)** - Open-source toolkit for examining, reporting, and mitigating bias in machine learning models.
 
 - **[Fairlearn (Microsoft)](https://fairlearn.org/)** - Python package to assess and improve fairness of machine learning models.
 
 - **[What-If Tool (Google)](https://pair-code.github.io/what-if-tool/)** - Visual interface for machine learning model analysis without coding.
 
-- **[Aequitas](http://www.datasciencepublicpolicy.org/our-work/tools-guides/aequitas/)** - Open-source bias and fairness audit toolkit.
+- **[Aequitas](https://github.com/dssg/aequitas)** - Open-source bias and fairness audit toolkit.
 
 ### Explainability and Interpretability
 
 - **[LIME (Local Interpretable Model-agnostic Explanations)](https://github.com/marcotcr/lime)** - Explains predictions of any machine learning classifier.
 
-- **[SHAP (SHapley Additive exPlanations)](https://github.com/slundberg/shap)** - Unified approach to explain the output of any machine learning model.
+- **[SHAP (SHapley Additive exPlanations)](https://github.com/shap/shap)** - Unified approach to explain the output of any machine learning model.
 
 - **[InterpretML (Microsoft)](https://interpret.ml/)** - Open-source package for training interpretable models and explaining blackbox systems.
 
@@ -127,7 +161,6 @@ A comprehensive collection of resources to help you understand, implement, and s
 
 - **[Deepchecks](https://deepchecks.com/)** - Open-source testing package for machine learning models and data.
 
-- **[MLTest](https://github.com/surya-narayanan/mltest)** - Testing infrastructure for ML pipelines.
 
 ## Training and Education
 
@@ -137,7 +170,7 @@ A comprehensive collection of resources to help you understand, implement, and s
 
 - **[AI for Everyone (Coursera)](https://www.coursera.org/learn/ai-for-everyone)** - Andrew Ng's non-technical course on AI fundamentals.
 
-- **[Ethics of AI (edX)](https://www.edx.org/learn/ethics/the-university-of-helsinki-ethics-of-ai)** - University of Helsinki's free course on AI ethics.
+- **[Ethics of AI (University of Helsinki)](https://ethics-of-ai.mooc.fi/)** - Free online course on AI ethics.
 
 - **[Responsible AI for Developers (Google)](https://www.cloudskillsboost.google/course_templates/547)** - Google's course on building responsible AI systems.
 
@@ -145,37 +178,33 @@ A comprehensive collection of resources to help you understand, implement, and s
 
 - **[IAPP AI Governance Professional (AIGP)](https://iapp.org/certify/aigp/)** - Professional certification for AI governance.
 
-- **[Certified Artificial Intelligence Practitioner (CertNexus)](https://certnexus.com/certification/caip/)** - Certification covering responsible AI practices.
-
 ## Industry Resources
 
 ### Professional Associations
 
 - **[ACM](https://www.acm.org/code-of-ethics)** - Association for Computing Machinery Code of Ethics and Professional Conduct.
 
-- **[IEEE Computer Society](https://www.computer.org/publications/tech-news/trends/ieee-sa-standards-are-building-trust-in-ai)** - IEEE's AI ethics standards work.
+- **[IEEE Standards Association: autonomous and intelligent systems](https://standards.ieee.org/initiatives/autonomous-intelligence-systems/)** - IEEE Standards Association work on ethics in autonomous and intelligent systems.
 
 ### Corporate AI Principles
 
-- **[Google AI Principles](https://ai.google/responsibility/principles/)** - Google's approach to responsible AI development.
+- **[Google AI Principles](https://ai.google/principles/)** - Google's approach to responsible AI development.
 
 - **[Microsoft Responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai)** - Microsoft's AI principles and governance framework.
 
-- **[IBM AI Ethics](https://www.ibm.com/artificial-intelligence/ethics)** - IBM's approach to AI ethics and governance.
+- **[IBM AI Ethics](https://www.ibm.com/trust/responsible-technology)** - IBM's approach to AI ethics and governance.
 
 ## Compliance Tools
 
 ### Assessment and Documentation
 
-- **[Model Cards for Model Reporting](https://modelcards.withgoogle.com/about)** - Google's framework for documenting model performance and limitations.
+- **[Model Cards for Model Reporting](https://arxiv.org/abs/1810.03993)** - Google's framework for documenting model performance and limitations.
 
 - **[Datasheets for Datasets](https://arxiv.org/abs/1803.09010)** - Framework for documenting datasets used in machine learning.
 
-- **[AI Impact Assessment Templates](https://ainowinstitute.org/publication/algorithmic-impact-assessments-a-practical-framework-for-public-agency)** - Framework for assessing AI impact on communities.
-
 ### Audit and Monitoring
 
-- **[Model Cards Toolkit](https://github.com/tensorflow/model-card-toolkit)** - Streamlines model card generation.
+- **[Model Cards Toolkit](https://github.com/tensorflow/model-card-toolkit)** (archived) - Streamlines model card generation.
 
 - **[ML Metadata (TensorFlow)](https://www.tensorflow.org/tfx/guide/mlmd)** - Library for recording and retrieving metadata associated with ML workflows.
 
@@ -207,7 +236,7 @@ A comprehensive collection of resources to help you understand, implement, and s
 
 - **[AAAI/ACM Conference on AI, Ethics, and Society (AIES)](https://www.aies-conference.com/)** - Leading conference on AI ethics research.
 
-- **[NeurIPS](https://neurips.cc/)** - Major ML conference with growing ethics track.
+- **[NeurIPS](https://neurips.cc/)** - Major ML conference with ethics review and responsible-AI workshops.
 
 ### Community Groups
 
@@ -215,12 +244,20 @@ A comprehensive collection of resources to help you understand, implement, and s
 
 - **[Black in AI](https://blackinai.github.io/)** - Community increasing Black representation in AI.
 
-- **[LatinX in AI](https://www.latinxinai.org/)** - Organization amplifying the voice of LatinX in AI.
+- **[LatinX in AI](https://www.latinxinai.org/)** - Organisation amplifying the voice of LatinX in AI.
 
 ---
 
 ## Contributing Resources
 
-Have a resource to suggest? This list is actively maintained. Contributions to improve this resource collection are welcome through our GitHub repository.
+Have a resource to suggest, or found a broken link? [Suggest an improvement on GitHub](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml).
 
-**Last updated:** December 2025
+**Last checked:** 6 November 2026 (official EU sections). Third-party links are not checked on a fixed schedule.
+
+## Sources
+
+- [AI Act, Regulation (EU) 2024/1689 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+- [Digital Omnibus on AI, Regulation (EU) 2026/1744 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)
+- [European Commission: AI Act policy page](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
+- [AI Act Service Desk](https://ai-act-service-desk.ec.europa.eu/)
+- [National implementation tracker](https://artificialintelligenceact.eu/national-implementation-plans/)

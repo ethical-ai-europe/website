@@ -216,6 +216,19 @@ body {
   border-bottom-color: var(--line-strong);
 }
 
+/* GitHub-style task lists (checklists) */
+.article ul.contains-task-list > li.task-list-item {
+  padding-left: 0;
+}
+.article ul.contains-task-list > li.task-list-item::before {
+  display: none;
+}
+.article li.task-list-item input[type='checkbox'] {
+  margin-right: 0.6em;
+  accent-color: var(--sage);
+  transform: translateY(1px);
+}
+
 /* Callouts detected by EnhancedContent */
 .article .callout-warning,
 .article .callout-tip {

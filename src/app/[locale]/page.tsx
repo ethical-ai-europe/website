@@ -202,7 +202,7 @@ export default function HomePage({
             <p className="eyebrow mb-6">Featured story</p>
             <StoryCard
               title="When the algorithm said no"
-              excerpt="How one job seeker challenged an AI hiring decision, and won."
+              excerpt="What to do when an AI system turns you down for a job: your right to an explanation and to a human review, step by step."
               category="Workplace"
               href={withLocale('/stories/algorithm-said-no')}
             />

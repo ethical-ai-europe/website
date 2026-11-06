@@ -1,7 +1,7 @@
 ---
 title: "Join Our Community"
-description: "You're not alone in navigating AI's impact—connect with others working for ethical AI"
-date: "2025-12-25"
+description: "You're not alone in navigating AI's impact. Share your experience and help improve this open resource."
+date: "2026-11-06"
 language: "en"
 ---
 
@@ -11,7 +11,7 @@ language: "en"
 
 Across Europe, people are asking the same questions you are: How does this AI system affect me? What are my rights? What can I do? By connecting with others, we learn from shared experiences, build collective knowledge, and amplify our voices.
 
-This isn't just a community—it's a movement for technology that respects human rights and dignity.
+We are a small, open-source project, not a large organisation. Right now the way to take part is through our GitHub repository: sharing stories, suggesting improvements and contributing content. We describe below what exists today and what we hope to build.
 
 ---
 
@@ -19,7 +19,7 @@ This isn't just a community—it's a movement for technology that respects human
 
 ### Share Experiences
 
-When you've dealt with an AI system—whether you successfully challenged a decision or hit a wall—your experience helps others. What worked? What didn't? What would you do differently?
+When you've dealt with an AI system, whether you successfully challenged a decision or hit a wall, your experience helps others. What worked? What didn't? What would you do differently?
 
 ### Learn from Others
 
@@ -27,57 +27,57 @@ Someone else has probably faced what you're facing. Their insights can save you 
 
 ### Collective Voice
 
-One person asking questions is easy to ignore. A community demanding answers is not. Together, we can push for transparency, accountability, and respect for rights.
+One person asking questions is easy to ignore. Many people asking the same questions are harder to ignore. Shared experiences show patterns that help push for transparency, accountability, and respect for rights.
 
-### Stay Connected
+### Keep the Human Factor in View
 
-AI governance is evolving fast. Being part of a community keeps you connected to developments, opportunities, and people who share your concerns.
+AI is built and used by people, and its effects land on people. Stories from real life remind everyone, including those who build AI, that a "decision" is someone's job, loan or benefit. AI can serve people, not just profit, when people keep asking how it works and who answers for it.
+
+### Stay Current
+
+AI rules are changing: the EU AI Act was amended in 2026 and new rules keep phasing in. See the [AI Act timeline](/en/timeline) for what applies when.
 
 ---
 
 ## Ways to Connect
 
-### 💬 Discussion Forum
+### 📝 Share Your Story (available now)
 
-*Coming soon: An online space for discussion, questions, and sharing.*
+Have you dealt with an AI system that affected you, at work, with a bank, a public service or a school? Your experience can help others.
 
-Our forum will be a place to:
-- Ask questions and get answers from the community
-- Share your experiences with AI systems
-- Discuss news and developments
-- Find others facing similar situations
-- Get feedback on draft letters and requests
+**[Share a story on GitHub](https://github.com/ethical-ai-europe/website/issues/new?template=share-a-story.yml)**
 
-*[Interested in helping set this up? Get in touch.](#volunteer)*
+Please leave out names, ID numbers and other personal data. Stories may be used, anonymised, to improve guides on this site.
 
-### 🌍 Local Groups
+### 🔧 Suggest an Improvement (available now)
 
-Connect with others in your area:
+Found an error, an outdated date or a confusing explanation? Know a resource we should add?
 
-*Local groups are forming across Europe. Express interest in joining or starting a local group by reaching out through our contribution channels.*
+**[Suggest an improvement on GitHub](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml)**
 
-**What local groups do:**
-- Meet regularly (in-person or hybrid)
-- Discuss local AI issues and developments
-- Support each other with rights requests
-- Organize local events and workshops
-- Connect with regional advocates and organizations
+### 💬 Discussion Forum (not available yet)
 
-### 🔬 Working Groups
+*We do not have a forum yet.* We would like one where people can ask questions, compare experiences and get feedback on draft letters. If you would like to help set it up, say so via the [improvement form](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml).
 
-Dive deep into specific topics:
+### 🌍 Local Groups (not available yet)
 
-**Workplace AI** — Focus on employment, HR, and workplace surveillance issues
+*There are no local groups at the moment.* If you would like to start one in your area, let us know through the [improvement form](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml) and we will mention it here once it exists.
 
-**Public Services** — Government AI, benefits systems, and public administration
+### 🔬 Possible Working Groups (ideas)
 
-**Consumer Rights** — AI in products and services we use daily
+Topics where we would welcome contributors:
 
-**Healthcare** — AI in medical diagnosis, treatment, and healthcare access
+**Workplace AI**: Focus on employment, HR, and workplace surveillance issues
 
-**Education** — AI in schools, universities, and lifelong learning
+**Public Services**: Government AI, benefits systems, and public administration
 
-*Working groups are developing. Express interest to join.*
+**Consumer Rights**: AI in products and services we use daily
+
+**Healthcare**: AI in medical diagnosis, treatment, and healthcare access
+
+**Education**: AI in schools, universities, and lifelong learning
+
+*These are not active groups yet. If you have expertise in one of these areas, tell us via the [improvement form](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml).*
 
 ---
 
@@ -89,7 +89,7 @@ Our community is built on mutual respect and shared purpose. To keep it welcomin
 
 - Treat everyone with respect, regardless of their background or expertise level
 - Welcome newcomers and help them get started
-- Recognize that people have different experiences and perspectives
+- Recognise that people have different experiences and perspectives
 - Use inclusive language and be mindful of cultural differences
 
 ### 📚 Evidence-Based Discussion
@@ -114,13 +114,13 @@ Our community is built on mutual respect and shared purpose. To keep it welcomin
 - Content that undermines the rights we're trying to protect
 - Illegal advice or encouragement of illegal activity
 
-*Full community guidelines are available when you join.*
+*These guidelines apply to all contributions, including GitHub issues and pull requests.*
 
 ---
 
 ## Contribute to the Project
 
-This website is an open-source project. Everything here—the content, the templates, the resources—is a community effort that you can help improve.
+This website is an open-source project. The content, templates and resources can all be improved by anyone.
 
 ### 🌐 How to Contribute Content
 
@@ -132,7 +132,7 @@ This website is an open-source project. Everything here—the content, the templ
 
 ### 🔧 How to Suggest Improvements
 
-**Technical issues**: Report bugs or suggest features through GitHub Issues.
+**Technical issues**: Report bugs or suggest features through [GitHub Issues](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml).
 
 **Content feedback**: Tell us what's working, what's confusing, and what's missing.
 
@@ -140,11 +140,11 @@ This website is an open-source project. Everything here—the content, the templ
 
 ### 🌍 How to Translate
 
-The AI rights movement needs to reach everyone. Help us translate content into other EU languages.
+Information about AI rights needs to reach everyone. Help us translate content into other EU languages.
 
-**Languages we're working on**: *Community translations starting soon*
+**Current status**: *No community translations are underway yet.*
 
-**How to help**: Contact us if you can translate into an EU language.
+**How to help**: If you can translate into an EU language, tell us via the [improvement form](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml).
 
 ### 💻 GitHub
 
@@ -153,7 +153,7 @@ This is an open-source project. Find us on GitHub:
 **Repository**: [github.com/ethical-ai-europe/website](https://github.com/ethical-ai-europe/website)
 
 **How to contribute**:
-1. Check the existing issues and discussions
+1. Check the existing issues
 2. Fork the repository
 3. Make your changes
 4. Submit a pull request
@@ -163,33 +163,27 @@ This is an open-source project. Find us on GitHub:
 
 ---
 
-## Partner Organizations
+## Partner Organisations
 
-We work with organizations across Europe that share our commitment to ethical AI and human rights.
+### Current Status
 
-### Allied Organizations
-
-*Partnerships are forming. This section will be updated as we establish formal relationships.*
-
-We're connecting with:
-- Digital rights organizations
+*We do not have formal partner organisations at the moment.* We would welcome collaboration with organisations that share a commitment to human rights and AI that serves people, such as:
+- Digital rights organisations
 - Consumer protection groups
 - Trade unions focused on workplace rights
 - Civil liberties advocates
 - Academic institutions
-- Legal aid organizations
+- Legal aid organisations
 
-### How Organizations Can Partner
-
-**Join the network**: Connect with other organizations working on AI rights.
+### How Organisations Can Partner
 
 **Collaborate on resources**: Contribute expertise to shared tools and guides.
 
-**Co-host events**: Bring AI rights education to your audience.
+**Review content**: Check our pages in your field for accuracy.
 
-**Share and amplify**: Help spread awareness of AI rights resources.
+**Share and amplify**: Link to resources here that your audience may find useful.
 
-**Interested in partnering?** Reach out through the contribution channels above.
+**Interested?** Open an issue via the [improvement form](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml).
 
 ---
 
@@ -203,9 +197,9 @@ This project runs on community energy. If you have time and skills to contribute
 
 **Translation**: Help make content accessible in other languages.
 
-**Community support**: Welcome newcomers, answer questions, moderate discussions.
+**Community support**: Welcome newcomers, help answer questions in GitHub issues.
 
-**Event support**: Help organize and run workshops and events.
+**Event support**: Help us plan future workshops (none are scheduled yet).
 
 **Technical work**: Contribute to website development and maintenance.
 
@@ -217,7 +211,7 @@ This project runs on community energy. If you have time and skills to contribute
 - Writing and editing
 - Translation (any EU language)
 - Community management
-- Event organization
+- Event organisation
 - Web development
 - Graphic design
 - Social media
@@ -229,9 +223,9 @@ Contribute what you can. Some people give a few hours a month; others are deeply
 
 ### Get Started
 
-1. [Join the community](#ways-to-connect)
-2. Introduce yourself and share what you're interested in
-3. Check out current needs and projects
+1. Look at the [GitHub repository](https://github.com/ethical-ai-europe/website) and its open issues
+2. Introduce yourself via the [improvement form](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml) and say what you're interested in
+3. Pick something small, such as checking a page or fixing a link
 4. Jump in where you can help
 
 ---
@@ -240,21 +234,28 @@ Contribute what you can. Some people give a few hours a month; others are deeply
 
 Multiple ways to engage with the community:
 
-📰 **[Subscribe to our newsletter](/en/take-action/newsletter)** for regular updates
+📝 **[Share a story](https://github.com/ethical-ai-europe/website/issues/new?template=share-a-story.yml)** about AI in your life
 
-📅 **[Attend an event](/en/take-action/events)** to connect in person or online
+🔧 **[Suggest an improvement](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml)** to this site
 
-💬 **Join the forum** *(coming soon)* for ongoing discussion
+📰 **[Stay informed](/en/take-action/newsletter)**: official sources to follow (our newsletter is not available yet)
 
-🐦 **Follow us** *(social links coming soon)* for news and updates
+📅 **[Events](/en/take-action/events)**: none scheduled yet; see how to propose one
+
+💬 **Forum and social media**: not available yet
 
 ---
 
-**Ready to join?**
+**Ready to take part?**
 
-The AI rights movement is growing. Every person who joins, contributes, or speaks up helps build a future where technology respects human rights.
+Every person who contributes or speaks up helps build a future where technology respects human rights.
 
 You don't need to be an expert. You just need to care.
+
+## Sources
+
+- [European Commission: AI Act policy page](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
+- [AI Act, Regulation (EU) 2024/1689 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
 
 ---
 

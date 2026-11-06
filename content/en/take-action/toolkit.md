@@ -1,7 +1,7 @@
 ---
 title: "Action Toolkit"
 description: "Ready-to-use resources for exercising your AI rights under the EU AI Act and GDPR"
-date: "2025-12-25"
+date: "2026-11-06"
 language: "en"
 ---
 
@@ -9,7 +9,13 @@ language: "en"
 
 **Ready-to-use resources for exercising your AI rights.**
 
-These templates, checklists, and guides are designed to be immediately useful. Copy them, customize them, and use them to protect your rights and hold organizations accountable.
+These templates, checklists, and guides are designed to be immediately useful. Copy them, customise them, and use them to protect your rights and hold organisations accountable. Behind every automated decision there should be people who can explain it and correct it; these tools help you reach them.
+
+**What applies today (checked 6 November 2026):**
+- **GDPR** is your main tool for automated decisions. It gives you the right to access your data, to meaningful information about the logic of automated decisions (Article 15(1)(h)) and, for significant decisions based solely on automated processing, the right to human intervention and to contest the decision (Article 22).
+- **The EU AI Act** already bans certain practices (since 2 February 2025) and requires chatbots to disclose they are AI and deepfakes to be labelled (since 2 August 2026). Its detailed high-risk rules for AI in hiring, credit, benefits and education apply from 2 December 2027. See the [AI Act timeline](/en/timeline).
+
+This toolkit is not legal advice. Organisations normally have one month to answer GDPR requests (Article 12(3)); this can be extended by up to two further months where necessary, but they must tell you within the first month and explain why.
 
 ---
 
@@ -25,19 +31,22 @@ Use this to ask your employer about AI systems used in the workplace.
 >
 > Dear [HR/Manager],
 >
-> Under the EU AI Act and GDPR, I am requesting information about any artificial intelligence or automated decision-making systems used in relation to my employment, including but not limited to:
+> Under Article 15 of the GDPR (and the information duties in Articles 13 and 14), I am requesting information about any artificial intelligence or automated decision-making systems used in relation to my employment, including but not limited to:
 >
 > 1. Performance monitoring or productivity tracking
 > 2. Scheduling or shift allocation
-> 3. Any systems that inform decisions about my employment
+> 3. Any systems that inform decisions about my employment, pay or promotion
 >
 > Please provide:
 > - What systems are in use
 > - What data about me is collected
 > - How this data is used in any decisions
 > - Who has access to this data
+> - Whether any decision about me is based solely on automated processing, and if so, meaningful information about the logic involved (GDPR Article 15(1)(h))
 >
-> I look forward to your response within 30 days as required by GDPR.
+> I would also be grateful for confirmation that no AI system is used to recognise or infer the emotions of employees, which has been prohibited under Article 5 of the EU AI Act since 2 February 2025 (except for medical or safety reasons).
+>
+> I look forward to your response without undue delay and in any event within one month, as required by GDPR Article 12(3).
 >
 > Regards,
 > [Name]
@@ -50,11 +59,11 @@ Use this when you've received a decision made by or with AI that you want a huma
 
 > **Subject: Request for Human Review of Automated Decision**
 >
-> Dear [Organization/Department],
+> Dear [Organisation/Department],
 >
 > I am writing regarding [describe the decision, e.g., "the rejection of my application," "the decision about my benefits," "the assessment of my case"] dated [date].
 >
-> Under GDPR Article 22(3), I have the right to obtain human intervention in decisions based significantly on automated processing. I am exercising this right and requesting that a qualified person review my case.
+> Under GDPR Article 22, I have the right not to be subject to a decision based solely on automated processing that has legal or similarly significant effects on me. Where such a decision is permitted, I have at least the right to obtain human intervention, to express my point of view and to contest the decision (Article 22(3), or the safeguards in the law that permits the decision). The EU Court of Justice has confirmed that an automated score that strongly determines a decision can itself count as such a decision (SCHUFA, C-634/21). I am exercising these rights and requesting that a qualified person, with the authority to change the outcome, review my case.
 >
 > Please ensure the review considers the following points:
 > - [List any relevant circumstances the AI may not have considered]
@@ -66,7 +75,7 @@ Use this when you've received a decision made by or with AI that you want a huma
 > 2. What factors were considered
 > 3. The outcome and reasoning
 >
-> Please respond within 30 days as required by law.
+> Please respond without undue delay and in any event within one month (GDPR Article 12(3)).
 >
 > Regards,
 > [Name]
@@ -76,11 +85,11 @@ Use this when you've received a decision made by or with AI that you want a huma
 
 ### GDPR Subject Access Request (AI-Focused)
 
-Use this to request all information an organization holds about you, with specific focus on AI-related processing.
+Use this to request all information an organisation holds about you, with specific focus on AI-related processing.
 
 > **Subject: Subject Access Request under GDPR Article 15**
 >
-> Dear Data Protection Officer/[Organization],
+> Dear Data Protection Officer/[Organisation],
 >
 > I am making a subject access request under Article 15 of the General Data Protection Regulation. Please provide me with:
 >
@@ -95,16 +104,15 @@ Use this to request all information an organization holds about you, with specif
 > Additionally, regarding automated decision-making and AI systems:
 >
 > 4. Whether any automated decision-making, including profiling, is applied to my data
-> 5. If so:
->    - The logic involved in such processing
->    - The significance and anticipated consequences for me
+> 5. If so, meaningful information about the logic involved and the significance and envisaged consequences (Article 15(1)(h)), plus, as part of my personal data:
 >    - Information about the specific AI or algorithmic systems used
 >    - Any scores, ratings, or categories assigned to me
 >    - The data used as inputs to these systems
+>    - The source of any data not collected from me (Article 15(1)(g))
 >
-> Please respond within one month as required by GDPR Article 12.
+> Please respond within one month as required by GDPR Article 12(3).
 >
-> For identity verification, I have included [describe verification, e.g., "a copy of my ID" or "I am sending this from my registered email address"].
+> For identity verification, I have included [describe verification, e.g. 'I am writing from the email address registered with you'; send ID only if the organisation asks and has reasonable doubts].
 >
 > Regards,
 > [Name]
@@ -115,26 +123,27 @@ Use this to request all information an organization holds about you, with specif
 
 ### Request for Explanation of Algorithmic Decision
 
-Use this when you want to understand how a specific AI-made decision was reached.
+Use this when you want to understand how a specific AI-made decision was reached. In 2025 the EU Court of Justice ruled (Dun & Bradstreet Austria, C-203/22) that you have a right to a meaningful explanation of the procedure and principles behind an automated decision, so that you can understand and contest the decision. Simply handing over a complex algorithm or formula is not enough.
 
 > **Subject: Request for Explanation of Decision**
 >
-> Dear [Organization],
+> Dear [Organisation],
 >
 > On [date], I received [describe decision: e.g., "a denial of my credit application," "a risk assessment score," "a decision about my eligibility for..."]. I understand this decision may have involved automated processing or algorithmic systems.
 >
-> Under GDPR Articles 13, 14, and 15, I request a meaningful explanation of:
+> Under GDPR Article 15(1)(h), I request meaningful information about the logic involved in any automated decision-making, including profiling, that affected me. Where the decision falls under Article 22, I also rely on my right to express my point of view and contest the decision.
+>
+> As the Court of Justice of the EU confirmed in Case C-203/22 (Dun & Bradstreet Austria, 27 February 2025), this means an explanation of the procedure and principles behind the decision, so that I can understand and, if necessary, contest the result. Please explain:
 >
 > 1. Whether automated decision-making or AI was used in reaching this decision
-> 2. The specific factors or data points that influenced my outcome
-> 3. The logic involved in the processing
-> 4. The relative importance of different factors in the decision
-> 5. How the decision would change if specific factors were different
-> 6. What I could do to achieve a different outcome
+> 2. Which of my personal data were used, and the specific factors that influenced my outcome
+> 3. The procedure and principles applied, and the relative importance of the main factors
+> 4. How the result would have been different if specific factors had been different
+> 5. Whether a person reviewed the decision, and how I can ask for human review
 >
 > I am requesting this information in plain language that I can understand, not technical jargon.
 >
-> Please respond within 30 days.
+> Please respond without undue delay and in any event within one month (GDPR Article 12(3)).
 >
 > Regards,
 > [Name]
@@ -144,28 +153,28 @@ Use this when you want to understand how a specific AI-made decision was reached
 
 ### Complaint to Data Protection Authority
 
-Use this if an organization has failed to respond to your requests or has violated your rights.
+Use this if an organisation has failed to respond to your requests or has violated your rights.
 
 > **Subject: Complaint under GDPR**
 >
 > Dear Data Protection Authority,
 >
-> I am filing a complaint regarding [Organization name and address].
+> I am filing a complaint regarding [Organisation name and address].
 >
 > **Background:**
-> [Briefly describe your situation and relationship with the organization]
+> [Briefly describe your situation and relationship with the organisation]
 >
 > **The Issue:**
-> I believe this organization has violated my rights under GDPR, specifically:
-> - [Describe the violation, e.g., "failed to respond to my subject access request within 30 days," "refused to provide human review of an automated decision," "did not provide meaningful information about AI systems used"]
+> I believe this organisation has violated my rights under GDPR, specifically:
+> - [Describe the violation, e.g., "failed to respond to my subject access request within one month," "refused to provide human review of an automated decision," "did not provide meaningful information about AI systems used"]
 >
 > **Steps I Have Taken:**
-> 1. On [date], I [sent a request/made a complaint] to the organization (see attached)
+> 1. On [date], I [sent a request/made a complaint] to the organisation (see attached)
 > 2. On [date], I [received response/did not receive any response]
 > 3. [Add any additional steps]
 >
 > **What I Am Requesting:**
-> I request that you investigate this matter and [specify desired outcome: e.g., "require the organization to provide the requested information," "ensure they implement proper human oversight," "impose appropriate sanctions"].
+> I request that you investigate this matter and [specify desired outcome: e.g., "require the organisation to provide the requested information," "ensure they implement proper human oversight," "impose appropriate sanctions"].
 >
 > **Attached Documents:**
 > - [List copies of all correspondence]
@@ -202,7 +211,7 @@ Use this to ask your child's school about AI systems they may be using.
 >    - Are any AI-based proctoring tools used for exams?
 >
 > 3. **Behavioral and wellbeing**
->    - Are any systems used to monitor or predict student behavior?
+>    - Are any systems used to monitor or predict student behaviour?
 >    - Are mental health screening algorithms in use?
 >
 > 4. **Data protection**
@@ -210,7 +219,7 @@ Use this to ask your child's school about AI systems they may be using.
 >    - Who are the third-party providers and where is data stored?
 >    - What is the legal basis for processing?
 >
-> As my child's education involves a public authority, I believe transparency about AI use is particularly important.
+> Because AI decisions in education can significantly affect my child, I believe transparency is particularly important.
 >
 > Thank you for your attention to this matter.
 >
@@ -239,7 +248,7 @@ Use this to understand AI use in your medical care.
 >
 > 2. **Administrative processes**
 >    - Are AI systems used for appointment allocation or triage?
->    - Is there automated prioritization for referrals or treatments?
+>    - Is there automated prioritisation for referrals or treatments?
 >
 > 3. **My rights**
 >    - How am I informed when AI is used in decisions about my care?
@@ -268,7 +277,7 @@ Before accepting a position, consider asking:
 - [ ] Does the company use productivity monitoring software?
 - [ ] Are keystrokes, screen activity, or location tracked?
 - [ ] Is there video surveillance with facial recognition?
-- [ ] Are communications (email, chat) monitored or analyzed?
+- [ ] Are communications (email, chat) monitored or analysed?
 
 **AI in Decision-Making**
 - [ ] Are AI systems used for performance reviews?
@@ -325,8 +334,10 @@ Consider taking action if:
 
 **Transparency Violations**
 - [ ] You weren't told AI was involved in a decision affecting you
+- [ ] A chatbot did not make clear it was an AI (required under the AI Act since 2 August 2026)
+- [ ] Realistic AI-generated images, video or audio (deepfakes) were not labelled as such
 - [ ] You asked for an explanation and got no response or incomprehensible jargon
-- [ ] An organization refuses to confirm whether AI is used
+- [ ] An organisation refuses to confirm whether AI is used
 - [ ] You can't find information about AI use in privacy policies
 
 **Human Oversight Failures**
@@ -336,7 +347,7 @@ Consider taking action if:
 - [ ] Staff can't override or explain the "system's" decisions
 
 **Data Rights Violations**
-- [ ] Your subject access request wasn't answered within 30 days
+- [ ] Your subject access request wasn't answered within one month (and no extension was explained)
 - [ ] Important information was withheld from your data request
 - [ ] You were charged excessive fees for accessing your data
 - [ ] Your request to correct inaccurate data was refused
@@ -347,6 +358,10 @@ Consider taking action if:
 - [ ] You suspect your protected characteristics influenced the outcome
 - [ ] There's a pattern of certain groups receiving worse outcomes
 
+**Banned AI Practices**
+- [ ] Your employer, school or a recruiter uses AI to read or infer your emotions (banned since 2 February 2025, except for medical or safety reasons)
+- [ ] Someone used an AI tool to create intimate or sexual images of you without consent. This is harmful and may already be a crime in your country; from 2 December 2026 such AI systems are also banned under the AI Act. See [intimate deepfakes](/en/rights/intimate-deepfakes).
+
 ---
 
 ## Know Your Authorities
@@ -355,7 +370,7 @@ Consider taking action if:
 
 Every EU/EEA country has a Data Protection Authority (DPA) that enforces GDPR. Your DPA can:
 - Investigate complaints about data protection violations
-- Order organizations to change their practices
+- Order organisations to change their practices
 - Issue fines for serious violations
 - Provide guidance on your rights
 
@@ -398,15 +413,17 @@ Every EU/EEA country has a Data Protection Authority (DPA) that enforces GDPR. Y
 
 ### What to Expect from the Process
 
-**Timeline:**
-- Acknowledgment: 1-4 weeks
+**Timeline (rough, varies by country):**
+- Acknowledgement: 1-4 weeks
 - Initial assessment: 1-3 months
 - Full investigation: 6-18 months
 - Final decision: varies widely
 
+If the DPA does not tell you about progress or the outcome within three months, you can go to court (GDPR Art. 78(2)).
+
 **Possible outcomes:**
 - Finding of no violation (with explanation)
-- Informal resolution (organization agrees to comply)
+- Informal resolution (organisation agrees to comply)
 - Formal finding + corrective measures required
 - Fines for serious violations
 - Referral for further action
@@ -415,7 +432,7 @@ Every EU/EEA country has a Data Protection Authority (DPA) that enforces GDPR. Y
 - Be clear and factual in your complaint
 - Include all relevant evidence
 - Respond promptly to requests for information
-- Be patient—investigations take time
+- Be patient: investigations take time
 - Keep records of all communications
 
 ---
@@ -424,8 +441,8 @@ Every EU/EEA country has a Data Protection Authority (DPA) that enforces GDPR. Y
 
 Data protection authorities aren't the only option:
 
-**Labor/Employment Issues**
-- National labor inspectorates for workplace AI surveillance
+**Labour/Employment Issues**
+- National labour inspectorates for workplace AI surveillance
 - Employment tribunals for workplace discrimination
 - Trade unions for collective representation
 
@@ -435,10 +452,15 @@ Data protection authorities aren't the only option:
 - Education authorities for school AI concerns
 - Consumer protection agencies for commercial AI services
 
-**AI-Specific Bodies (Emerging)**
-- EU AI Office (European level)
-- National AI authorities (being established under EU AI Act)
-- Market surveillance authorities
+**AI-Specific Bodies**
+- EU AI Office (European level): supervises general-purpose AI models (and, since 2026, certain AI systems built on them and AI in very large online platforms) and coordinates AI Act implementation
+- National market surveillance authorities: enforce the AI Act in each country. Their powers apply since 2 August 2026, but many countries were late in naming them (as of mid-June 2026, only 9 of 27 had named both required authorities). Check the [national implementation tracker](https://artificialintelligenceact.eu/national-implementation-plans/).
+- Anyone who believes the AI Act has been breached can complain to the national market surveillance authority (Article 85 of the AI Act). This is useful for banned practices or missing chatbot/deepfake disclosure.
+- Example: in Denmark, the Danish Agency for Digital Government (Digitaliseringsstyrelsen) is the single point of contact and a market surveillance authority, and the Danish Data Protection Agency (Datatilsynet) supervises certain bans.
+- For general questions about the AI Act, the Commission runs the [AI Act Service Desk](https://ai-act-service-desk.ec.europa.eu/).
+
+**Platform Workers**
+- If you work through a digital platform (for example delivery or ride-hailing), the Platform Work Directive gives you rights on algorithmic management, including human review of automated decisions. Countries must put it into national law by 2 December 2026; many are running late, so check with a union or labour inspectorate.
 
 **Courts**
 - For significant harm, legal action may be possible
@@ -463,7 +485,7 @@ When you encounter AI systems, document:
 - What information you were asked to provide
 - Any disclosures about AI use
 - Steps you went through
-- Error messages or unusual behavior
+- Error messages or unusual behaviour
 
 **Evidence of Impact**
 - How the decision affected you
@@ -494,7 +516,7 @@ When you encounter AI systems, document:
 - Back up important documents
 
 **Best practices:**
-- Use descriptive file names (e.g., "2024-03-15_Credit_Decision_Screenshot.png")
+- Use descriptive file names (e.g., "2026-03-15_Credit_Decision_Screenshot.png")
 - Keep originals, don't just rely on memory
 - Store copies in multiple places
 - Consider using a dedicated email folder for correspondence
@@ -513,7 +535,7 @@ Create a chronological list of events:
 - Deadlines and whether they were met
 
 **2. Evidence folder**
-Organize your documentation:
+Organise your documentation:
 - Original decision/notification
 - Your requests and their responses
 - Supporting documents
@@ -539,10 +561,20 @@ Track all communications:
 
 These templates and guides are a starting point. For complex situations or if you're facing significant harm, consider:
 
-- **Consumer rights organizations** in your country
+- **Consumer rights organisations** in your country
 - **Legal aid services** for those who qualify
 - **Trade unions** for workplace issues
-- **Civil liberties organizations** focused on digital rights
+- **Civil liberties organisations** focused on digital rights
 - **Free legal clinics** at universities
+
+Want to help others? [Share your story](https://github.com/ethical-ai-europe/website/issues/new?template=share-a-story.yml) (without personal data), or [suggest an improvement](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml) to these templates.
+
+## Sources
+
+- [AI Act, Regulation (EU) 2024/1689 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+- [Digital Omnibus on AI, Regulation (EU) 2026/1744 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)
+- [Commission: transparency obligations under Article 50 (FAQ)](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)
+- [AI Act Service Desk](https://ai-act-service-desk.ec.europa.eu/)
+- [National implementation tracker](https://artificialintelligenceact.eu/national-implementation-plans/)
 
 [Back to Take Action →](/en/take-action) | [Join Our Community →](/en/take-action/community)

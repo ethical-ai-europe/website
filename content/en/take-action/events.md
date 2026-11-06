@@ -1,184 +1,146 @@
 ---
 title: "Events & Workshops"
-description: "Connect, learn, and act together at our AI rights events and workshops"
-date: "2025-12-25"
+description: "No events are scheduled yet. Here is what we hope to offer, and how you can run your own session using our free materials."
+date: "2026-11-06"
 language: "en"
 ---
 
 # Events & Workshops
 
-**Connect, learn, and act together.**
+**Learning together, with people at the centre.**
 
-From online workshops to local meetups, our events bring together people who want to understand their AI rights, implement responsible practices, and shape the future of technology. Whether you're a citizen learning the basics or an organization seeking compliance guidance, there's something for you.
+AI affects people's jobs, money, health and education. Talking about it together, in a workplace, a library, a classroom or online, is one of the best ways to understand your rights and to use AI in ways that serve people.
 
 ---
 
 ## Upcoming Events
 
-*Check back soon for upcoming events. In the meantime, [subscribe to our newsletter](/en/take-action/newsletter) to be notified of new events.*
+**There are no events scheduled at the moment.** We are a small open-source project and do not yet run a regular events programme.
+
+If that changes, events will be listed here with a date, place and organiser. In the meantime, you can:
+
+- use the free [toolkit](/en/take-action/toolkit) and [AI Act timeline](/en/timeline) to run your own session
+- [suggest an event or workshop topic](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml) on GitHub
 
 <!-- 
-Example event format for future use:
+Example event format for future use (only publish real, confirmed events):
 
 ### Know Your Rights: AI in the Workplace
 **📅 Date:** [Date and time]
-**📍 Location:** Online via Zoom / [City, Venue]
+**📍 Location:** [Online platform / City, Venue]
 **🎯 Audience:** Workers, HR professionals, union representatives
 **💶 Cost:** Free
 
-Learn about your rights when AI is used at work—from productivity monitoring to automated performance reviews. Leave with practical tools to ask the right questions and protect your interests.
+[Short description]
 
-[Register Now →](#)
+[Register →](#)
 
 ---
 -->
 
 ---
 
-## Types of Events
+## Workshop Ideas
 
-### 🎓 Know Your Rights Workshops
+These are formats we think would be useful. They are ideas, not scheduled sessions. Anyone can use them.
+
+### 🎓 Know Your Rights
 
 **For: Citizens, workers, anyone affected by AI systems**
 
-Interactive sessions covering:
-- Understanding the EU AI Act and GDPR protections
-- Identifying AI systems in your daily life
-- Using template letters and request forms
-- Filing complaints effectively
-- Q&A with legal and policy experts
+Possible topics:
+- What the EU AI Act already does: banned practices, and the duty to tell you when you are talking to a chatbot or looking at a deepfake (since 2 August 2026)
+- What is still coming: high-risk rules for hiring, credit, benefits and education from 2 December 2027
+- Your GDPR rights today: access to your data and, for decisions made solely by automated means with legal or similarly significant effects, a meaningful explanation and human review
+- Using template letters and filing complaints
 
-*Duration: 90 minutes | Format: Online and in-person | Cost: Free*
-
----
-
-### 🏢 Responsible AI Implementation
-
-**For: Organizations, businesses, public sector bodies**
-
-Practical guidance sessions on:
-- EU AI Act compliance requirements
-- Risk assessment and classification
-- Documentation and transparency obligations
-- Building human oversight processes
-- Preparing for AI audits
-
-*Duration: Half-day to full-day | Format: Online and in-person | Cost: Varies*
+*Suggested length: 90 minutes*
 
 ---
 
-### 🏛️ Policy Discussions
+### 🏢 Responsible AI in Your Organisation
 
-**For: All stakeholders—citizens, organizations, policymakers**
+**For: Organisations, businesses, public sector bodies**
 
-Open forums exploring:
-- EU AI Act implementation updates
-- Emerging issues in AI governance
-- Cross-sector perspectives
-- Future policy directions
-- Public participation opportunities
+Possible topics:
+- AI literacy: what it means to support your staff's understanding of AI (applies to all organisations using AI)
+- Checking that you do not use banned practices, and meeting transparency duties
+- Mapping where you use AI and whether any use could be high-risk
+- Building human oversight that works in practice, not just on paper
+- Using the extra time before the high-risk rules apply to prepare well
 
-*Duration: 60-90 minutes | Format: Usually online | Cost: Free*
-
----
-
-### 🤝 Community Meetups
-
-**For: Anyone interested in AI ethics and rights**
-
-Informal gatherings for:
-- Networking with like-minded people
-- Sharing experiences and stories
-- Learning from each other
-- Building local communities
-- Planning collective action
-
-*Duration: 2 hours | Format: In-person in various cities | Cost: Free*
+*Suggested length: half-day*
 
 ---
 
-## Host an Event
+### 🏛️ Policy Discussion
 
-Want to bring AI rights education to your community, workplace, or organization? We can help.
+**For: Citizens, organisations, policymakers**
 
-### What You Can Organize
+Possible topics:
+- What the 2026 Digital Omnibus changed, and the arguments for and against delaying the high-risk rules
+- How your country is setting up AI Act supervision
+- Related laws: the Platform Work Directive (to be transposed by 2 December 2026) and the Product Liability Directive (from 9 December 2026)
 
-**Community workshops**: Teach your neighbors about their AI rights
-**Workplace sessions**: Help colleagues understand AI in the workplace
-**Student events**: Engage young people on technology and rights
-**Professional seminars**: Bring AI ethics to your sector
+*Suggested length: 60 to 90 minutes*
 
-### Resources We Provide
+---
 
-- **Presentation materials** and slide decks
-- **Facilitator guides** with talking points
-- **Handouts and templates** for participants
-- **Promotional materials** for your event
-- **Remote speaker support** for online sessions
+### 🤝 Story Circle
+
+**For: Anyone interested in AI and rights**
+
+An informal session where people share how AI has affected them, and what helped. The human stories are often what make the rules make sense.
+
+*Suggested length: 1 to 2 hours*
+
+---
+
+## Run Your Own Session
+
+You do not need us to host an event. You can bring these topics to your community, workplace, school or organisation.
+
+### Free Materials Available Now
+
+- **[Action toolkit](/en/take-action/toolkit)**: template letters, checklists and complaint guidance
+- **[AI Act timeline](/en/timeline)**: what applies when, in plain language
+- **[About the EU AI Act](/en/about)**: a short overview
+- **[Your rights](/en/rights)**: explanations of key rights
+
+We do not currently offer slide decks, facilitator guides or speakers. If you create materials you are happy to share, you can [suggest adding them](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml).
 
 ### How to Get Started
 
-1. **Choose your format**: Workshop, discussion, or meetup
-2. **Identify your audience**: Who do you want to reach?
-3. **Pick a date and venue**: Or plan for online delivery
-4. **Contact us**: We'll help you prepare
-
-**Interested in hosting?** [Get in touch](/en/take-action/community) to discuss your ideas and get support.
+1. **Choose your format**: workshop, discussion or story circle
+2. **Identify your audience**: who do you want to reach?
+3. **Pick a date and place**: or plan for online delivery
+4. **Check the dates**: rules change, so use the [timeline](/en/timeline) rather than older slides
 
 ---
 
 ## Past Events
 
-*This section will be updated as we host events.*
-
-<!-- 
-Example past event format:
-
-### AI Rights Workshop: Understanding GDPR Protections
-**📅 Date:** December 2024
-**📍 Location:** Online
-**👥 Attendees:** 45 participants
-
-Key topics covered:
-- Right to explanation under GDPR
-- Template letters for requesting information
-- How to escalate complaints
-
-**Materials:** [Slides (PDF)](#) | [Recording](#)
-
----
--->
+*None yet.*
 
 ---
 
-## Partner Events
+## Events by Others
 
-These events from partner organizations may also be of interest:
-
-*We'll list relevant events from allied organizations here as they become available.*
-
-### Suggest an Event
-
-Know of an event that should be listed here? [Let us know](/en/take-action/community) so we can share it with the community.
-
-### Event Types We Promote
-
-- AI ethics conferences and workshops
-- Digital rights trainings
-- Technology policy discussions
-- Consumer rights events
-- Academic symposia on AI governance
+We do not list third-party events at the moment, because we cannot check them all. If you know a free, public event on AI and rights in Europe, you can [suggest it on GitHub](https://github.com/ethical-ai-europe/website/issues/new?template=suggest-improvement.yml).
 
 ---
 
 ## Stay Updated
 
-Never miss an event:
+- **[Stay informed](/en/take-action/newsletter)**: official sources to follow (no newsletter yet)
+- **[Community](/en/take-action/community)**: how to share stories and contribute
 
-- **[Subscribe to our newsletter](/en/take-action/newsletter)** for event announcements
-- **[Join our community](/en/take-action/community)** for discussion and updates
-- **Add our calendar** *(coming soon)* to get automatic event reminders
+## Sources
+
+- [European Commission: AI Act policy page](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
+- [Digital Omnibus on AI, Regulation (EU) 2026/1744 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)
+- [AI Act Service Desk](https://ai-act-service-desk.ec.europa.eu/)
 
 ---
 
-[← Back to Take Action](/en/take-action) | [Join Our Community →](/en/take-action/community)
+[← Back to Take Action](/en/take-action) | [Community →](/en/take-action/community)

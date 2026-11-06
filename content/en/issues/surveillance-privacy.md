@@ -1,15 +1,15 @@
 ---
 title: "Surveillance, Privacy, and AI"
-description: "Understanding how AI enables new forms of surveillance and what protections exist"
-date: "2025-12-25"
+description: "Understanding how AI enables new forms of surveillance, which EU bans apply today, and who enforces them"
+date: "2026-11-06"
 language: "en"
 ---
 
 # Surveillance, Privacy, and AI
 
-AI supercharges surveillance capabilities. What once required armies of human watchers can now be automated. What once could be observed only fleetingly can now be recorded, analyzed, and never forgotten. What once was private—our movements, behaviors, relationships, even emotions—can now be inferred at scale.
+AI supercharges surveillance capabilities. What once required armies of human watchers can now be automated. What once could be observed only fleetingly can now be recorded, analyzed, and never forgotten. What once was private (our movements, behaviors, relationships, even emotions) can now be inferred at scale.
 
-This isn't a dystopian future; it's the present reality in many contexts. Understanding what's happening, what protections exist, and what you can do is essential for anyone who values privacy and freedom.
+This isn't a dystopian future; it's the present reality in many contexts. But technology doesn't decide how it is used. People do. The same tools can help find a missing child or track a peaceful protester. Understanding what's happening, what protections exist, and what you can do is essential for anyone who values privacy and freedom.
 
 ## Forms of AI-Enabled Surveillance
 
@@ -24,10 +24,10 @@ AI enables identification through biological characteristics:
 - Verification for access control
 
 **Other biometrics:**
-- Gait analysis — identifying people by how they walk
-- Voice recognition — identifying speakers from audio
-- Fingerprint and iris scanning — enhanced by AI processing
-- Vein pattern recognition — for high-security contexts
+- Gait analysis: identifying people by how they walk
+- Voice recognition: identifying speakers from audio
+- Fingerprint and iris scanning, enhanced by AI processing
+- Vein pattern recognition for high-security contexts
 
 AI has dramatically improved the accuracy and speed of biometric identification, making mass surveillance feasible in ways it wasn't before.
 
@@ -35,13 +35,13 @@ AI has dramatically improved the accuracy and speed of biometric identification,
 
 AI systems increasingly aim to predict behavior:
 
-- **Criminal risk prediction** — assessing likelihood of reoffending
-- **Fraud detection** — identifying suspicious patterns
-- **Radicalization prediction** — flagging potential extremism
-- **Consumer behavior** — predicting purchasing and other decisions
-- **Health predictions** — inferring health status and risks
+- **Criminal risk prediction:** assessing likelihood of reoffending (individual crime prediction based solely on profiling is banned in the EU since February 2025)
+- **Fraud detection:** identifying suspicious patterns
+- **Radicalization prediction:** flagging potential extremism
+- **Consumer behavior:** predicting purchasing and other decisions
+- **Health predictions:** inferring health status and risks
 
-These systems claim to identify "risky" individuals or behaviors before anything happens—raising profound questions about presumption of innocence and self-fulfilling prophecies.
+These systems claim to identify "risky" individuals or behaviors before anything happens, raising profound questions about the presumption of innocence and self-fulfilling prophecies.
 
 ### Location and Movement Tracking
 
@@ -73,7 +73,7 @@ Emerging (and contested) AI applications claim to detect:
 - Attention and engagement levels
 - "Suspicious" behavior from body language
 
-The scientific validity of many emotion detection claims is disputed, but the systems are being deployed regardless.
+The scientific validity of many emotion detection claims is disputed. That is one reason the EU has banned emotion recognition at work and in schools, and requires anyone using it elsewhere to inform the people affected.
 
 ## Where Surveillance Happens
 
@@ -99,7 +99,7 @@ As explored in our section on [workplace surveillance](/en/rights/workplace-surv
 - Productivity measurement
 - Biometric time tracking
 
-AI enables more intensive and continuous monitoring than human supervisors ever could.
+AI enables more intensive and continuous monitoring than human supervisors ever could. [See how AI is changing work →](/en/issues/labor-market)
 
 ### Online
 
@@ -138,7 +138,7 @@ Migrants and refugees face some of the most intensive AI surveillance with the l
 
 ## Why AI Surveillance Is Different
 
-AI doesn't just do more of what surveillance always did—it changes the nature of surveillance fundamentally.
+AI doesn't just do more of what surveillance always did. It changes the nature of surveillance fundamentally.
 
 ### Scale: Monitor Everyone, Not Just Suspects
 
@@ -184,7 +184,7 @@ This affects not just individuals but the vibrancy and openness of society as a 
 
 The General Data Protection Regulation provides significant protections for biometric data:
 
-- Biometric data is classified as "special category" requiring extra protection
+- Biometric data used to identify people is classified as "special category" data requiring extra protection
 - Processing requires explicit consent or specific legal grounds
 - Data subjects have rights to access, correction, and deletion
 - Organizations must document their processing and legal basis
@@ -192,27 +192,52 @@ The General Data Protection Regulation provides significant protections for biom
 
 However, exceptions for law enforcement and national security limit these protections in significant contexts.
 
-### AI Act Prohibitions
+The European Commission has proposed changes to the GDPR as part of a separate "digital omnibus" on data. These are still being negotiated by EU governments and the European Parliament, and nothing in the GDPR has changed yet. Privacy advocates are following the talks closely.
 
-The EU AI Act includes notable prohibitions on certain surveillance practices:
+### AI Act Prohibitions (in Force Since February 2025)
+
+Since 2 February 2025, the EU AI Act bans several surveillance practices outright:
 
 **Banned:**
-- Real-time remote biometric identification in public spaces for law enforcement (with limited exceptions)
-- Emotion recognition in workplaces and educational institutions
+- Most real-time remote biometric identification (such as live facial recognition) by police in publicly accessible spaces, with narrow exceptions
+- Emotion recognition in workplaces and educational institutions (except for medical or safety reasons)
 - Social scoring systems
-- Exploitation of vulnerabilities through AI
-- Untargeted scraping for facial recognition databases
+- Manipulative AI, or AI that exploits people's vulnerabilities, in ways that cause or are likely to cause significant harm
+- AI that sorts people by their biometric data (such as their face) to infer their race, political opinions, trade union membership, religion, sex life or sexual orientation
+- AI that predicts whether a specific person will commit a crime based solely on profiling or personality traits
+- Untargeted scraping of facial images from the internet or CCTV to build facial recognition databases
 
-**Exceptions:**
-- Real-time biometric identification is allowed for serious crimes, subject to safeguards
-- Law enforcement has other exemptions
-- National security is largely outside the AI Act's scope
+**From 2 December 2026**, a new ban adds AI systems that generate realistic sexually explicit images of identifiable people without consent. [Learn more →](/en/rights/intimate-deepfakes)
+
+**Exceptions and limits:**
+- Real-time biometric identification by police is allowed only in narrowly defined serious cases, subject to safeguards, and requires prior authorisation by a judge or independent authority, and only where national law allows it
+- AI used exclusively for military, defence or national security purposes is outside the AI Act
+
+[Read more about facial recognition and your rights →](/en/rights/facial-recognition)
+
+### Transparency Duties (Since August 2026)
+
+Since 2 August 2026, anyone using emotion recognition or biometric categorisation (sorting people into groups based on their biometric data) where it is still allowed must inform the people exposed to it. [Read about your transparency rights →](/en/rights/ai-transparency)
+
+### High-Risk Biometric Systems: Delayed to December 2027
+
+Many biometric systems that are not banned are classed as "high-risk." They will have to meet strict requirements, including on documentation and human oversight. Under the Digital Omnibus on AI (Regulation (EU) 2026/1744), adopted in July 2026, these rules now apply from **2 December 2027** instead of August 2026. Public authorities already using such systems have until 2 August 2030 to comply.
+
+Supporters of the delay say it gives time for technical standards to be ready so the rules work in practice. Civil liberties groups worry that it leaves powerful surveillance tools without the full safeguards for longer. The Omnibus did not weaken the bans.
+
+### Who Enforces the Rules?
+
+Since 2 August 2026, national authorities and the EU AI Office have had the power to supervise and enforce the AI Act. In practice, the picture is patchy. By mid-June 2026, only 9 of the 27 EU countries had fully designated both their market surveillance and notifying authorities (the situation may have improved since; see the tracker). Many countries were late.
+
+**Example: Denmark.** Denmark adopted its implementing law in May 2025, in force since 2 August 2025. The Danish Agency for Digital Government (Digitaliseringsstyrelsen) is the single point of contact, the notifying authority and a market surveillance authority. The Danish Data Protection Agency (Datatilsynet) supervises certain bans, and the Danish Court Administration (Domstolsstyrelsen) covers the courts' administrative use of AI.
+
+Penalties for breaching the bans can reach €35 million or 7% of a company's worldwide annual turnover, whichever is higher. No AI Act fine has been confirmed so far. Strong rules only protect people if authorities have the staff, skills and will to enforce them.
 
 ### Law Enforcement Exceptions and Safeguards
 
 EU law permits significant surveillance for law enforcement purposes, but requires:
 
-- Prior judicial authorization in most cases
+- Prior authorisation by a court or independent authority for the most intrusive measures
 - Necessity and proportionality assessment
 - Specific purpose limitations
 - Time limits on surveillance
@@ -238,13 +263,13 @@ These questions don't have simple answers, but they deserve honest debate rather
 
 "If you have nothing to hide, you have nothing to fear" is perhaps the most common defense of surveillance. But this argument has problems:
 
-- **Everyone has something to hide** — Privacy isn't just for criminals; it's a normal human need
-- **Who decides what's suspicious?** — What's innocuous today might be concerning tomorrow
-- **Power imbalance** — We're expected to be transparent while surveillance operators remain opaque
-- **Chilling effects are real** — Even innocent behavior changes under observation
-- **Errors happen** — Systems make mistakes, and those caught up in them suffer
+- **Everyone has something to hide:** privacy isn't just for criminals; it's a normal human need
+- **Who decides what's suspicious?** What's innocuous today might be concerning tomorrow
+- **Power imbalance:** we're expected to be transparent while surveillance operators remain opaque
+- **Chilling effects are real:** even innocent behavior changes under observation
+- **Errors happen:** systems make mistakes, and those caught up in them suffer
 
-Privacy isn't about hiding wrongdoing—it's about maintaining boundaries that are fundamental to dignity and freedom.
+Privacy isn't about hiding wrongdoing. It's about maintaining boundaries that are fundamental to dignity and freedom.
 
 ### Proportionality Principle
 
@@ -264,6 +289,7 @@ This principle provides a framework for evaluating surveillance proposals, thoug
 You have rights under EU law:
 
 - Right to know if biometric data is being collected
+- Right to be informed when emotion recognition or biometric categorisation is used on you
 - Right to object to processing in certain circumstances
 - Right to access information about processing
 - Right to lodge complaints with data protection authorities
@@ -292,9 +318,10 @@ While individual action can't solve systemic surveillance, you can take steps:
 
 Individual privacy practices matter less than collective action on policy:
 
-- **Stay informed** about surveillance proposals and debates
+- **Stay informed** about surveillance proposals and debates, including the GDPR negotiations
 - **Support organizations** working on privacy and civil liberties
 - **Engage with policymakers** on surveillance issues
+- **Ask your government** whether its AI enforcement authorities are in place and properly resourced
 - **Demand transparency** about surveillance in your community
 - **Vote** with privacy and civil liberties in mind
 
@@ -307,7 +334,7 @@ Surveillance isn't inherently wrong. Societies have legitimate interests in secu
 - Is this surveillance **necessary** for a legitimate purpose?
 - Is it **proportionate** to that purpose?
 - Are there **adequate safeguards** against abuse?
-- Is there **meaningful oversight**?
+- Is there **meaningful oversight**, including by humans who can question the system?
 - Do affected people have **rights and remedies**?
 - Are **less invasive alternatives** available?
 
@@ -318,5 +345,13 @@ When surveillance meets these tests, it may be justified. When it doesn't, we sh
 **Learn more:**
 - [Facial recognition and your rights →](/en/rights/facial-recognition)
 - [Workplace surveillance rules →](/en/rights/workplace-surveillance)
+- [AI Act timeline →](/en/timeline)
 - [Take action on AI issues →](/en/take-action)
 - [Return to Understanding the Issues →](/en/issues)
+
+## Sources
+
+- [EU AI Act, Regulation (EU) 2024/1689 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+- [Digital Omnibus on AI, Regulation (EU) 2026/1744 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)
+- [AI Act national implementation tracker](https://artificialintelligenceact.eu/national-implementation-plans/)
+- [Denmark: Act no. 467 of 14 May 2025 (Retsinformation)](https://www.retsinformation.dk/eli/lta/2025/467)

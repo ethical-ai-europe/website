@@ -1,7 +1,7 @@
 ---
 title: "AI in Education"
 description: "Understanding AI in schools, from adaptive learning to plagiarism detection"
-date: "2025-12-25"
+date: "2026-11-06"
 language: "en"
 ---
 
@@ -44,30 +44,50 @@ AI that monitors students during online exams, watching for signs of cheating th
 - **Dependency**: Over-reliance on AI may reduce critical thinking and problem-solving skills
 - **Bias**: AI trained on limited data may not serve all students equally
 - **Privacy**: Student data collection raises questions about who has access and for how long
-- **Accuracy**: AI plagiarism detectors have shown high false-positive rates, wrongly accusing students
+- **Accuracy**: AI-writing detectors can wrongly flag genuine work, and studies suggest non-native English writers are flagged more often
 
-## EU AI Act: Education AI Is High-Risk
+## What the Law Says Today (November 2026)
 
-Under the EU AI Act (Article 6, Annex III), AI systems used in education are classified as **high-risk**. This includes:
+The EU AI Act is the European Union's law on artificial intelligence. Some parts already apply in schools; others have been delayed.
+
+### Already in force
+
+✓ **Emotion recognition is banned in education** (since February 2025). Schools and universities may not use AI that claims to read students' emotions, for example tools that claim to detect from students' faces or voices whether they are bored, frustrated or anxious. There are narrow exceptions for medical or safety reasons only.
+
+✓ **Other bans apply too**, such as AI that manipulates people or exploits the vulnerabilities of children.
+
+✓ **AI literacy** (since February 2025). Schools and other organisations that use AI must take steps to help their staff understand it: what it can do, where it goes wrong, and when to rely on human judgment.
+
+✓ **Chatbots must say they are AI** (since 2 August 2026). If a school or app uses a chatbot to talk with students or parents, it must make clear that you are talking to a machine, unless that is already obvious. AI-generated deepfakes must be labelled. See [When AI must tell you it's AI](/en/rights/ai-transparency).
+
+✓ **Data protection (GDPR)** applies to all student data now. You can ask to see what is recorded. If a decision with significant effects is made solely by a machine, you also have the right to be told, to get a meaningful explanation and to ask for human review.
+
+### Coming on 2 December 2026: a ban on "nudifier" deepfakes
+
+From 2 December 2026, AI systems that create realistic sexual or intimate images of real, identifiable people without their consent are banned in the EU. This includes so-called "nudifier" apps and any AI-generated child sexual abuse material. This matters for schools and young people, where fake images of classmates can cause serious harm. If it happens to your child or a student, keep evidence, do not share the image further, tell the school and report it. See [Intimate deepfakes](/en/rights/intimate-deepfakes).
+
+### Delayed: "high-risk" rules for education AI
+
+Under the AI Act (Article 6, Annex III), some education AI is classified as **high-risk**, meaning it must meet stricter requirements. This includes:
 
 - AI that determines access to education or training
 - AI that evaluates learning outcomes
 - AI that assesses the appropriate level of education for an individual
-- AI used to monitor student behavior during exams
+- AI used to detect cheating or other prohibited behaviour during tests
 
-### What This Means
+These high-risk requirements were originally due in August 2026. In July 2026 the EU postponed them, and they now apply from **2 December 2027**. When they apply, they will require:
 
-High-risk classification requires:
+✓ **Correct use and information**: Schools must use these systems as instructed and inform people affected
 
-✓ **Transparency**: Schools must inform you when high-risk AI is used
-
-✓ **Human oversight**: AI decisions must have human review, especially for significant outcomes
+✓ **Human oversight**: Trained people must be able to check and overrule the AI
 
 ✓ **Bias testing**: Systems must be tested for discriminatory effects
 
-✓ **Documentation**: Schools should be able to explain how systems work
+✓ **Documentation**: Clear records of how systems work
 
 ✓ **Accuracy requirements**: Systems must meet quality standards
+
+**What this means for you:** until December 2027 there are fewer formal AI Act duties for these tools. But the bans, transparency rules, GDPR and anti-discrimination law protect students right now. Most importantly, a teacher remains responsible for decisions about your child. If an AI tool influenced a grade, placement or accusation, ask for a human to look at it.
 
 ## For Parents: Questions to Ask Your Child's School
 
@@ -92,6 +112,7 @@ If your child's school uses AI, consider asking:
 - How is my child's data protected?
 - Is monitoring software used on school devices at home?
 - What are the school's policies on AI-generated content?
+- How does the school handle fake or manipulated images of students, including deepfakes?
 
 ## For Teachers: Responsible AI Use Principles
 
@@ -121,11 +142,11 @@ If you're an educator using AI tools:
 
 ### Your Rights
 
-✓ **Right to know**: You should be told when AI is used in grading, monitoring, or decisions about you
+✓ **Right to know**: You must be told if a significant decision about you is made solely by a machine, and a chatbot must tell you it is AI. Even when the law doesn't require it, you can always ask whether AI was used in grading or monitoring
 
-✓ **Right to explanation**: If AI affects your grade or academic standing, you can ask how
+✓ **Right to explanation**: If a solely automated decision significantly affects your grade or academic standing, you have the right to a meaningful explanation. In other cases you can still ask how AI was used
 
-✓ **Right to human review**: For significant academic decisions, a human should be involved
+✓ **Right to human review**: For significant academic decisions, a human should be involved. If an AI detector flags your work, ask for a teacher to review it
 
 ✓ **Right to access**: You can ask to see data collected about you
 
@@ -139,7 +160,8 @@ Using AI tools raises new questions about academic honesty:
 - **Cite AI assistance**: If you use AI for research or drafting, be transparent about it
 - **Don't submit AI work as your own**: Passing off AI-generated content as original is dishonest
 - **Develop your own skills**: AI should support your learning, not replace it
-- **Be aware of detection**: AI plagiarism detectors are improving, and faculty are adapting
+- **Be aware of detection**: AI-writing detectors can be wrong, so keep drafts and notes that show your own work
+- **Never create or share fake images of others**: Making sexual deepfakes of classmates causes real harm, and from 2 December 2026 the AI tools that do this are banned in the EU
 
 If you're unsure whether AI use is appropriate for an assignment, ask your teacher before submitting.
 
@@ -157,7 +179,9 @@ If you're unsure whether AI use is appropriate for an assignment, ask your teach
 
 🚩 **No appeal process**: No way to challenge AI-influenced decisions
 
-🚩 **Emotion detection**: AI claiming to assess student emotions or engagement (banned in many contexts)
+🚩 **Emotion detection**: AI claiming to read student emotions from faces or voices. This has been banned in education in the EU since February 2025 (except for medical or safety reasons). If you see it, raise it with the school and your national AI supervisory authority or data protection authority
+
+🚩 **Undisclosed chatbots**: A chatbot that talks to students or parents without making clear it is AI
 
 ## What You Can Do
 
@@ -171,7 +195,8 @@ If you're unsure whether AI use is appropriate for an assignment, ask your teach
 - Discuss AI policies with your administration
 - Advocate for teacher input on technology decisions
 - Share concerns through professional associations
-- Stay informed about evolving regulations
+- Ask your school what AI literacy support it offers staff
+- Stay informed about evolving regulations (see the [timeline](/en/timeline))
 
 **For students:**
 - Know your rights and don't be afraid to ask questions
@@ -182,3 +207,11 @@ If you're unsure whether AI use is appropriate for an assignment, ask your teach
 ---
 
 [← Back to AI in Daily Life](/en/daily-life) | [AI in Healthcare →](/en/daily-life/healthcare)
+
+## Sources
+
+- [EU AI Act, Regulation (EU) 2024/1689 (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)
+- [Amending regulation (EU) 2026/1744, the Digital Omnibus on AI (EUR-Lex)](https://eur-lex.europa.eu/eli/reg/2026/1744/oj)
+- [Council of the EU: final approval of the AI Act simplification (29 June 2026)](https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/)
+- [European Commission: Transparency obligations under Article 50 (FAQ)](https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act)
+- [European Commission: Regulatory framework for AI](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
